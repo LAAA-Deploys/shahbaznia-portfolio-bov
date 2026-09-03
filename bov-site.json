@@ -22,7 +22,7 @@
         "tel": "8182122724",
         "email": "Morgan.Wetmore@marcusmillichap.com",
         "license": "CA 02209935",
-        "bio": "Pace Setter Award, 2025. GRIT Award, 2025 and 2026. Emerging Core Hustle Award, 2025.",
+        "bio": "2025: Pace Setter Award, GRIT Award, Emerging Core Hustle Award. 2026: GRIT Award.",
         "headshot": "images/team-morgan-wetmore.jpg",
         "headshot_sha256": "450503e582b40f7542f62b2b14024ea93aa2ae290ef910b999370a2df9eb19a9"
       },
@@ -3848,7 +3848,7 @@
   "approval_binding": {
     "deal_id": "shahbaznia-portfolio",
     "domains": {
-      "identity": "97c2a8b43175ddbe124d3d7b6e3296c03eb7509cd0c1d0020a6a6842e4bf4feb",
+      "identity": "8b73ac2e6665d03e7371dbb79802a66b4b67ec8d58df4157154cb14b0abdbe58",
       "financial_inputs": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b",
       "pricing_decision": "37d2b76f39576eb9bc550e7cd4c099f5f1a416781c2eb3dcbce482d7f3ecd699",
       "sale_comps": "c98b2a0dcf43a4cd982b3b760c138267c521ceb4cfa14bdc5c8523bd817a39fa",
@@ -3859,7 +3859,7 @@
     },
     "members": {
       "shahbaznia-vanowen-16550": {
-        "identity": "04f598be10f4915daff3cbb8a079d37e5f6d6b02a8c331468721b75ad2b47c86",
+        "identity": "86af9d62f88e3e1a3644adef675abf4943c887c85e377f22b6559e27b1885c77",
         "financial_inputs": "37616713854f19238c86b53956a26121e20a8a62d68ef2dac13fbd17342cd805",
         "pricing_decision": "bcc0e62620af0fd98f30caef1fb047fa8da71acaad523dda536014e343ca8fc9",
         "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
@@ -3869,7 +3869,7 @@
         "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
       },
       "shahbaznia-honolulu-3000": {
-        "identity": "6b0b8f736298e9a1a071d0155946eb3c1eed4f0e3b2d83ec2e85272e9c950a89",
+        "identity": "66ba374afbeac09097055d25e0d61e31e8134673d6753bd332a12adfcd0e93c1",
         "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
         "pricing_decision": "57a9259ee19549634e54432751f5c26b4e25a38fea465cb3ecad972766f94f62",
         "sale_comps": "a90fe6ae77373ab6c1277eda98801995f2896eeab605e522edfd9281e4b5dd0e",
@@ -3880,7 +3880,7 @@
       }
     },
     "presentation_hashes": {
-      "identity": "41da60aa1aae643af22f5ffbf1a69d2c439c58959546fb0d194ebd775f4d9233",
+      "identity": "44d2234f1c7077de94891af5bb1a9b2927dc33a8a1a3ce07adf9f36c8405f1fb",
       "financial_inputs": "8b41671866e7413456285ed0e276cc4066aeb8975ccc434e72852c45eaae3c84",
       "pricing_decision": "6bb890fea1c7124d0711c921150c6769fb6fb431267b819c060c85c1ea5a2e84",
       "sale_comps": "525dded9d911bcba2f03ef54029647ec15d205239e60306d0fb4540869c2a895",
@@ -3892,7 +3892,7 @@
   },
   "stats": {
     "live": true,
-    "generated": "2026-09-03T20:55:46+00:00",
+    "generated": "2026-09-03T21:05:47+00:00",
     "geography": {
       "states": 21,
       "has_dc": true,

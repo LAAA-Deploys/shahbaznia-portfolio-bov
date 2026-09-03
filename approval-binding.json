@@ -3,8 +3,8 @@
   "scope": "portfolio",
   "deal_id": "shahbaznia-portfolio",
   "portfolio_id": "shahbaznia-portfolio",
-  "package_version": "v5",
-  "approved_at": "2026-09-03T20:55:36.542314+00:00",
+  "package_version": "v6",
+  "approved_at": "2026-09-03T21:05:37.028695+00:00",
   "approver": "Morgan Wetmore",
   "price": {
     "value": 20500000
@@ -30,7 +30,7 @@
       "content_sha256": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b"
     },
     "identity": {
-      "content_sha256": "97c2a8b43175ddbe124d3d7b6e3296c03eb7509cd0c1d0020a6a6842e4bf4feb"
+      "content_sha256": "8b73ac2e6665d03e7371dbb79802a66b4b67ec8d58df4157154cb14b0abdbe58"
     },
     "media_selection": {
       "content_sha256": "4de399f2df6f55958fcc4725157214d3a1257da7a5b7234ae8e18ac5fb492aa9"
@@ -52,7 +52,7 @@
   "legacy_label": null,
   "members": {
     "shahbaznia-vanowen-16550": {
-      "identity": "04f598be10f4915daff3cbb8a079d37e5f6d6b02a8c331468721b75ad2b47c86",
+      "identity": "86af9d62f88e3e1a3644adef675abf4943c887c85e377f22b6559e27b1885c77",
       "financial_inputs": "37616713854f19238c86b53956a26121e20a8a62d68ef2dac13fbd17342cd805",
       "pricing_decision": "bcc0e62620af0fd98f30caef1fb047fa8da71acaad523dda536014e343ca8fc9",
       "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
@@ -62,7 +62,7 @@
       "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
     },
     "shahbaznia-honolulu-3000": {
-      "identity": "6b0b8f736298e9a1a071d0155946eb3c1eed4f0e3b2d83ec2e85272e9c950a89",
+      "identity": "66ba374afbeac09097055d25e0d61e31e8134673d6753bd332a12adfcd0e93c1",
       "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
       "pricing_decision": "57a9259ee19549634e54432751f5c26b4e25a38fea465cb3ecad972766f94f62",
       "sale_comps": "a90fe6ae77373ab6c1277eda98801995f2896eeab605e522edfd9281e4b5dd0e",
