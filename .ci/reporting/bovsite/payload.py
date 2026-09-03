@@ -1148,6 +1148,7 @@ def _build_payload(workspace: DealWorkspace) -> dict:
         "slug": deal["slug"],
         "short_name": presentation["short_name"],
         "show_active_listings": bool(presentation.get("show_active_listings")),
+        "show_local_closings": presentation.get("show_local_closings", True) is not False,
         "show_buyout_model": bool(presentation.get("show_buyout_model")),
         "buyout_model": presentation.get("buyout_model"),
         "show_value_scenarios": bool(presentation.get("show_value_scenarios")),

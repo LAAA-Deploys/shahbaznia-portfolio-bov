@@ -401,6 +401,10 @@
         "show_active_listings": {
           "type": "boolean"
         },
+        "show_local_closings": {
+          "type": "boolean",
+          "description": "Show the Representative Local Closings table in the Track Record section. Defaults to TRUE, unlike the opt-in show_ flags: the table has always rendered, so an absent value must keep rendering it. Set false where the local closed-deal population is too thin to help, e.g. a submarket below the MIN_SALES floor whose radius rung scrapes in distant or very small transactions."
+        },
         "show_buyout_model": {
           "type": "boolean",
           "description": "Opt in to the Buyout Scenarios section. Off for every deal that does not set it, exactly like show_active_listings. Requires buyout_model."

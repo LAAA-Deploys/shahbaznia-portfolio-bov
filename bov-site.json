@@ -146,6 +146,7 @@
       "slug": "16550-vanowen",
       "short_name": "Terraces at the Lake",
       "show_active_listings": false,
+      "show_local_closings": true,
       "show_buyout_model": false,
       "buyout_model": null,
       "show_value_scenarios": false,
@@ -778,6 +779,7 @@
       "slug": "3000-honolulu",
       "short_name": "Gardens at La Crescenta",
       "show_active_listings": false,
+      "show_local_closings": false,
       "show_buyout_model": false,
       "buyout_model": null,
       "show_value_scenarios": false,
@@ -3914,7 +3916,7 @@
   },
   "stats": {
     "live": true,
-    "generated": "2026-09-03T22:10:17+00:00",
+    "generated": "2026-09-03T22:23:57+00:00",
     "geography": {
       "states": 21,
       "has_dc": true,
