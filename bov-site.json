@@ -8,7 +8,7 @@
     "title": "Fernando Shahbaznia Portfolio",
     "subtitle": "Two-Property, 69-Unit Los Angeles Multifamily Portfolio",
     "month_year": "September 2026",
-    "cover_label": "Confidential Broker Opinion of Value",
+    "cover_label": "Confidential Broker Opinion of Value  |  Marcus & Millichap, #1 in U.S. Multifamily Sales",
     "hero": "images/portfolio-hero-split.jpg",
     "hero_tall": "images/portfolio-hero-split-tall.jpg",
     "portfolio_map": "images/maps-portfolio-subjects.png"
@@ -125,8 +125,8 @@
         "copy": "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket."
       },
       {
-        "title": "Marcus & Millichap platform",
-        "copy": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+        "title": "#1 in multifamily, nationally",
+        "copy": "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026."
       },
       {
         "title": "Dedicated digital presentation",
@@ -1484,12 +1484,12 @@
             ],
             "difference_titles": [
               "Direct owner and buyer outreach",
-              "Marcus & Millichap platform",
+              "#1 in multifamily, nationally",
               "Dedicated digital presentation"
             ],
             "difference_copy": [
               "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket.",
-              "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring.",
+              "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026.",
               "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
             ],
             "narrative": [
@@ -1721,12 +1721,12 @@
           },
           {
             "id": "difference-2",
-            "claim_type": "broker_opinion",
+            "claim_type": "sourced_market_fact",
             "support_refs": [
-              "sources:team-stats"
+              "sources:mm-ranking-1"
             ],
-            "framed_as": "proposed campaign",
-            "text": "Marcus & Millichap platform"
+            "framed_as": null,
+            "text": "#1 in multifamily, nationally"
           },
           {
             "id": "difference-3",
@@ -1748,12 +1748,12 @@
           },
           {
             "id": "difference-copy-2",
-            "claim_type": "broker_opinion",
+            "claim_type": "sourced_market_fact",
             "support_refs": [
-              "sources:team-stats"
+              "sources:mm-ranking-1"
             ],
-            "framed_as": "proposed campaign",
-            "text": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+            "framed_as": null,
+            "text": "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026."
           },
           {
             "id": "difference-copy-3",
@@ -2020,12 +2020,12 @@
             ],
             "difference_titles": [
               "Direct owner and buyer outreach",
-              "Marcus & Millichap platform",
+              "#1 in multifamily, nationally",
               "Dedicated digital presentation"
             ],
             "difference_copy": [
               "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket.",
-              "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring.",
+              "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026.",
               "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
             ],
             "narrative": [
@@ -2256,12 +2256,12 @@
           },
           {
             "id": "difference-2",
-            "claim_type": "broker_opinion",
+            "claim_type": "sourced_market_fact",
             "support_refs": [
-              "sources:team-stats"
+              "sources:mm-ranking-1"
             ],
-            "framed_as": "proposed campaign",
-            "text": "Marcus & Millichap platform"
+            "framed_as": null,
+            "text": "#1 in multifamily, nationally"
           },
           {
             "id": "difference-3",
@@ -2283,12 +2283,12 @@
           },
           {
             "id": "difference-copy-2",
-            "claim_type": "broker_opinion",
+            "claim_type": "sourced_market_fact",
             "support_refs": [
-              "sources:team-stats"
+              "sources:mm-ranking-1"
             ],
-            "framed_as": "proposed campaign",
-            "text": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+            "framed_as": null,
+            "text": "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026."
           },
           {
             "id": "difference-copy-3",
@@ -2551,12 +2551,12 @@
               ],
               "difference_titles": [
                 "Direct owner and buyer outreach",
-                "Marcus & Millichap platform",
+                "#1 in multifamily, nationally",
                 "Dedicated digital presentation"
               ],
               "difference_copy": [
                 "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket.",
-                "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring.",
+                "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026.",
                 "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
               ],
               "narrative": [
@@ -2788,12 +2788,12 @@
             },
             {
               "id": "difference-2",
-              "claim_type": "broker_opinion",
+              "claim_type": "sourced_market_fact",
               "support_refs": [
-                "sources:team-stats"
+                "sources:mm-ranking-1"
               ],
-              "framed_as": "proposed campaign",
-              "text": "Marcus & Millichap platform"
+              "framed_as": null,
+              "text": "#1 in multifamily, nationally"
             },
             {
               "id": "difference-3",
@@ -2815,12 +2815,12 @@
             },
             {
               "id": "difference-copy-2",
-              "claim_type": "broker_opinion",
+              "claim_type": "sourced_market_fact",
               "support_refs": [
-                "sources:team-stats"
+                "sources:mm-ranking-1"
               ],
-              "framed_as": "proposed campaign",
-              "text": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+              "framed_as": null,
+              "text": "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026."
             },
             {
               "id": "difference-copy-3",
@@ -3283,12 +3283,12 @@
               ],
               "difference_titles": [
                 "Direct owner and buyer outreach",
-                "Marcus & Millichap platform",
+                "#1 in multifamily, nationally",
                 "Dedicated digital presentation"
               ],
               "difference_copy": [
                 "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket.",
-                "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring.",
+                "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026.",
                 "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
               ],
               "narrative": [
@@ -3519,12 +3519,12 @@
             },
             {
               "id": "difference-2",
-              "claim_type": "broker_opinion",
+              "claim_type": "sourced_market_fact",
               "support_refs": [
-                "sources:team-stats"
+                "sources:mm-ranking-1"
               ],
-              "framed_as": "proposed campaign",
-              "text": "Marcus & Millichap platform"
+              "framed_as": null,
+              "text": "#1 in multifamily, nationally"
             },
             {
               "id": "difference-3",
@@ -3546,12 +3546,12 @@
             },
             {
               "id": "difference-copy-2",
-              "claim_type": "broker_opinion",
+              "claim_type": "sourced_market_fact",
               "support_refs": [
-                "sources:team-stats"
+                "sources:mm-ranking-1"
               ],
-              "framed_as": "proposed campaign",
-              "text": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+              "framed_as": null,
+              "text": "Marcus & Millichap closed 1,415 apartment transactions in the twelve months through Q1 2026, against 778 for CBRE. That is more than the next two firms combined. Over the five years from 2021 through 2025 the firm also ranks first in closed transactions across every property type. What that buys this listing is reach: national distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring. Ranking source: Marcus & Millichap Research Services, CoStar, Real Capital Analytics and NICMap, 2026."
             },
             {
               "id": "difference-copy-3",
@@ -3870,51 +3870,51 @@
   "approval_binding": {
     "deal_id": "shahbaznia-portfolio",
     "domains": {
-      "identity": "8b73ac2e6665d03e7371dbb79802a66b4b67ec8d58df4157154cb14b0abdbe58",
+      "identity": "230b47e3efbb92a79547acb3205c12a36a0b165726151bac737f111604cf7240",
       "financial_inputs": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b",
       "pricing_decision": "60a4af6ac503edd6b24c4b734c0693184320fbef5341a6c187dc5b821962eff4",
       "sale_comps": "96a2df61111c31bed59f00d6896ca74d795c2d5e097905c21374d3b8ca278178",
       "rent_comps": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2",
-      "copy": "d4310f2a0d12b258630826d2522de5a37cbddd0dbcf58783ad774f1d762f0d1f",
+      "copy": "4d0a2095d545bb3a0d15de0a13b4f62c365b47390327e6bac8ac10eaa561f67a",
       "media_selection": "4de399f2df6f55958fcc4725157214d3a1257da7a5b7234ae8e18ac5fb492aa9",
       "regulatory_conclusions": "aebaad476ba4746df8611977b480ecdad93795c04c46e0f97d94b5863d04d813"
     },
     "members": {
       "shahbaznia-vanowen-16550": {
-        "identity": "86af9d62f88e3e1a3644adef675abf4943c887c85e377f22b6559e27b1885c77",
+        "identity": "e3297fa95d02f81553a660a32402796a2c9799af194690b0beba0d81fd323a85",
         "financial_inputs": "37616713854f19238c86b53956a26121e20a8a62d68ef2dac13fbd17342cd805",
         "pricing_decision": "bcc0e62620af0fd98f30caef1fb047fa8da71acaad523dda536014e343ca8fc9",
         "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
         "rent_comps": "a5d5a0bf362d695d68d2e434cc8d7e2865e324146269645483b8b8accb2c9f4b",
-        "copy": "9b9e789ef06e247e8f12f420fae0cf1bcd9535318b8c6d173ed4590a5b037990",
+        "copy": "34e5d09d9038c96321b3f78624868738ca2813941e2955bbb290780069124bfd",
         "media_selection": "908d1b10d5ebf943bbfa2e5e3b04fcc4693c6fc537c3b625fb405b324056469e",
         "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
       },
       "shahbaznia-honolulu-3000": {
-        "identity": "66ba374afbeac09097055d25e0d61e31e8134673d6753bd332a12adfcd0e93c1",
+        "identity": "3d98b076fc56add773bafaf13fb95e3e0b632fe0872020f8bfe8087338902dd0",
         "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
         "pricing_decision": "8f2e0e64700c297b2c4d1c734553926e6977dda5b819c71c8ac59d77e00f68e7",
         "sale_comps": "860409f9efd1b847673b6109b05127c3b8d3bb8bd832010db598cdd2d5f97a48",
         "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
-        "copy": "2c53f992b331e1635bda816f86d9554cf0116d875f5727002efba9225511031c",
+        "copy": "3ebee0f9632f1be052a0ad9ecb4679f53804ae80ba2b75dff70691539afa49e3",
         "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",
         "regulatory_conclusions": "220f85881ba693876f3e1a607289a43d25fad7df1b09b1316f42a5d8fe09359e"
       }
     },
     "presentation_hashes": {
-      "identity": "44d2234f1c7077de94891af5bb1a9b2927dc33a8a1a3ce07adf9f36c8405f1fb",
+      "identity": "75d1798649b2b8042967d3c8ef30c847c45269797e27ec798304a55b55d41833",
       "financial_inputs": "8b41671866e7413456285ed0e276cc4066aeb8975ccc434e72852c45eaae3c84",
       "pricing_decision": "6bb890fea1c7124d0711c921150c6769fb6fb431267b819c060c85c1ea5a2e84",
       "sale_comps": "aff3df9f9eadf3230069b1ccd5e99d05153e02f77bbdcb7e58164d76a17a6b8b",
       "rent_comps": "223ea8925b250165c0ae6a28d46cd8c5d012ef0dda93894f8e5ce7c84fd3e5c8",
-      "copy": "3b2d3cd80c21d355aa77f42782c3f151502414625e12b60e0335e6ec1c6373b3",
+      "copy": "d02eca9a2bdb866c3b7a17f6bf4d03c5f8ee2d8f0053f398982be9ec828093a9",
       "media_selection": "92dcf52217f187976a7d0b86e1d4fc74a8b58474502e3586c1f2cc3d0a7f6b95",
       "regulatory_conclusions": "cc752caa3878fc117582c3ec2fa281d6441ecbd832a04042861d2e48dd379354"
     }
   },
   "stats": {
     "live": true,
-    "generated": "2026-09-03T21:58:19+00:00",
+    "generated": "2026-09-03T22:10:17+00:00",
     "geography": {
       "states": 21,
       "has_dc": true,
