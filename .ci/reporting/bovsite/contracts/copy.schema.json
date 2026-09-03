@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://laaa.com/contracts/bov/copy-1.0.0.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "deal_id", "blocks", "claims"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"}, "deal_id": {"type": "string"},
+    "blocks": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "array", "items": {"type": "string"}}}},
+    "claims": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/claim"}}
+  },
+  "$defs": {
+    "claim": {"type": "object", "additionalProperties": false, "required": ["id", "text", "claim_type", "support_refs", "framed_as"], "properties": {"id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]+$"}, "text": {"type": "string", "minLength": 1}, "claim_type": {"enum": ["verified_fact", "sourced_market_fact", "derived_calculation", "broker_opinion", "projection_scenario", "unverified"]}, "support_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}, "framed_as": {"type": ["string", "null"]}}}
+  }
+}

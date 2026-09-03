@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://laaa.com/contracts/bov/site-approval-1.0.0.schema.json",
+  "title": "Public BOV approval binding",
+  "description": "The ONLY approval artifact a public deal repository may carry. It is hash-only binding evidence for the server-side gate. additionalProperties is false, so the internal approval-record.json cannot be dropped in here under another name: its approval_note, channel, exceptions, artifacts and versions fields all fail validation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "scope", "deal_id", "portfolio_id", "package_version",
+    "approved_at", "approver", "price", "approved_exception_ids", "domains",
+    "legacy_snapshot", "legacy_label", "members"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "scope": {"enum": ["deal", "portfolio"]},
+    "deal_id": {"type": "string"},
+    "portfolio_id": {"type": ["string", "null"]},
+    "package_version": {"type": "string", "pattern": "^v[1-9][0-9]*$"},
+    "approved_at": {"type": "string", "format": "date-time"},
+    "approver": {"type": "string", "minLength": 2},
+    "price": {
+      "description": "The approved exact price only. The supported range and the internal confidence level stay in the workspace.",
+      "type": "object", "additionalProperties": false, "required": ["value"],
+      "properties": {"value": {"type": "number", "exclusiveMinimum": 0}}
+    },
+    "approved_exception_ids": {
+      "description": "Identifiers only. The media publication gate needs to know whether an exception was approved; the description that explains the ruling is deliberation and stays in the workspace.",
+      "type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}
+    },
+    "domains": {
+      "type": "object", "additionalProperties": false,
+      "required": ["identity", "financial_inputs", "pricing_decision", "sale_comps", "rent_comps", "copy", "media_selection", "regulatory_conclusions"],
+      "properties": {
+        "identity": {"$ref": "#/$defs/domain"},
+        "financial_inputs": {"$ref": "#/$defs/domain"},
+        "pricing_decision": {"$ref": "#/$defs/domain"},
+        "sale_comps": {"$ref": "#/$defs/domain"},
+        "rent_comps": {"$ref": "#/$defs/domain"},
+        "copy": {"$ref": "#/$defs/domain"},
+        "media_selection": {"$ref": "#/$defs/domain"},
+        "regulatory_conclusions": {"$ref": "#/$defs/domain"}
+      }
+    },
+    "legacy_snapshot": {"type": "boolean"},
+    "legacy_label": {"type": ["string", "null"]},
+    "members": {"oneOf": [{"type": "null"}, {"type": "object", "additionalProperties": {"$ref": "#/$defs/memberDomains"}}]}
+  },
+  "allOf": [
+    {"if": {"properties": {"scope": {"const": "deal"}}}, "then": {"properties": {"portfolio_id": {"type": "null"}, "members": {"type": "null"}}}},
+    {"if": {"properties": {"scope": {"const": "portfolio"}}}, "then": {"properties": {"portfolio_id": {"type": "string", "minLength": 1}, "members": {"type": "object", "minProperties": 2}}}}
+  ],
+  "$defs": {
+    "domain": {"type": "object", "additionalProperties": false, "required": ["content_sha256"], "properties": {"content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}},
+    "memberDomains": {"type": "object", "additionalProperties": false, "required": ["identity", "financial_inputs", "pricing_decision", "sale_comps", "rent_comps", "copy", "media_selection", "regulatory_conclusions"], "properties": {"identity": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "financial_inputs": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "pricing_decision": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "sale_comps": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "rent_comps": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "copy": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "media_selection": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "regulatory_conclusions": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://laaa.com/contracts/bov/media-manifest-1.0.0.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "deal_id", "archive", "published"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"}, "deal_id": {"type": "string"},
+    "archive": {"type": "array", "items": {"$ref": "#/$defs/item"}},
+    "published": {"type": "object", "additionalProperties": false, "required": ["order", "hero", "contact_sheet_sha256"], "properties": {"order": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}, "hero": {"type": ["string", "null"]}, "contact_sheet_sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}}}
+  },
+  "$defs": {
+    "item": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "filename", "sha256", "phash", "source", "source_url", "access_date", "category", "width", "height", "stock_or_illustrative", "stock_basis", "property_match", "match_basis", "reviewed_by", "reviewed_at", "rights_holder", "publication_basis", "usage_scope", "required_credit", "status", "rejected_reason", "rendered_width", "rendered_height", "exception_id"],
+      "properties": {
+        "id": {"type": "string"}, "filename": {"type": "string", "pattern": "^[^/\\\\]+$"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "phash": {"type": "string", "pattern": "^[a-f0-9]{16}$"},
+        "source": {"enum": ["seller", "owner_pm_site", "mls", "costar", "listing_portal", "photographer", "team_drone", "team_dslr", "street_view", "web_other"]}, "source_url": {"type": ["string", "null"]}, "access_date": {"type": "string", "format": "date"}, "category": {"type": "string"},
+        "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
+        "stock_or_illustrative": {"type": "boolean"}, "stock_basis": {"type": ["string", "null"]},
+        "property_match": {"enum": ["confirmed_human", "unreviewed", "rejected"]}, "match_basis": {"type": ["string", "null"]}, "reviewed_by": {"type": ["string", "null"]}, "reviewed_at": {"type": ["string", "null"], "format": "date-time"},
+        "rights_holder": {"type": ["string", "null"]}, "publication_basis": {"enum": ["seller_provided", "team_owned", "photographer_authorized", "licensed", "glen_standing_rule", "glen_exception", null]}, "usage_scope": {"type": ["string", "null"]}, "required_credit": {"type": ["string", "null"]},
+        "status": {"description": "Declares WHICH FOLDER under the media root the file lives in, so changing status MOVES the file rather than copying it: published -> published/, rejected -> rejected/, and both research_only and publication_candidate -> archive/. checks/media.py resolves the path from this value and fails when the file is not in that folder, so a copy left behind in the old folder is a duplicate, not a promotion.", "enum": ["research_only", "publication_candidate", "published", "rejected"]}, "rejected_reason": {"type": ["string", "null"]},
+        "rendered_width": {"type": ["integer", "null"], "minimum": 1}, "rendered_height": {"type": ["integer", "null"], "minimum": 1}, "exception_id": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

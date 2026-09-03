@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://laaa.com/contracts/bov/comps-sale-1.0.0.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "deal_id", "as_of_date", "poison_log_refs", "rows", "conclusions"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"}, "deal_id": {"type": "string"}, "as_of_date": {"type": "string", "format": "date"},
+    "poison_log_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "rows": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/row"}},
+    "conclusions": {"type": "object", "additionalProperties": false, "required": ["summary", "accepted_ids", "excluded_ids"], "properties": {"summary": {"type": "string", "minLength": 1}, "accepted_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}, "excluded_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}}}
+  },
+  "$defs": {
+    "metricBasis": {"type": "object", "additionalProperties": false, "required": ["basis", "reason"], "properties": {"basis": {"enum": ["transaction_supported", "unsupported"]}, "reason": {"type": "string", "minLength": 1}}},
+    "row": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "status", "address", "source", "sale_price", "units", "building_sf", "price_per_unit", "price_per_sf", "cap_rate", "cap_rate_basis", "grm", "grm_basis", "physical_differences", "operational_differences", "quality_rating", "weight", "weight_reason", "pin", "distance_miles"],
+      "properties": {
+        "id": {"type": "string"}, "status": {"enum": ["closed", "active", "pending", "expired"]}, "address": {"type": "string"},
+        "source": {"type": "object", "additionalProperties": false, "required": ["source_id", "record_id", "verified_at"], "properties": {"source_id": {"type": "string"}, "record_id": {"type": "string"}, "verified_at": {"type": "string", "format": "date"}}},
+        "sale_price": {"type": ["number", "null"]}, "units": {"type": ["integer", "null"], "minimum": 0, "description": "null for a LAND comparable, which has no units to count. checks/comps.py then requires price_per_unit to be null as well and lot_sf to be present, because a comp carrying neither a unit count nor a land area offers no basis of comparison at all."}, "building_sf": {"type": ["number", "null"]},
+        "price_per_unit": {"type": ["number", "null"]}, "price_per_sf": {"type": ["number", "null"]},
+        "cap_rate": {"description": "Cap rate as a FRACTION: 0.0585 means 5.85%. The subject-side presentation contract uses percent-as-percent; the two forms are bounded so they cannot be confused, and payload.py converts explicitly at the one render boundary instead of guessing from magnitude.", "type": ["number", "null"], "exclusiveMinimum": 0, "maximum": 1}, "cap_rate_basis": {"$ref": "#/$defs/metricBasis"},
+        "grm": {"type": ["number", "null"]}, "grm_basis": {"$ref": "#/$defs/metricBasis"},
+        "physical_differences": {"type": "array", "items": {"type": "string"}}, "operational_differences": {"type": "array", "items": {"type": "string"}},
+        "quality_rating": {"description": "A, B and C are weighting tiers for a comp that RENDERS. \"exclude\" removes the row from the site entirely, not just from the weighting: payload.py drops it before rendering, so it leaves the table, the medians and the map pins. A comp that must appear on the page, including an active-competition listing, is never rated exclude. An excluded comp must also carry weight 0 and appear in conclusions.excluded_ids.", "enum": ["A", "B", "C", "exclude"]}, "weight": {"type": "number", "minimum": 0, "maximum": 1}, "weight_reason": {"type": "string", "minLength": 1},
+        "pin": {"type": "object", "additionalProperties": false, "required": ["place_id", "latitude", "longitude"], "properties": {"place_id": {"type": "string"}, "latitude": {"type": "number", "minimum": -90, "maximum": 90}, "longitude": {"type": "number", "minimum": -180, "maximum": 180}}},
+        "distance_miles": {"type": "number", "minimum": 0}, "as_of_date": {"type": ["string", "null"], "format": "date"}, "broker_confirmation": {"type": ["string", "null"]},
+        "year_built": {"type": ["integer", "null"]}, "lot_sf": {"type": ["number", "null"]}, "sale_date": {"type": ["string", "null"], "format": "date"}, "days_on_market": {"type": ["integer", "null"], "minimum": 0}, "image": {"type": ["string", "null"]},
+        "restatement": {"type": ["object", "null"], "additionalProperties": false, "required": ["price", "label", "basis"],
+          "properties": {"price": {"type": "number", "exclusiveMinimum": 0}, "label": {"type": "string", "minLength": 1}, "basis": {"type": "string", "minLength": 1}}}
+      }
+    }
+  }
+}

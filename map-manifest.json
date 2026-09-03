@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "portfolio_id": "shahbaznia-portfolio",
+  "approved_by": "Morgan Wetmore",
+  "approved_at": "2026-09-02T18:30:00Z",
+  "approval_note": "Every coordinate came from laaa-geo resolveAddress at ROOFTOP precision with needsReview false. Both subject pins were additionally rendered on Google satellite imagery and confirmed to sit on the building structure.",
+  "entries": [
+    {
+      "property": "16550-vanowen",
+      "category": "subject",
+      "order": 0,
+      "lat": 34.1936175,
+      "lng": -118.4939476,
+      "place_id": "ChIJI4zwluaZwoAR99QUrAvGooY",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "Subject property, rooftop pin resolved through laaa-geo resolveAddress and confirmed on-structure against Google satellite imagery."
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "subject",
+      "order": 0,
+      "lat": 34.213866,
+      "lng": -118.2445554,
+      "place_id": "ChIJV_fKUVzqwoARvtqtnzabU-0",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "Subject property, rooftop pin resolved through laaa-geo resolveAddress and confirmed on-structure against Google satellite imagery."
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "sold",
+      "order": 1,
+      "lat": 34.194587,
+      "lng": -118.4752597,
+      "place_id": "ChIJ5UKzUV2XwoARRjwqnxDPfi0",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "6825 Haskell Ave, Van Nuys, CA 91406, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "sold",
+      "order": 2,
+      "lat": 34.2043366,
+      "lng": -118.4745056,
+      "place_id": "ChIJYXqlVUWXwoARsQ-OhLDS2_k",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "7342 Haskell Ave, Van Nuys, CA 91406, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "sold",
+      "order": 3,
+      "lat": 34.1839002,
+      "lng": -118.4222027,
+      "place_id": "ChIJzb06LVmWwoARVOrg5K7uyvs",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "6228 Fulton Ave, Van Nuys, CA 91401, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "sold",
+      "order": 4,
+      "lat": 34.191387399999996,
+      "lng": -118.47540479999999,
+      "place_id": "ChIJVyhJLWaXwoARlbf4oGTDYJU",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "6643 Haskell Ave, Van Nuys, CA 91406, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "sold",
+      "order": 5,
+      "lat": 34.203106399999996,
+      "lng": -118.44056189999999,
+      "place_id": "ChIJXWiCHCCXwoAR5av_i6uH0vg",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "7305 Hazeltine Ave, Van Nuys, CA 91405, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 1,
+      "lat": 34.2117776,
+      "lng": -118.2326307,
+      "place_id": "ChIJ25f8U2rqwoARNW5Pw0bOIw4",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2463 Montrose Ave, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 2,
+      "lat": 34.2083346,
+      "lng": -118.23288050000001,
+      "place_id": "ChIJJQa9emzqwoARn4Gup1Sz_iQ",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "3822 Sunset Ave, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 3,
+      "lat": 34.2103548,
+      "lng": -118.22822219999999,
+      "place_id": "ChIJi0MHpBTqwoARl7nWLT15J6g",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "4123 Ocean View Blvd, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 4,
+      "lat": 34.207418,
+      "lng": -118.22613079999999,
+      "place_id": "ChIJL0kNVxLqwoARNvPZ4WUIuN4",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2218 Mira Vista Ave, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 1,
+      "lat": 34.1933977,
+      "lng": -118.4762685,
+      "place_id": "ChIJq7nDjGeXwoAR9vFDJxa5_zw",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "15736 Vanowen St, Van Nuys, CA 91406, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 2,
+      "lat": 34.1933977,
+      "lng": -118.4762685,
+      "place_id": "ChIJq7nDjGeXwoAR9vFDJxa5_zw",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "15736 Vanowen St, Van Nuys, CA 91406, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 3,
+      "lat": 34.193701,
+      "lng": -118.4676502,
+      "place_id": "ChIJt842NGqXwoARVnah6HyP2G0",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "15340 Vanowen St, Van Nuys, CA 91406, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 4,
+      "lat": 34.1942385,
+      "lng": -118.44711339999999,
+      "place_id": "ChIJDS67vRuXwoARhG72iwE4wQM",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "14419 Vanowen St, Van Nuys, CA 91405, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 5,
+      "lat": 34.1942385,
+      "lng": -118.44711339999999,
+      "place_id": "ChIJDS67vRuXwoARhG72iwE4wQM",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "14419 Vanowen St, Van Nuys, CA 91405, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "rent",
+      "order": 1,
+      "lat": 34.215820300000004,
+      "lng": -118.2405103,
+      "place_id": "ChIJh59HNkPqwoARvyJrjcECYlQ",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2800 Montrose Ave, Glendale, CA 91214, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "rent",
+      "order": 2,
+      "lat": 34.215820300000004,
+      "lng": -118.2405103,
+      "place_id": "ChIJh59HNkPqwoARvyJrjcECYlQ",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2800 Montrose Ave, Glendale, CA 91214, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "rent",
+      "order": 3,
+      "lat": 34.215820300000004,
+      "lng": -118.2405103,
+      "place_id": "ChIJh59HNkPqwoARvyJrjcECYlQ",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2800 Montrose Ave, Glendale, CA 91214, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "rent",
+      "order": 4,
+      "lat": 34.2107102,
+      "lng": -118.2394149,
+      "place_id": "ChIJlwc5QmjqwoARFzTPJjuhI5k",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2722 Honolulu Ave, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "rent",
+      "order": 5,
+      "lat": 34.2107102,
+      "lng": -118.2394149,
+      "place_id": "ChIJlwc5QmjqwoARFzTPJjuhI5k",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2722 Honolulu Ave, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "rent",
+      "order": 6,
+      "lat": 34.2022392,
+      "lng": -118.2228746,
+      "place_id": "ChIJdZNvpA7qwoARO2P5CjqEUlI",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2121 Valderas Dr, Glendale, CA 91208, USA"
+    }
+  ],
+  "renders": {
+    "images/maps-portfolio-subjects.png": "ee66857ffde17881c199020934cf5f509ee70b99a204917d029b119c069a1c79",
+    "images/maps-portfolio-subjects-tall.png": "6106428693238bdb009b8c5a5db62fc7604f053f478a91e72472d21ee1bec4a2",
+    "images/maps-16550-vanowen-subject.png": "7879675cc4f5e5b9db9efa39dbf16dbdc50e69b3162caf1d84d4f8721b44879e",
+    "images/maps-16550-vanowen-subject-tall.png": "3a19402ce79a0d3f491684183e26f3a3ee0e5c918698389f61ac0b68784cac58",
+    "images/maps-16550-vanowen-sale-comps.png": "c6599c55ea79d4c0baa6dbc94217d561b5d850613b1a9c0c07e6eba6cc8c0773",
+    "images/maps-16550-vanowen-sale-comps-tall.png": "ead9e8f92105a9ba5987eaa41a1cc60d46eef011098836c33bc713df1638e1da",
+    "images/maps-16550-vanowen-rent-comps.png": "71fb7af11b5d195394c7b71a8784cd5f0c6b1be6f7ae16e6018097341c42c31e",
+    "images/maps-16550-vanowen-rent-comps-tall.png": "5cee0004dff00f37c77aeb79e303dc6d2c5afb054ab1ed30d13999bf4b77a967",
+    "images/maps-3000-honolulu-subject.png": "4c3de7f990a1a465f5fcba6ab2cf03ace1fa0954bf52d7dcb70c50afc7f9dcd9",
+    "images/maps-3000-honolulu-subject-tall.png": "1347599ffe650eeaa56eb05320adbc7ede62aaf75cd69e5117829ac790e47be4",
+    "images/maps-3000-honolulu-sale-comps.png": "0be806041299478f7d8c3468497c4aa7efbc15018e0ab14b6b67efceb7db8cb1",
+    "images/maps-3000-honolulu-sale-comps-tall.png": "5ddd6bffd51d19748fdf890546ec3bad9a03c81f314e7a30ae3b0d29ecab925d",
+    "images/maps-3000-honolulu-rent-comps.png": "432563e4f2a78abc65c7a71b5efaeea9d628f86d5924d34ee1705d2db4730db8",
+    "images/maps-3000-honolulu-rent-comps-tall.png": "cfd1e2521c41f8764ce13022a9801198b58ef08b88753ca398fe1441cbcb0d97",
+    "images/maps-16550-vanowen-closings.png": "c3cac22c7f4aa6c769e1bea21349f452e3325ee7d4caca8715e29ee727c3bf02"
+  },
+  "closings": {
+    "16550-vanowen": {
+      "source": "https://www.laaa.com/track-record",
+      "pulled": "2026-09-03T16:02:08+00:00",
+      "basis": {
+        "type": "radius",
+        "label": "within 1 miles",
+        "radius_mi": 1
+      },
+      "apartment_sales": 7,
+      "other_closings": 1,
+      "apartment_markers": 6,
+      "other_markers": 1,
+      "render": "images/maps-16550-vanowen-closings.png"
+    }
+  }
+}

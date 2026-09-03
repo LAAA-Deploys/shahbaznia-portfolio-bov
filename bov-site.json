@@ -1,0 +1,3833 @@
+{
+  "schema_version": 3,
+  "document_type": "bov",
+  "site_mode": "portfolio",
+  "meta": {
+    "domain": "shahbaznia-portfolio.laaa.com",
+    "client": "MSCO Corporation",
+    "title": "Fernando Shahbaznia Portfolio",
+    "subtitle": "Two-Property, 69-Unit Los Angeles Multifamily Portfolio",
+    "month_year": "September 2026",
+    "cover_label": "Confidential Broker Opinion of Value",
+    "hero": "images/portfolio-hero-split.jpg",
+    "hero_tall": "images/portfolio-hero-split-tall.jpg",
+    "portfolio_map": "images/maps-portfolio-subjects.png"
+  },
+  "team": {
+    "leads": [
+      {
+        "name": "Glen Scher",
+        "title": "Co-Founder, LAAA Team",
+        "phone": "(818) 212-2808",
+        "tel": "8182122808",
+        "email": "Glen.Scher@marcusmillichap.com",
+        "license": "CA 01962976",
+        "bio": "Senior Managing Director Investments and co-founder of the LAAA Team of Marcus & Millichap, specializing in Los Angeles apartment investment sales.",
+        "headshot": "images/team-glen-scher.jpg",
+        "headshot_sha256": "32abb08b4fceeb6f011c53b33660c521bb21606697a710e5d52eb688646919d1"
+      },
+      {
+        "name": "Filip Niculete",
+        "title": "Co-Founder, LAAA Team",
+        "phone": "(818) 212-2748",
+        "tel": "8182122748",
+        "email": "Filip.Niculete@marcusmillichap.com",
+        "license": "CA 01905352",
+        "bio": "Senior Managing Director Investments and co-founder of the LAAA Team of Marcus & Millichap, specializing in Los Angeles apartment investment sales.",
+        "headshot": "images/team-filip-niculete.jpg",
+        "headshot_sha256": "63c20fde9deeb498aa777df872f22177fcfbcf19c9de30513e96aed0a3db8e66"
+      }
+    ],
+    "grid": [
+      {
+        "name": "Morgan Wetmore",
+        "title": "Associate",
+        "phone": "(818) 212-2724",
+        "tel": "8182122724",
+        "email": "Morgan.Wetmore@marcusmillichap.com",
+        "license": "CA 02209935",
+        "bio": "Associate with the LAAA Team of Marcus & Millichap and the deal contact for the Shahbaznia portfolio.",
+        "headshot": "images/team-morgan-wetmore.jpg",
+        "headshot_sha256": "450503e582b40f7542f62b2b14024ea93aa2ae290ef910b999370a2df9eb19a9"
+      }
+    ]
+  },
+  "track_record": {
+    "metrics": [
+      [
+        "{closed}",
+        "Closed Transactions"
+      ],
+      [
+        "{volume}",
+        "Total Sales Volume"
+      ],
+      [
+        "{apt_units}",
+        "Apartment Units Sold"
+      ]
+    ],
+    "narrative": [
+      "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded.",
+      "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+    ],
+    "achievements": [
+      [
+        "Chairman's Club",
+        "Marcus & Millichap's top-tier annual honor"
+      ],
+      [
+        "National Achievement Award",
+        "multiple years, both partners"
+      ],
+      [
+        "#1 Most Active Multifamily Team in LA County",
+        "CoStar 2019-2021"
+      ],
+      [
+        "Sales Recognition Award",
+        "every year since 2016"
+      ],
+      [
+        "{closed} closed transactions",
+        "{volume} in sales volume"
+      ]
+    ],
+    "press": [
+      "BISNOW",
+      "YAHOO FINANCE",
+      "CONNECT CRE",
+      "SFVBJ",
+      "THE PINNACLE LIST"
+    ]
+  },
+  "marketing": {
+    "metrics": [
+      [
+        "{subscribers}",
+        "Active Email Subscribers"
+      ]
+    ],
+    "channels": [
+      [
+        "Targeted Buyer Outreach",
+        "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+      ]
+    ],
+    "narrative": [
+      "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone.",
+      "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline.",
+      "That list runs well over 100 names, and we call every one of them."
+    ],
+    "pull_quote": "We are proactive marketers, not reactive.",
+    "differences": [
+      {
+        "title": "Direct owner and buyer outreach",
+        "copy": "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket."
+      },
+      {
+        "title": "Marcus & Millichap platform",
+        "copy": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+      },
+      {
+        "title": "Dedicated digital presentation",
+        "copy": "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+      }
+    ]
+  },
+  "portfolio": {
+    "total_units": 69,
+    "total_current_rent": 2015396.16,
+    "total_noi": 1239770.6600000001,
+    "portfolio_price": 20500000,
+    "portfolio_price_basis": "Sum of the two member recommendations: $14,750,000 for 16550 Vanowen St and $5,750,000 for 3000 Honolulu Ave, each taken from Glen's finalized model stamped 2026-09-02."
+  },
+  "properties": [
+    {
+      "slug": "16550-vanowen",
+      "short_name": "Terraces at the Lake",
+      "show_active_listings": false,
+      "show_buyout_model": false,
+      "buyout_model": null,
+      "show_value_scenarios": false,
+      "value_scenarios": null,
+      "address": "16550 Vanowen St, Los Angeles, CA 91406",
+      "city": "Los Angeles (Lake Balboa), CA 91406",
+      "submarket": "Lake Balboa / Van Nuys",
+      "track_record_submarkets": null,
+      "apn": "2231-007-024",
+      "units": 52,
+      "building_sf": 41099,
+      "lot_sf": 39019,
+      "lot_acres": 0.9,
+      "year_built": 1988,
+      "renovated_year": null,
+      "parking": "Subterranean parking structure beneath the building.",
+      "hero": "images/16550-vanowen-vanowen-02.png",
+      "price": 14750000,
+      "price_per_unit": 283653.85,
+      "price_per_sf": 358.89,
+      "value_range": "$14,250,000 to $15,250,000",
+      "opinion_of_value": [
+        {
+          "label": "Suggested list price",
+          "price": 14750000,
+          "price_per_unit": 283653.8461538461,
+          "price_per_sf": 358.88951069369085,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 9.96530264036335,
+          "grm_market": 8.84929205663547,
+          "cap_current": 6.172791050847458,
+          "cap_market": 7.3269491525423724
+        },
+        {
+          "label": "Range top",
+          "price": 15250000,
+          "price_per_unit": 293269.23076923075,
+          "price_per_sf": 371.0552568189007,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 10.303109509528207,
+          "grm_market": 9.149268058555316,
+          "cap_current": 5.930404459016394,
+          "cap_market": 7.04672131147541
+        },
+        {
+          "label": "Midpoint",
+          "price": 14750000.0,
+          "price_per_unit": 283653.8461538461,
+          "price_per_sf": 358.88951069369085,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 9.96530264036335,
+          "grm_market": 8.84929205663547,
+          "cap_current": 6.172791050847458,
+          "cap_market": 7.3269491525423724
+        },
+        {
+          "label": "Range bottom",
+          "price": 14250000,
+          "price_per_unit": 274038.46153846156,
+          "price_per_sf": 346.723764568481,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 9.62749577119849,
+          "grm_market": 8.549316054715623,
+          "cap_current": 6.432187228070176,
+          "cap_market": 7.626842105263158
+        }
+      ],
+      "scheduled_rent": [
+        123344.64,
+        138900.0
+      ],
+      "monthly_sgi": [
+        127594.64,
+        143150.0
+      ],
+      "additional_income": [
+        4250.0,
+        4250.0
+      ],
+      "grm_current": 9.96530264036335,
+      "grm_market": 8.84929205663547,
+      "cap_current": 6.172791050847458,
+      "cap_market": 7.3269491525423724,
+      "cap_current_basis": "LAAA calculation: current NOI / recommended value",
+      "cap_market_basis": "LAAA calculation: market NOI / recommended value",
+      "noi_current": 910486.68,
+      "noi_market": 1080725,
+      "tax_rate": 1.22,
+      "tax_anchor": {
+        "ad_valorem": 179950.0,
+        "flat_assessments": 0,
+        "expense_line": "Taxes"
+      },
+      "expense_total": 561444,
+      "expense_per_unit": 10797.0,
+      "expense_per_sf": 13.660770335044647,
+      "unit_mix": [
+        {
+          "type": "1/1.00",
+          "count": 28,
+          "sf": 625,
+          "rent_current": 2216.59,
+          "monthly_current": 62064.61,
+          "rent_market": 2450.0,
+          "monthly_market": 68600.0,
+          "sf_basis": "labelled_estimate"
+        },
+        {
+          "type": "2/2.00",
+          "count": 24,
+          "sf": 737,
+          "rent_current": 2553.33,
+          "monthly_current": 61280.03,
+          "rent_market": 2929.17,
+          "monthly_market": 70300.0,
+          "sf_basis": "labelled_estimate"
+        }
+      ],
+      "operating": {
+        "sgi": [
+          1531135.68,
+          1717800.0
+        ],
+        "vacancy": [
+          59205,
+          66672
+        ],
+        "vacancy_pct": 3.866737662334405,
+        "vacancy_only": [
+          59205,
+          66672
+        ],
+        "vacancy_only_pct": 3.866737662334405,
+        "credit_loss": [
+          0,
+          0
+        ],
+        "credit_loss_pct": 0.0,
+        "goi": [
+          1471930.68,
+          1651128.0
+        ],
+        "expenses": [
+          561444,
+          570403
+        ],
+        "expense_ratio": [
+          38.14337234957288,
+          34.54626170714808
+        ],
+        "noi": [
+          910486.68,
+          1080725
+        ],
+        "loan_payments": [
+          0.0,
+          0.0
+        ],
+        "pretax_cf": [
+          910486.68,
+          1080725.0
+        ],
+        "pretax_cf_pct": [
+          6.172791050847458,
+          7.3269491525423724
+        ],
+        "principal_reduction": [
+          0.0,
+          0.0
+        ],
+        "total_return": [
+          910486.68,
+          1080725.0
+        ],
+        "total_return_pct": [
+          6.172791050847458,
+          7.3269491525423724
+        ]
+      },
+      "expense_lines": [
+        [
+          "Contract Services",
+          20800,
+          20800,
+          "3"
+        ],
+        [
+          "General Administrative",
+          7800,
+          7800,
+          "4"
+        ],
+        [
+          "Insurance",
+          41600,
+          41600,
+          "5"
+        ],
+        [
+          "Management Fee",
+          73597,
+          73597,
+          "6"
+        ],
+        [
+          "Manager",
+          52000,
+          52000,
+          "7"
+        ],
+        [
+          "Repairs Maintenance",
+          52000,
+          52000,
+          "8"
+        ],
+        [
+          "Reserves",
+          10400,
+          10400,
+          "9"
+        ],
+        [
+          "Taxes",
+          179950.0,
+          179950.0,
+          "10"
+        ],
+        [
+          "Utilities",
+          123297,
+          123297,
+          "11"
+        ],
+        [
+          "Underwriting Expense Adjustment",
+          0.0,
+          8959.0,
+          "12"
+        ]
+      ],
+      "expense_notes": {
+        "3": [
+          "Contract Services",
+          "Landscaping, pest control and recurring service contracts, carried from the model."
+        ],
+        "4": [
+          "General Administrative",
+          "Accounting, legal, bank fees and licences, carried from the model."
+        ],
+        "5": [
+          "Insurance",
+          "Carried from the model at the property's underwritten premium."
+        ],
+        "6": [
+          "Management Fee",
+          "Carried at 5.00% of Gross Scheduled Rent. The LAAA standard is 4.00%, so this is the more conservative figure and it is followed as the model was written."
+        ],
+        "7": [
+          "Manager",
+          "On-site management. California requires a manager in residence at 16 units or more. The manager here is compensated as a reduced tenant rent embedded in the model rather than as a separate salary line."
+        ],
+        "8": [
+          "Repairs Maintenance",
+          "Carried from the model."
+        ],
+        "9": [
+          "Reserves",
+          "Replacement reserves, carried from the model. Lenders require a reserve line in underwriting."
+        ],
+        "10": [
+          "Taxes",
+          "Reassessed to the recommended price at 1.22%, the rate implied by the model's tax line of $179,950.00. Flat direct assessments are carried at zero because the itemized bill is not in the deal folder, which is the documented treatment when the itemization cannot be read."
+        ],
+        "11": [
+          "Utilities",
+          "Owner-paid utilities and trash, carried from the model."
+        ],
+        "12": [
+          "Underwriting Expense Adjustment",
+          "Aggregate difference between classified T12 expense lines and the modeled current and pro forma operating expense totals."
+        ],
+        "2": [
+          "Scheduled Gross Income",
+          "In-place scheduled rent from the model's Rent Roll Summary, $1,480,135.68. That is the SCHEDULED column: Gross Potential Rent of $1,666,800 less a Loss to Lease of $186,664."
+        ],
+        "1": [
+          "Additional Income",
+          "Utility bill-back of $36,000 and other income of $15,000, $51,000 combined, as carried in the model."
+        ]
+      },
+      "income_notes": {
+        "scheduled_gross_income": "2",
+        "additional_income": "1"
+      },
+      "financing_structure": "all_cash",
+      "financing": null,
+      "highlights": [
+        "52 units across 41,099 gross SF on a 39,019 SF lot, built 1988.",
+        "Built 1988, so the building sits outside the Los Angeles Rent Stabilization Ordinance.",
+        "Gross Potential Rent of $1,666,800 against Gross Scheduled Rent of $1,480,136, a Loss to Lease of $186,664.",
+        "Pro forma net operating income of $1,080,725 against $910,487 in place, a 7.33% cap at the recommended price.",
+        "15 of 52 units were vacant or in active eviction at the August 2026 rent roll, which is where the pro forma comes from."
+      ],
+      "overview": [
+        "Terraces at the Lake is a 52 unit apartment building at 16550 Vanowen St in the Lake Balboa area of Los Angeles, built in 1988 and held by MSCO Corporation. The building runs 41,099 gross SF across 28 one bedroom and 24 two bedroom units on a 39,019 SF lot.",
+        "Value here turns on two numbers moving in the same direction. Gross Scheduled Rent of $1,480,136 sits $186,664 below Gross Potential Rent, and 15 units are either vacant or in eviction. Recover those units at market and the cap moves from 6.17% to 7.33% without a dollar of new capital going into the building."
+      ],
+      "location_title": "Lake Balboa, 1988 Construction, Outside the RSO",
+      "location_narrative": [
+        "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+      ],
+      "physical_narrative": [
+        "One building, 52 units, 41,099 gross SF on a 39,019 SF lot. Unit mix is 28 one bedroom and 24 two bedroom, averaging 790 SF per unit. The courtyard carries a pool, and units have in unit laundry."
+      ],
+      "market_narrative": [
+        "Five closed Van Nuys sales from 2025 set the frame. Price per unit runs $225,758 to $310,119 and the recommendation sits inside that at $283,654. Price per SF runs $206 to $309 against $359 here, and that gap is unit size, not pricing: this building averages 790 SF per unit where four of the five comps run 1,057 to 1,160 SF. The one comp with a comparable 769 SF average, 6825 Haskell, carries the highest price per SF in the set at $309."
+      ],
+      "positioning_narrative": [
+        "This trades as a value add with the work already identified rather than a stabilized income purchase. The buyer is underwriting the recovery of 15 units and the closing of a $186,664 Loss to Lease, and is paying a 6.17% cap today for a 7.33% cap on the other side of that."
+      ],
+      "rent_narrative": [
+        "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+      ],
+      "valuation_narrative": [
+        "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+      ],
+      "strategy": [
+        {
+          "title": "Lead with Supported Income",
+          "copy": "Anchor the campaign in verified current operations and supported market evidence."
+        }
+      ],
+      "buyer_profiles": [
+        {
+          "title": "Value Add Private Capital",
+          "copy": "A private operator who has turned units in the Valley before and can carry the vacancy and eviction load through to stabilization. This buyer prices off the pro forma, not the trailing."
+        },
+        {
+          "title": "1031 Exchange Buyer",
+          "copy": "An exchange buyer with a deadline who wants scale in one transaction. 52 units in a single 1988 building outside the RSO places a large amount of equity in one close."
+        }
+      ],
+      "disclosures": [
+        "Stabilized basis. The pro forma reflects the building at full market rate occupancy. At the August 2026 rent roll 8 units were vacant and 7 were in active eviction, 15 of 52 or about 29%. The pro forma assumes those units are recovered and re leased at market. Owner collections for calendar 2025 were $1,226,612.",
+        "Real estate taxes are reassessed to the recommended price. Measure ULA applies a 5.5% transfer tax on a sale above $10M in the City of Los Angeles."
+      ],
+      "gallery": [
+        {
+          "src": "images/16550-vanowen-vanowen-01.png",
+          "alt": "Exterior"
+        },
+        {
+          "src": "images/16550-vanowen-vanowen-15.png",
+          "alt": "Interior"
+        },
+        {
+          "src": "images/16550-vanowen-vanowen-13.png",
+          "alt": "Parking"
+        }
+      ],
+      "maps": {
+        "subject": "images/maps-16550-vanowen-subject.png",
+        "sale": "images/maps-16550-vanowen-sale-comps.png",
+        "rent": "images/maps-16550-vanowen-rent-comps.png",
+        "active": null
+      },
+      "rent_comps": [
+        {
+          "address": "Toscana Apartments, 15736 Vanowen St, Van Nuys, CA 91406, USA",
+          "unit_type": "1BR",
+          "rent": 2248,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 1.01,
+          "image": null,
+          "map_ref": 1
+        },
+        {
+          "address": "Toscana Apartments, 15736 Vanowen St, Van Nuys, CA 91406, USA",
+          "unit_type": "2BR",
+          "rent": 2567,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 1.01,
+          "image": null,
+          "map_ref": 1
+        },
+        {
+          "address": "Vanowen Apartments, 15340 Vanowen St, Van Nuys, CA 91406, USA",
+          "unit_type": "Studio to 2BR",
+          "rent": 1325,
+          "square_feet": 430,
+          "square_feet_basis": "labelled_estimate",
+          "distance": 1.503,
+          "image": null,
+          "map_ref": 2
+        },
+        {
+          "address": "HFL Vanowen, 14419 Vanowen St, Van Nuys, CA 91405, USA",
+          "unit_type": "1BR",
+          "rent": 1627,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 2.677,
+          "image": null,
+          "map_ref": 3
+        },
+        {
+          "address": "HFL Vanowen, 14419 Vanowen St, Van Nuys, CA 91405, USA",
+          "unit_type": "2BR",
+          "rent": 2113,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 2.677,
+          "image": null,
+          "map_ref": 3
+        }
+      ],
+      "sale_comps": [
+        {
+          "address": "6825 Haskell Ave, Van Nuys, CA 91406, USA",
+          "status": "Closed",
+          "price": 6664000,
+          "units": 28,
+          "year_built": 1985,
+          "building_sf": 21540,
+          "lot_sf": null,
+          "date": "2025-11-15",
+          "days_on_market": null,
+          "price_per_unit": 238000.0,
+          "price_per_sf": 309.38,
+          "price_per_land_sf": null,
+          "grm": 10.6,
+          "cap_rate": 4.89,
+          "image": null,
+          "restatement": null,
+          "summary": "Closest match on average unit size, 769 SF against the subject's 790, and just over one mile away.",
+          "relevance": "28 units against 52, 21,540 SF against 41,099.; Average unit 769 SF, nearly identical to the subject's 790 SF.",
+          "considerations": "Closed November 2025.",
+          "map_ref": 1
+        },
+        {
+          "address": "7342 Haskell Ave, Van Nuys, CA 91406, USA",
+          "status": "Closed",
+          "price": 6512500,
+          "units": 21,
+          "year_built": 1986,
+          "building_sf": 24349,
+          "lot_sf": null,
+          "date": "2025-12-15",
+          "days_on_market": null,
+          "price_per_unit": 310119.05,
+          "price_per_sf": 267.46,
+          "price_per_land_sf": null,
+          "grm": 12.14,
+          "cap_rate": 5.01,
+          "image": null,
+          "restatement": null,
+          "summary": "Same submarket and vintage, closed most recently of the Haskell group.",
+          "relevance": "21 units against 52.; Average unit 1,160 SF against the subject's 790 SF.",
+          "considerations": "Closed December 2025.",
+          "map_ref": 2
+        },
+        {
+          "address": "6228 Fulton Ave, Van Nuys, CA 91401, USA",
+          "status": "Closed",
+          "price": 8740000,
+          "units": 30,
+          "year_built": 1985,
+          "building_sf": 34587,
+          "lot_sf": null,
+          "date": "2025-01-15",
+          "days_on_market": null,
+          "price_per_unit": 291333.33,
+          "price_per_sf": 252.7,
+          "price_per_land_sf": null,
+          "grm": 10.76,
+          "cap_rate": 6.05,
+          "image": null,
+          "restatement": null,
+          "summary": "Closest on unit count of the closed set, but the oldest sale and four miles out.",
+          "relevance": "30 units against 52.; Average unit 1,153 SF against the subject's 790 SF.",
+          "considerations": "Closed January 2025, the oldest sale in the set.; 4.2 miles from the subject.",
+          "map_ref": 3
+        },
+        {
+          "address": "6643 Haskell Ave, Van Nuys, CA 91406, USA",
+          "status": "Closed",
+          "price": 5291000,
+          "units": 18,
+          "year_built": 1987,
+          "building_sf": 19033,
+          "lot_sf": null,
+          "date": "2025-12-15",
+          "days_on_market": null,
+          "price_per_unit": 293944.44,
+          "price_per_sf": 277.99,
+          "price_per_land_sf": null,
+          "grm": null,
+          "cap_rate": null,
+          "image": null,
+          "restatement": null,
+          "summary": "Same street and vintage, but carries no cap rate or GRM, so it informs price per unit and per SF only.",
+          "relevance": "18 units against 52.; Average unit 1,057 SF against the subject's 790 SF.",
+          "considerations": "Closed December 2025.; No income detail available in the comp file.",
+          "map_ref": 4
+        },
+        {
+          "address": "7305 Hazeltine Ave, Van Nuys, CA 91405, USA",
+          "status": "Closed",
+          "price": 7450000,
+          "units": 33,
+          "year_built": 1985,
+          "building_sf": 36216,
+          "lot_sf": null,
+          "date": "2025-04-15",
+          "days_on_market": null,
+          "price_per_unit": 225757.58,
+          "price_per_sf": 205.71,
+          "price_per_land_sf": null,
+          "grm": null,
+          "cap_rate": null,
+          "image": null,
+          "restatement": null,
+          "summary": "Largest closed comp by unit count, but no income detail and three miles out.",
+          "relevance": "33 units against 52.; Average unit 1,097 SF against the subject's 790 SF.",
+          "considerations": "Closed April 2025.; No income detail available in the comp file.; 3.1 miles from the subject.",
+          "map_ref": 5
+        }
+      ],
+      "active_comps": [],
+      "map_points": [],
+      "track_record": {
+        "all": {
+          "count": 494,
+          "volume": 1556428899.5,
+          "units": 4719
+        },
+        "asset_class": {
+          "count": 342,
+          "volume": 1163835729.5,
+          "units": 4703
+        },
+        "asset_class_label": "Apartments",
+        "local": {
+          "count": 7,
+          "volume": 16775000,
+          "units": 81
+        },
+        "local_basis": {
+          "type": "radius",
+          "label": "within 1 miles",
+          "radius_mi": 1
+        },
+        "representative": [
+          {
+            "address": "16565 Vanowen St",
+            "submarket": "Van Nuys",
+            "units": 12,
+            "price": 1800000,
+            "price_per_unit": 150000,
+            "year": "2013",
+            "distance": 0.04
+          },
+          {
+            "address": "6706 Hayvenhurst Avenue",
+            "submarket": "Van Nuys",
+            "units": 33,
+            "price": 3800000,
+            "price_per_unit": 115152,
+            "year": "2013",
+            "distance": 0.13
+          },
+          {
+            "address": "6860 Woodley Ave",
+            "submarket": "Van Nuys",
+            "units": 7,
+            "price": 1715000,
+            "price_per_unit": 245000,
+            "year": "2026",
+            "distance": 0.63
+          }
+        ],
+        "closings_map": {
+          "source": "https://www.laaa.com/track-record",
+          "pulled": "2026-09-03T16:02:08+00:00",
+          "basis": {
+            "type": "radius",
+            "label": "within 1 miles",
+            "radius_mi": 1
+          },
+          "apartment_sales": 7,
+          "other_closings": 1,
+          "apartment_markers": 6,
+          "other_markers": 1,
+          "render": "images/maps-16550-vanowen-closings.png"
+        }
+      },
+      "deal_id": "shahbaznia-vanowen-16550",
+      "card_image": "images/16550-vanowen-vanowen-02.png"
+    },
+    {
+      "slug": "3000-honolulu",
+      "short_name": "Gardens at La Crescenta",
+      "show_active_listings": false,
+      "show_buyout_model": false,
+      "buyout_model": null,
+      "show_value_scenarios": false,
+      "value_scenarios": null,
+      "address": "3000 Honolulu Ave, La Crescenta, CA 91214",
+      "city": "La Crescenta, CA 91214",
+      "submarket": "La Crescenta / Montrose",
+      "track_record_submarkets": null,
+      "apn": "5617-007-018",
+      "units": 17,
+      "building_sf": 13628,
+      "lot_sf": 17616,
+      "lot_acres": 0.4,
+      "year_built": 1958,
+      "renovated_year": null,
+      "parking": "On-site parking; count to be confirmed from the site inspection.",
+      "hero": "images/3000-honolulu-honolulu-01.jpeg",
+      "price": 5750000,
+      "price_per_unit": 338235.29,
+      "price_per_sf": 421.93,
+      "value_range": "$5,550,000 to $5,950,000",
+      "opinion_of_value": [
+        {
+          "label": "Suggested list price",
+          "price": 5750000,
+          "price_per_unit": 338235.29411764705,
+          "price_per_sf": 421.92544760786615,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 10.742433291544334,
+          "grm_market": 10.671863400148478,
+          "cap_current": 5.726677913043478,
+          "cap_market": 5.784000000000001
+        },
+        {
+          "label": "Range top",
+          "price": 5950000,
+          "price_per_unit": 350000.0,
+          "price_per_sf": 436.60111535074844,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 11.116083145163268,
+          "grm_market": 11.043058648849295,
+          "cap_current": 5.49300806722689,
+          "cap_market": 5.548403361344538
+        },
+        {
+          "label": "Midpoint",
+          "price": 5750000.0,
+          "price_per_unit": 338235.29411764705,
+          "price_per_sf": 421.92544760786615,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 10.742433291544334,
+          "grm_market": 10.671863400148478,
+          "cap_current": 5.726677913043478,
+          "cap_market": 5.784000000000001
+        },
+        {
+          "label": "Range bottom",
+          "price": 5550000,
+          "price_per_unit": 326470.5882352941,
+          "price_per_sf": 407.24977986498385,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 10.368783437925401,
+          "grm_market": 10.300668151447661,
+          "cap_current": 5.977188828828829,
+          "cap_market": 6.036576576576577
+        }
+      ],
+      "scheduled_rent": [
+        44605.04,
+        44900.0
+      ],
+      "monthly_sgi": [
+        44605.04,
+        44900.0
+      ],
+      "additional_income": [
+        0.0,
+        0.0
+      ],
+      "grm_current": 10.742433291544334,
+      "grm_market": 10.671863400148478,
+      "cap_current": 5.726677913043478,
+      "cap_market": 5.784000000000001,
+      "cap_current_basis": "LAAA calculation: current NOI / recommended value",
+      "cap_market_basis": "LAAA calculation: market NOI / recommended value",
+      "noi_current": 329283.98,
+      "noi_market": 332580,
+      "tax_rate": 1.225,
+      "tax_anchor": {
+        "ad_valorem": 70437.5,
+        "flat_assessments": 0,
+        "expense_line": "Taxes"
+      },
+      "expense_total": 189919,
+      "expense_per_unit": 11171.70588235294,
+      "expense_per_sf": 13.935940710302319,
+      "unit_mix": [
+        {
+          "type": "Studio / 1 Bath",
+          "count": 1,
+          "sf": 450,
+          "rent_current": 2205.0,
+          "monthly_current": 2205.0,
+          "rent_market": 2100.0,
+          "monthly_market": 2100.0,
+          "sf_basis": "labelled_estimate"
+        },
+        {
+          "type": "1 Bed / 1 Bath",
+          "count": 15,
+          "sf": 800,
+          "rent_current": 2653.34,
+          "monthly_current": 39800.04,
+          "rent_market": 2686.67,
+          "monthly_market": 40300.0,
+          "sf_basis": "labelled_estimate"
+        },
+        {
+          "type": "2 Bed / 1 Bath",
+          "count": 1,
+          "sf": 900,
+          "rent_current": 2600.0,
+          "monthly_current": 2600.0,
+          "rent_market": 2500.0,
+          "monthly_market": 2500.0,
+          "sf_basis": "labelled_estimate"
+        }
+      ],
+      "operating": {
+        "sgi": [
+          535260.48,
+          538800.0
+        ],
+        "vacancy": [
+          16058,
+          16164
+        ],
+        "vacancy_pct": 3.000034674706416,
+        "vacancy_only": [
+          16058,
+          16164
+        ],
+        "vacancy_only_pct": 3.000034674706416,
+        "credit_loss": [
+          0,
+          0
+        ],
+        "credit_loss_pct": 0.0,
+        "goi": [
+          519202.48,
+          522636.0
+        ],
+        "expenses": [
+          189919,
+          190056
+        ],
+        "expense_ratio": [
+          36.57898552410613,
+          36.36488875622804
+        ],
+        "noi": [
+          329283.98,
+          332580
+        ],
+        "loan_payments": [
+          0.0,
+          0.0
+        ],
+        "pretax_cf": [
+          329283.98,
+          332580.0
+        ],
+        "pretax_cf_pct": [
+          5.726677913043478,
+          5.784000000000001
+        ],
+        "principal_reduction": [
+          0.0,
+          0.0
+        ],
+        "total_return": [
+          329283.98,
+          332580.0
+        ],
+        "total_return_pct": [
+          5.726677913043478,
+          5.784000000000001
+        ]
+      },
+      "expense_lines": [
+        [
+          "Contract Services",
+          6800,
+          6800,
+          "3"
+        ],
+        [
+          "General Administrative",
+          2550,
+          2550,
+          "4"
+        ],
+        [
+          "Insurance",
+          16150,
+          16150,
+          "5"
+        ],
+        [
+          "Management Fee",
+          20768,
+          20768,
+          "6"
+        ],
+        [
+          "Manager",
+          24000,
+          24000,
+          "7"
+        ],
+        [
+          "Repairs Maintenance",
+          17000,
+          17000,
+          "8"
+        ],
+        [
+          "Reserves",
+          3400,
+          3400,
+          "9"
+        ],
+        [
+          "Taxes",
+          70437.5,
+          70437.5,
+          "10"
+        ],
+        [
+          "Utilities",
+          28813,
+          28813,
+          "11"
+        ],
+        [
+          "Underwriting Expense Adjustment",
+          0.5,
+          137.5,
+          "12"
+        ]
+      ],
+      "expense_notes": {
+        "3": [
+          "Contract Services",
+          "Landscaping, pest control and recurring service contracts, carried from the model."
+        ],
+        "4": [
+          "General Administrative",
+          "Accounting, legal, bank fees and licences, carried from the model."
+        ],
+        "5": [
+          "Insurance",
+          "Carried from the model at the property's underwritten premium."
+        ],
+        "6": [
+          "Management Fee",
+          "Carried at 4.00% of Gross Scheduled Rent, the LAAA standard rate."
+        ],
+        "7": [
+          "Manager",
+          "On-site manager carried at $24,000. California requires a manager in residence at 16 units or more, and this building has 17."
+        ],
+        "8": [
+          "Repairs Maintenance",
+          "Carried from the model."
+        ],
+        "9": [
+          "Reserves",
+          "Replacement reserves, carried from the model. Lenders require a reserve line in underwriting."
+        ],
+        "10": [
+          "Taxes",
+          "Reassessed to the recommended price at 1.225%, the rate implied by the model's tax line of $70,437.50. Flat direct assessments are carried at zero because the itemized bill is not in the deal folder, which is the documented treatment when the itemization cannot be read."
+        ],
+        "11": [
+          "Utilities",
+          "Owner-paid utilities and trash, carried from the model."
+        ],
+        "12": [
+          "Underwriting Expense Adjustment",
+          "Aggregate difference between classified T12 expense lines and the modeled current and pro forma operating expense totals."
+        ],
+        "2": [
+          "Scheduled Gross Income",
+          "In-place scheduled rent from the model's Rent Roll Summary, $535,260.48, which ties to the August 2026 rent roll in-place sum to the cent. Gross Potential Rent is $538,800, a Loss to Lease of $3,540."
+        ],
+        "1": [
+          "Additional Income",
+          "No additional income is carried; the model shows none for this property."
+        ]
+      },
+      "income_notes": {
+        "scheduled_gross_income": "2",
+        "additional_income": "1"
+      },
+      "financing_structure": "all_cash",
+      "financing": null,
+      "highlights": [
+        "17 units across two structures on one parcel, 13,628 gross SF on a 17,616 SF lot, built 1958.",
+        "Fully occupied at the August 2026 rent roll, with no vacant units.",
+        "In place rent of $535,260 is 99.3% of Gross Potential Rent, a Loss to Lease of only $3,540.",
+        "5.73% cap on current net operating income of $329,284 at the recommended price."
+      ],
+      "overview": [
+        "Gardens at La Crescenta is a 17 unit apartment property at 3000 Honolulu Ave in La Crescenta, held by MSCO Corporation. Two structures sit on a single parcel, APN 5617-007-018, totalling 13,628 gross SF on a 17,616 SF lot, built in 1958.",
+        "This is the stabilized half of the portfolio. The building is full, in place rent is within 1% of potential, and the pro forma adds $3,296 of net operating income. Value rests on current income and the Montrose sale evidence rather than on a recovery story."
+      ],
+      "location_title": "La Crescenta, Foothill Submarket, Fully Occupied",
+      "location_narrative": [
+        "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+      ],
+      "physical_narrative": [
+        "Two structures on one lot, 17 units totalling 13,628 gross SF on a 17,616 SF parcel. The mix is 15 one bedroom units, one studio and one two bedroom, averaging 802 SF."
+      ],
+      "market_narrative": [
+        "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+      ],
+      "positioning_narrative": [
+        "This is an income purchase. A full building at 99.3% of potential rent in a foothill submarket with four recent closings inside 1.2 miles offers a buyer predictability rather than upside."
+      ],
+      "rent_narrative": [
+        "Three competing La Crescenta and Montrose properties frame the rents, all within 1.5 miles. One bedrooms run $1,948 to $2,230 and two bedrooms run $2,595 to $2,800. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+      ],
+      "valuation_narrative": [
+        "$5,750,000, or $338,235 per unit and $422 per SF. That is a 5.73% cap on current net operating income of $329,284 and a 10.74 gross rent multiplier on in place rent of $535,260. Operating expenses run 36.58% of effective gross income. The recommended range is $5,550,000 to $5,950,000."
+      ],
+      "strategy": [
+        {
+          "title": "Lead with Supported Income",
+          "copy": "Anchor the campaign in verified current operations and supported market evidence."
+        }
+      ],
+      "buyer_profiles": [
+        {
+          "title": "Local Income Buyer",
+          "copy": "An owner who already holds product in La Crescenta, Montrose or Glendale and wants a full building with no lease up risk and no deferred turn."
+        },
+        {
+          "title": "1031 Exchange Buyer",
+          "copy": "An exchange buyer needing a clean, fully occupied asset that closes on schedule, where the diligence risk sits in the physical plant rather than in the rent roll."
+        }
+      ],
+      "disclosures": [
+        "An on site manager is carried at $24,000, as California requires for a building of 16 units or more. Real estate taxes are reassessed to the recommended price.",
+        "The rent control regime is not concluded in this report. The assessor record returns a postal city of Glendale for APN 5617-007-018 while the property is identified as La Crescenta. The City of Glendale ordinance and the Los Angeles County ordinance are different regimes, and the answer should be confirmed before it is relied on. The California Tenant Protection Act applies on building age under either."
+      ],
+      "gallery": [
+        {
+          "src": "images/3000-honolulu-honolulu-24.jpeg",
+          "alt": "Exterior"
+        },
+        {
+          "src": "images/3000-honolulu-honolulu-22.jpeg",
+          "alt": "Exterior"
+        }
+      ],
+      "maps": {
+        "subject": "images/maps-3000-honolulu-subject.png",
+        "sale": "images/maps-3000-honolulu-sale-comps.png",
+        "rent": "images/maps-3000-honolulu-rent-comps.png",
+        "active": null
+      },
+      "rent_comps": [
+        {
+          "address": "Sunset Ridge at La Crescenta, 2800 Montrose Ave, Glendale, CA 91214, USA",
+          "unit_type": "1BR",
+          "rent": 2230,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 0.268,
+          "image": null,
+          "map_ref": 1
+        },
+        {
+          "address": "Sunset Ridge at La Crescenta, 2800 Montrose Ave, Glendale, CA 91214, USA",
+          "unit_type": "2BR",
+          "rent": 2800,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 0.268,
+          "image": null,
+          "map_ref": 1
+        },
+        {
+          "address": "Sunset Ridge at La Crescenta, 2800 Montrose Ave, Glendale, CA 91214, USA",
+          "unit_type": "Studio",
+          "rent": 2045,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 0.268,
+          "image": null,
+          "map_ref": 1
+        },
+        {
+          "address": "hon272 Apartments, 2722 Honolulu Ave, Montrose, CA 91020, USA",
+          "unit_type": "Studio to 1BR",
+          "rent": 1948,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 0.366,
+          "image": null,
+          "map_ref": 2
+        },
+        {
+          "address": "hon272 Apartments, 2722 Honolulu Ave, Montrose, CA 91020, USA",
+          "unit_type": "2BR",
+          "rent": 2595,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 0.366,
+          "image": null,
+          "map_ref": 2
+        },
+        {
+          "address": "Vue at Montrose, 2121 Valderas Dr, Glendale, CA 91208, USA",
+          "unit_type": "Mixed",
+          "rent": 1800,
+          "square_feet": null,
+          "square_feet_basis": "omitted",
+          "distance": 1.477,
+          "image": null,
+          "map_ref": 3
+        }
+      ],
+      "sale_comps": [
+        {
+          "address": "2463 Montrose Ave, Montrose, CA 91020, USA",
+          "status": "Closed",
+          "price": 3200000,
+          "units": 8,
+          "year_built": 1962,
+          "building_sf": 7924,
+          "lot_sf": null,
+          "date": "2025-08-15",
+          "days_on_market": null,
+          "price_per_unit": 400000.0,
+          "price_per_sf": 403.84,
+          "price_per_land_sf": null,
+          "grm": null,
+          "cap_rate": null,
+          "image": null,
+          "restatement": null,
+          "summary": "Closest comp to the subject at seven tenths of a mile, and the nearest on vintage.",
+          "relevance": "8 units against 17.; Average unit 991 SF against the subject's 802 SF.",
+          "considerations": "Closed August 2025.; No income detail available in the comp file.",
+          "map_ref": 1
+        },
+        {
+          "address": "3822 Sunset Ave, Montrose, CA 91020, USA",
+          "status": "Closed",
+          "price": 2935000,
+          "units": 9,
+          "year_built": 1961,
+          "building_sf": 8138,
+          "lot_sf": null,
+          "date": "2026-01-15",
+          "days_on_market": null,
+          "price_per_unit": 326111.11,
+          "price_per_sf": 360.65,
+          "price_per_land_sf": null,
+          "grm": null,
+          "cap_rate": null,
+          "image": null,
+          "restatement": null,
+          "summary": "Nearest match on unit count and vintage, and the second most recent close.",
+          "relevance": "9 units against 17.; Average unit 904 SF against the subject's 802 SF.",
+          "considerations": "Closed January 2026.; No income detail available in the comp file.",
+          "map_ref": 2
+        },
+        {
+          "address": "4123 Ocean View Blvd, Montrose, CA 91020, USA",
+          "status": "Closed",
+          "price": 1685000,
+          "units": 6,
+          "year_built": 1948,
+          "building_sf": 3998,
+          "lot_sf": null,
+          "date": "2026-03-15",
+          "days_on_market": null,
+          "price_per_unit": 280833.33,
+          "price_per_sf": 421.46,
+          "price_per_land_sf": null,
+          "grm": 12.33,
+          "cap_rate": 5.04,
+          "image": null,
+          "restatement": null,
+          "summary": "Most recent close in the set and the only one carrying income detail, but the smallest and oldest.",
+          "relevance": "6 units against 17, and the oldest at 1948.; Average unit 666 SF against the subject's 802 SF.",
+          "considerations": "Closed March 2026, the most recent in the set.",
+          "map_ref": 3
+        },
+        {
+          "address": "2218 Mira Vista Ave, Montrose, CA 91020, USA",
+          "status": "Closed",
+          "price": 2700000,
+          "units": 8,
+          "year_built": 1960,
+          "building_sf": 5664,
+          "lot_sf": null,
+          "date": "2025-04-15",
+          "days_on_market": null,
+          "price_per_unit": 337500.0,
+          "price_per_sf": 476.69,
+          "price_per_land_sf": null,
+          "grm": null,
+          "cap_rate": null,
+          "image": null,
+          "restatement": null,
+          "summary": "Similar vintage and unit count, but the oldest sale and the highest price per SF in the set.",
+          "relevance": "8 units against 17.; Average unit 708 SF against the subject's 802 SF.",
+          "considerations": "Closed April 2025, the oldest in the set.; No income detail available in the comp file.",
+          "map_ref": 4
+        }
+      ],
+      "active_comps": [],
+      "map_points": [],
+      "track_record": {
+        "all": {
+          "count": 494,
+          "volume": 1556428899.5,
+          "units": 4719
+        },
+        "asset_class": {
+          "count": 342,
+          "volume": 1163835729.5,
+          "units": 4703
+        },
+        "asset_class_label": "Apartments",
+        "local": {
+          "count": 18,
+          "volume": 78075000,
+          "units": 211
+        },
+        "local_basis": {
+          "type": "radius",
+          "label": "within 5 miles",
+          "radius_mi": 5
+        },
+        "representative": [
+          {
+            "address": "4123 Ocean View Blvd",
+            "submarket": "Montrose",
+            "units": 6,
+            "price": 1685000,
+            "price_per_unit": 280833,
+            "year": "2026",
+            "distance": 0.99
+          },
+          {
+            "address": "4503 Castle Lane",
+            "submarket": "La Ca\u00f1ada Flintridge",
+            "units": 3,
+            "price": 1280000,
+            "price_per_unit": 426667,
+            "year": "2026",
+            "distance": 1.08
+          },
+          {
+            "address": "10345 Pinyon Ave",
+            "submarket": "Tujunga",
+            "units": 7,
+            "price": 1325000,
+            "price_per_unit": 189286,
+            "year": "2023",
+            "distance": 3.78
+          }
+        ],
+        "closings_map": null
+      },
+      "deal_id": "shahbaznia-honolulu-3000",
+      "card_image": "images/3000-honolulu-honolulu-01.jpeg"
+    }
+  ],
+  "regulatory_conclusions": {
+    "shahbaznia-vanowen-16550": {
+      "rent_control": {
+        "conclusion": "Built 1988. The Los Angeles Rent Stabilization Ordinance applies to units with a certificate of occupancy issued before October 1, 1978, so the building sits outside the RSO. The California Tenant Protection Act (AB 1482) applies on age. Confirm both against the certificate of occupancy before any buyer-facing use.",
+        "support_refs": [
+          "sources:assessor-1"
+        ],
+        "as_of_date": "2026-09-02",
+        "approved_exception_id": null
+      },
+      "zoning": {
+        "conclusion": "City of Los Angeles parcel, APN 2231-007-024, assessor property use 'Apartment house (5+ units)'. Zoning designation to be confirmed from ZIMAS before publication.",
+        "support_refs": [
+          "sources:assessor-1"
+        ],
+        "as_of_date": "2026-09-02",
+        "approved_exception_id": null
+      },
+      "development": {
+        "conclusion": "No development conclusion is drawn. The site is improved with a 52-unit building of 41,099 SF on a 39,019 SF lot and is valued as an operating apartment building, not on a development basis.",
+        "support_refs": [
+          "sources:assessor-1"
+        ],
+        "as_of_date": "2026-09-02",
+        "approved_exception_id": null
+      }
+    },
+    "shahbaznia-honolulu-3000": {
+      "rent_control": {
+        "conclusion": "NOT CONCLUDED, VERIFICATION REQUIRED BEFORE BUYER-FACING USE. Built 1958, old enough to be regulated under whichever regime governs. The assessor record and Google both return a postal city of Glendale for APN 5617-007-018, while the deal team identifies the location as La Crescenta. The City of Glendale runs its own rent stabilization ordinance and unincorporated Los Angeles County runs the County RSO, and those are different answers for a buyer. The California Tenant Protection Act (AB 1482) applies on age under either. ZIMAS cannot settle it because ZIMAS covers City of Los Angeles parcels only.",
+        "support_refs": [
+          "sources:assessor-1"
+        ],
+        "as_of_date": "2026-09-02",
+        "approved_exception_id": null
+      },
+      "zoning": {
+        "conclusion": "Los Angeles County parcel, APN 5617-007-018, assessor property use 'Apartment house (5+ units)', two structures on one lot. Zoning designation to be confirmed from the governing jurisdiction.",
+        "support_refs": [
+          "sources:assessor-1"
+        ],
+        "as_of_date": "2026-09-02",
+        "approved_exception_id": null
+      },
+      "development": {
+        "conclusion": "No development conclusion is drawn. The site is improved with 17 units across two structures totaling 13,628 SF on a 17,616 SF lot and is valued as an operating apartment building.",
+        "support_refs": [
+          "sources:assessor-1"
+        ],
+        "as_of_date": "2026-09-02",
+        "approved_exception_id": null
+      }
+    }
+  },
+  "copy_contract": {
+    "members": {
+      "shahbaznia-vanowen-16550": {
+        "deal_id": "shahbaznia-vanowen-16550",
+        "blocks": {
+          "track_record": {
+            "narrative": [
+              "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded.",
+              "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+            ],
+            "achievements": [
+              "Chairman's Club | Marcus & Millichap's top-tier annual honor",
+              "National Achievement Award | multiple years, both partners",
+              "#1 Most Active Multifamily Team in LA County | CoStar 2019-2021",
+              "Sales Recognition Award | every year since 2016",
+              "{closed} closed transactions | {volume} in sales volume"
+            ],
+            "press": [
+              "BISNOW",
+              "YAHOO FINANCE",
+              "CONNECT CRE",
+              "SFVBJ",
+              "THE PINNACLE LIST"
+            ]
+          },
+          "marketing": {
+            "channel_titles": [
+              "Targeted Buyer Outreach"
+            ],
+            "channel_copy": [
+              "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+            ],
+            "strategy_titles": [
+              "Lead with Supported Income"
+            ],
+            "strategy_copy": [
+              "Anchor the campaign in verified current operations and supported market evidence."
+            ],
+            "pull_quote": [
+              "We are proactive marketers, not reactive."
+            ],
+            "difference_titles": [
+              "Direct owner and buyer outreach",
+              "Marcus & Millichap platform",
+              "Dedicated digital presentation"
+            ],
+            "difference_copy": [
+              "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket.",
+              "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring.",
+              "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+            ],
+            "narrative": [
+              "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone.",
+              "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline.",
+              "That list runs well over 100 names, and we call every one of them."
+            ]
+          },
+          "investment": {
+            "highlights": [
+              "52 units across 41,099 gross SF on a 39,019 SF lot, built 1988.",
+              "Built 1988, so the building sits outside the Los Angeles Rent Stabilization Ordinance.",
+              "Gross Potential Rent of $1,666,800 against Gross Scheduled Rent of $1,480,136, a Loss to Lease of $186,664.",
+              "Pro forma net operating income of $1,080,725 against $910,487 in place, a 7.33% cap at the recommended price.",
+              "15 of 52 units were vacant or in active eviction at the August 2026 rent roll, which is where the pro forma comes from."
+            ],
+            "overview": [
+              "Terraces at the Lake is a 52 unit apartment building at 16550 Vanowen St in the Lake Balboa area of Los Angeles, built in 1988 and held by MSCO Corporation. The building runs 41,099 gross SF across 28 one bedroom and 24 two bedroom units on a 39,019 SF lot.",
+              "Value here turns on two numbers moving in the same direction. Gross Scheduled Rent of $1,480,136 sits $186,664 below Gross Potential Rent, and 15 units are either vacant or in eviction. Recover those units at market and the cap moves from 6.17% to 7.33% without a dollar of new capital going into the building."
+            ]
+          },
+          "location": {
+            "title": [
+              "Lake Balboa, 1988 Construction, Outside the RSO"
+            ],
+            "narrative": [
+              "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+            ]
+          },
+          "property_details": {
+            "physical_narrative": [
+              "One building, 52 units, 41,099 gross SF on a 39,019 SF lot. Unit mix is 28 one bedroom and 24 two bedroom, averaging 790 SF per unit. The courtyard carries a pool, and units have in unit laundry."
+            ]
+          },
+          "buyer_profile": {
+            "market_narrative": [
+              "Five closed Van Nuys sales from 2025 set the frame. Price per unit runs $225,758 to $310,119 and the recommendation sits inside that at $283,654. Price per SF runs $206 to $309 against $359 here, and that gap is unit size, not pricing: this building averages 790 SF per unit where four of the five comps run 1,057 to 1,160 SF. The one comp with a comparable 769 SF average, 6825 Haskell, carries the highest price per SF in the set at $309."
+            ],
+            "positioning_narrative": [
+              "This trades as a value add with the work already identified rather than a stabilized income purchase. The buyer is underwriting the recovery of 15 units and the closing of a $186,664 Loss to Lease, and is paying a 6.17% cap today for a 7.33% cap on the other side of that."
+            ],
+            "profile_titles": [
+              "Value Add Private Capital",
+              "1031 Exchange Buyer"
+            ],
+            "profile_copy": [
+              "A private operator who has turned units in the Valley before and can carry the vacancy and eviction load through to stabilization. This buyer prices off the pro forma, not the trailing.",
+              "An exchange buyer with a deadline who wants scale in one transaction. 52 units in a single 1988 building outside the RSO places a large amount of equity in one close."
+            ]
+          },
+          "rent_comps": {
+            "narrative": [
+              "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+            ]
+          },
+          "financial_analysis": {
+            "valuation_narrative": [
+              "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+            ],
+            "disclosures": [
+              "Stabilized basis. The pro forma reflects the building at full market rate occupancy. At the August 2026 rent roll 8 units were vacant and 7 were in active eviction, 15 of 52 or about 29%. The pro forma assumes those units are recovered and re leased at market. Owner collections for calendar 2025 were $1,226,612.",
+              "Real estate taxes are reassessed to the recommended price. Measure ULA applies a 5.5% transfer tax on a sale above $10M in the City of Los Angeles."
+            ]
+          }
+        },
+        "claims": [
+          {
+            "id": "track-1",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded."
+          },
+          {
+            "id": "track-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "what the record means for this assignment",
+            "text": "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+          },
+          {
+            "id": "achievement-1",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "Chairman's Club | Marcus & Millichap's top-tier annual honor"
+          },
+          {
+            "id": "achievement-2",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "National Achievement Award | multiple years, both partners"
+          },
+          {
+            "id": "achievement-3",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "#1 Most Active Multifamily Team in LA County | CoStar 2019-2021"
+          },
+          {
+            "id": "achievement-4",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "Sales Recognition Award | every year since 2016"
+          },
+          {
+            "id": "achievement-5",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "{closed} closed transactions | {volume} in sales volume"
+          },
+          {
+            "id": "press-1",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "BISNOW"
+          },
+          {
+            "id": "press-2",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "YAHOO FINANCE"
+          },
+          {
+            "id": "press-3",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "CONNECT CRE"
+          },
+          {
+            "id": "press-4",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "SFVBJ"
+          },
+          {
+            "id": "press-5",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "THE PINNACLE LIST"
+          },
+          {
+            "id": "marketing-title-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "recommended marketing channel",
+            "text": "Targeted Buyer Outreach"
+          },
+          {
+            "id": "marketing-channel-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "recommended marketing approach",
+            "text": "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+          },
+          {
+            "id": "strategy-title-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "recommended positioning",
+            "text": "Lead with Supported Income"
+          },
+          {
+            "id": "strategy-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "financials:t12",
+              "comps-sale:conclusions"
+            ],
+            "framed_as": "recommended positioning",
+            "text": "Anchor the campaign in verified current operations and supported market evidence."
+          },
+          {
+            "id": "marketing-quote",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "positioning",
+            "text": "We are proactive marketers, not reactive."
+          },
+          {
+            "id": "difference-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Direct owner and buyer outreach"
+          },
+          {
+            "id": "difference-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Marcus & Millichap platform"
+          },
+          {
+            "id": "difference-3",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Dedicated digital presentation"
+          },
+          {
+            "id": "difference-copy-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket."
+          },
+          {
+            "id": "difference-copy-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+          },
+          {
+            "id": "difference-copy-3",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+          },
+          {
+            "id": "marketing-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "positioning",
+            "text": "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone."
+          },
+          {
+            "id": "marketing-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline."
+          },
+          {
+            "id": "marketing-3",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "That list runs well over 100 names, and we call every one of them."
+          },
+          {
+            "id": "highlight-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:unit_count"
+            ],
+            "framed_as": null,
+            "text": "52 units across 41,099 gross SF on a 39,019 SF lot, built 1988."
+          },
+          {
+            "id": "highlight-2",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:year_built"
+            ],
+            "framed_as": null,
+            "text": "Built 1988, so the building sits outside the Los Angeles Rent Stabilization Ordinance."
+          },
+          {
+            "id": "highlight-3",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "financials:t12"
+            ],
+            "framed_as": null,
+            "text": "Gross Potential Rent of $1,666,800 against Gross Scheduled Rent of $1,480,136, a Loss to Lease of $186,664."
+          },
+          {
+            "id": "highlight-4",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": null,
+            "text": "Pro forma net operating income of $1,080,725 against $910,487 in place, a 7.33% cap at the recommended price."
+          },
+          {
+            "id": "highlight-5",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "financials:rent_roll"
+            ],
+            "framed_as": null,
+            "text": "15 of 52 units were vacant or in active eviction at the August 2026 rent roll, which is where the pro forma comes from."
+          },
+          {
+            "id": "overview-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:identity"
+            ],
+            "framed_as": null,
+            "text": "Terraces at the Lake is a 52 unit apartment building at 16550 Vanowen St in the Lake Balboa area of Los Angeles, built in 1988 and held by MSCO Corporation. The building runs 41,099 gross SF across 28 one bedroom and 24 two bedroom units on a 39,019 SF lot."
+          },
+          {
+            "id": "overview-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "financials:t12",
+              "comps-sale:conclusions",
+              "comps-rent:conclusions"
+            ],
+            "framed_as": "valuation framework",
+            "text": "Value here turns on two numbers moving in the same direction. Gross Scheduled Rent of $1,480,136 sits $186,664 below Gross Potential Rent, and 15 units are either vacant or in eviction. Recover those units at market and the cap moves from 6.17% to 7.33% without a dollar of new capital going into the building."
+          },
+          {
+            "id": "location-title-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:assessor-1"
+            ],
+            "framed_as": "location positioning",
+            "text": "Lake Balboa, 1988 Construction, Outside the RSO"
+          },
+          {
+            "id": "location-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:rooftop_pin"
+            ],
+            "framed_as": null,
+            "text": "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+          },
+          {
+            "id": "physical-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:building_sf"
+            ],
+            "framed_as": null,
+            "text": "One building, 52 units, 41,099 gross SF on a 39,019 SF lot. Unit mix is 28 one bedroom and 24 two bedroom, averaging 790 SF per unit. The courtyard carries a pool, and units have in unit laundry."
+          },
+          {
+            "id": "market-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "comps-sale:conclusions",
+              "comps-rent:conclusions"
+            ],
+            "framed_as": "broker market assessment",
+            "text": "Five closed Van Nuys sales from 2025 set the frame. Price per unit runs $225,758 to $310,119 and the recommendation sits inside that at $283,654. Price per SF runs $206 to $309 against $359 here, and that gap is unit size, not pricing: this building averages 790 SF per unit where four of the five comps run 1,057 to 1,160 SF. The one comp with a comparable 769 SF average, 6825 Haskell, carries the highest price per SF in the set at $309."
+          },
+          {
+            "id": "positioning-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "broker positioning opinion",
+            "text": "This trades as a value add with the work already identified rather than a stabilized income purchase. The buyer is underwriting the recovery of 15 units and the closing of a $186,664 Loss to Lease, and is paying a 6.17% cap today for a 7.33% cap on the other side of that."
+          },
+          {
+            "id": "profile-title-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "comps-sale:conclusions"
+            ],
+            "framed_as": "target buyer profile",
+            "text": "Value Add Private Capital"
+          },
+          {
+            "id": "profile-title-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "target buyer profile",
+            "text": "1031 Exchange Buyer"
+          },
+          {
+            "id": "profile-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "target buyer profile",
+            "text": "A private operator who has turned units in the Valley before and can carry the vacancy and eviction load through to stabilization. This buyer prices off the pro forma, not the trailing."
+          },
+          {
+            "id": "profile-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "target buyer profile",
+            "text": "An exchange buyer with a deadline who wants scale in one transaction. 52 units in a single 1988 building outside the RSO places a large amount of equity in one close."
+          },
+          {
+            "id": "rent-1",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "comps-rent:rent-van-1",
+              "comps-rent:rent-van-2"
+            ],
+            "framed_as": null,
+            "text": "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+          },
+          {
+            "id": "valuation-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision",
+              "comps-sale:conclusions"
+            ],
+            "framed_as": "broker opinion of value",
+            "text": "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+          },
+          {
+            "id": "disclosure-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "financials:t12"
+            ],
+            "framed_as": null,
+            "text": "Stabilized basis. The pro forma reflects the building at full market rate occupancy. At the August 2026 rent roll 8 units were vacant and 7 were in active eviction, 15 of 52 or about 29%. The pro forma assumes those units are recovered and re leased at market. Owner collections for calendar 2025 were $1,226,612."
+          },
+          {
+            "id": "disclosure-2",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "sources:assessor-1"
+            ],
+            "framed_as": null,
+            "text": "Real estate taxes are reassessed to the recommended price. Measure ULA applies a 5.5% transfer tax on a sale above $10M in the City of Los Angeles."
+          }
+        ],
+        "exceptions": []
+      },
+      "shahbaznia-honolulu-3000": {
+        "deal_id": "shahbaznia-honolulu-3000",
+        "blocks": {
+          "track_record": {
+            "narrative": [
+              "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded.",
+              "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+            ],
+            "achievements": [
+              "Chairman's Club | Marcus & Millichap's top-tier annual honor",
+              "National Achievement Award | multiple years, both partners",
+              "#1 Most Active Multifamily Team in LA County | CoStar 2019-2021",
+              "Sales Recognition Award | every year since 2016",
+              "{closed} closed transactions | {volume} in sales volume"
+            ],
+            "press": [
+              "BISNOW",
+              "YAHOO FINANCE",
+              "CONNECT CRE",
+              "SFVBJ",
+              "THE PINNACLE LIST"
+            ]
+          },
+          "marketing": {
+            "channel_titles": [
+              "Targeted Buyer Outreach"
+            ],
+            "channel_copy": [
+              "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+            ],
+            "strategy_titles": [
+              "Lead with Supported Income"
+            ],
+            "strategy_copy": [
+              "Anchor the campaign in verified current operations and supported market evidence."
+            ],
+            "pull_quote": [
+              "We are proactive marketers, not reactive."
+            ],
+            "difference_titles": [
+              "Direct owner and buyer outreach",
+              "Marcus & Millichap platform",
+              "Dedicated digital presentation"
+            ],
+            "difference_copy": [
+              "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket.",
+              "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring.",
+              "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+            ],
+            "narrative": [
+              "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone.",
+              "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline.",
+              "That list runs well over 100 names, and we call every one of them."
+            ]
+          },
+          "investment": {
+            "highlights": [
+              "17 units across two structures on one parcel, 13,628 gross SF on a 17,616 SF lot, built 1958.",
+              "Fully occupied at the August 2026 rent roll, with no vacant units.",
+              "In place rent of $535,260 is 99.3% of Gross Potential Rent, a Loss to Lease of only $3,540.",
+              "5.73% cap on current net operating income of $329,284 at the recommended price."
+            ],
+            "overview": [
+              "Gardens at La Crescenta is a 17 unit apartment property at 3000 Honolulu Ave in La Crescenta, held by MSCO Corporation. Two structures sit on a single parcel, APN 5617-007-018, totalling 13,628 gross SF on a 17,616 SF lot, built in 1958.",
+              "This is the stabilized half of the portfolio. The building is full, in place rent is within 1% of potential, and the pro forma adds $3,296 of net operating income. Value rests on current income and the Montrose sale evidence rather than on a recovery story."
+            ]
+          },
+          "location": {
+            "title": [
+              "La Crescenta, Foothill Submarket, Fully Occupied"
+            ],
+            "narrative": [
+              "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+            ]
+          },
+          "property_details": {
+            "physical_narrative": [
+              "Two structures on one lot, 17 units totalling 13,628 gross SF on a 17,616 SF parcel. The mix is 15 one bedroom units, one studio and one two bedroom, averaging 802 SF."
+            ]
+          },
+          "buyer_profile": {
+            "market_narrative": [
+              "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+            ],
+            "positioning_narrative": [
+              "This is an income purchase. A full building at 99.3% of potential rent in a foothill submarket with four recent closings inside 1.2 miles offers a buyer predictability rather than upside."
+            ],
+            "profile_titles": [
+              "Local Income Buyer",
+              "1031 Exchange Buyer"
+            ],
+            "profile_copy": [
+              "An owner who already holds product in La Crescenta, Montrose or Glendale and wants a full building with no lease up risk and no deferred turn.",
+              "An exchange buyer needing a clean, fully occupied asset that closes on schedule, where the diligence risk sits in the physical plant rather than in the rent roll."
+            ]
+          },
+          "rent_comps": {
+            "narrative": [
+              "Three competing La Crescenta and Montrose properties frame the rents, all within 1.5 miles. One bedrooms run $1,948 to $2,230 and two bedrooms run $2,595 to $2,800. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+            ]
+          },
+          "financial_analysis": {
+            "valuation_narrative": [
+              "$5,750,000, or $338,235 per unit and $422 per SF. That is a 5.73% cap on current net operating income of $329,284 and a 10.74 gross rent multiplier on in place rent of $535,260. Operating expenses run 36.58% of effective gross income. The recommended range is $5,550,000 to $5,950,000."
+            ],
+            "disclosures": [
+              "An on site manager is carried at $24,000, as California requires for a building of 16 units or more. Real estate taxes are reassessed to the recommended price.",
+              "The rent control regime is not concluded in this report. The assessor record returns a postal city of Glendale for APN 5617-007-018 while the property is identified as La Crescenta. The City of Glendale ordinance and the Los Angeles County ordinance are different regimes, and the answer should be confirmed before it is relied on. The California Tenant Protection Act applies on building age under either."
+            ]
+          }
+        },
+        "claims": [
+          {
+            "id": "track-1",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded."
+          },
+          {
+            "id": "track-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "what the record means for this assignment",
+            "text": "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+          },
+          {
+            "id": "achievement-1",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "Chairman's Club | Marcus & Millichap's top-tier annual honor"
+          },
+          {
+            "id": "achievement-2",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "National Achievement Award | multiple years, both partners"
+          },
+          {
+            "id": "achievement-3",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "#1 Most Active Multifamily Team in LA County | CoStar 2019-2021"
+          },
+          {
+            "id": "achievement-4",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "Sales Recognition Award | every year since 2016"
+          },
+          {
+            "id": "achievement-5",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "{closed} closed transactions | {volume} in sales volume"
+          },
+          {
+            "id": "press-1",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "BISNOW"
+          },
+          {
+            "id": "press-2",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "YAHOO FINANCE"
+          },
+          {
+            "id": "press-3",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "CONNECT CRE"
+          },
+          {
+            "id": "press-4",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "SFVBJ"
+          },
+          {
+            "id": "press-5",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": null,
+            "text": "THE PINNACLE LIST"
+          },
+          {
+            "id": "marketing-title-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "recommended marketing channel",
+            "text": "Targeted Buyer Outreach"
+          },
+          {
+            "id": "marketing-channel-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "recommended marketing approach",
+            "text": "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+          },
+          {
+            "id": "strategy-title-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "recommended positioning",
+            "text": "Lead with Supported Income"
+          },
+          {
+            "id": "strategy-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "financials:t12",
+              "comps-sale:conclusions"
+            ],
+            "framed_as": "recommended positioning",
+            "text": "Anchor the campaign in verified current operations and supported market evidence."
+          },
+          {
+            "id": "marketing-quote",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "positioning",
+            "text": "We are proactive marketers, not reactive."
+          },
+          {
+            "id": "difference-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Direct owner and buyer outreach"
+          },
+          {
+            "id": "difference-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Marcus & Millichap platform"
+          },
+          {
+            "id": "difference-3",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Dedicated digital presentation"
+          },
+          {
+            "id": "difference-copy-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket."
+          },
+          {
+            "id": "difference-copy-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+          },
+          {
+            "id": "difference-copy-3",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+          },
+          {
+            "id": "marketing-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "positioning",
+            "text": "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone."
+          },
+          {
+            "id": "marketing-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline."
+          },
+          {
+            "id": "marketing-3",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:team-stats"
+            ],
+            "framed_as": "proposed campaign",
+            "text": "That list runs well over 100 names, and we call every one of them."
+          },
+          {
+            "id": "highlight-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:unit_count"
+            ],
+            "framed_as": null,
+            "text": "17 units across two structures on one parcel, 13,628 gross SF on a 17,616 SF lot, built 1958."
+          },
+          {
+            "id": "highlight-2",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "financials:rent_roll"
+            ],
+            "framed_as": null,
+            "text": "Fully occupied at the August 2026 rent roll, with no vacant units."
+          },
+          {
+            "id": "highlight-3",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "financials:t12"
+            ],
+            "framed_as": null,
+            "text": "In place rent of $535,260 is 99.3% of Gross Potential Rent, a Loss to Lease of only $3,540."
+          },
+          {
+            "id": "highlight-4",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": null,
+            "text": "5.73% cap on current net operating income of $329,284 at the recommended price."
+          },
+          {
+            "id": "overview-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:identity"
+            ],
+            "framed_as": null,
+            "text": "Gardens at La Crescenta is a 17 unit apartment property at 3000 Honolulu Ave in La Crescenta, held by MSCO Corporation. Two structures sit on a single parcel, APN 5617-007-018, totalling 13,628 gross SF on a 17,616 SF lot, built in 1958."
+          },
+          {
+            "id": "overview-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "financials:t12",
+              "comps-sale:conclusions",
+              "comps-rent:conclusions"
+            ],
+            "framed_as": "valuation framework",
+            "text": "This is the stabilized half of the portfolio. The building is full, in place rent is within 1% of potential, and the pro forma adds $3,296 of net operating income. Value rests on current income and the Montrose sale evidence rather than on a recovery story."
+          },
+          {
+            "id": "location-title-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "sources:assessor-1"
+            ],
+            "framed_as": "location positioning",
+            "text": "La Crescenta, Foothill Submarket, Fully Occupied"
+          },
+          {
+            "id": "location-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:rooftop_pin"
+            ],
+            "framed_as": null,
+            "text": "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+          },
+          {
+            "id": "physical-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "deal:building_sf"
+            ],
+            "framed_as": null,
+            "text": "Two structures on one lot, 17 units totalling 13,628 gross SF on a 17,616 SF parcel. The mix is 15 one bedroom units, one studio and one two bedroom, averaging 802 SF."
+          },
+          {
+            "id": "market-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "comps-sale:conclusions",
+              "comps-rent:conclusions"
+            ],
+            "framed_as": "broker market assessment",
+            "text": "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+          },
+          {
+            "id": "positioning-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "broker positioning opinion",
+            "text": "This is an income purchase. A full building at 99.3% of potential rent in a foothill submarket with four recent closings inside 1.2 miles offers a buyer predictability rather than upside."
+          },
+          {
+            "id": "profile-title-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "comps-sale:conclusions"
+            ],
+            "framed_as": "target buyer profile",
+            "text": "Local Income Buyer"
+          },
+          {
+            "id": "profile-title-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "target buyer profile",
+            "text": "1031 Exchange Buyer"
+          },
+          {
+            "id": "profile-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "target buyer profile",
+            "text": "An owner who already holds product in La Crescenta, Montrose or Glendale and wants a full building with no lease up risk and no deferred turn."
+          },
+          {
+            "id": "profile-2",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision"
+            ],
+            "framed_as": "target buyer profile",
+            "text": "An exchange buyer needing a clean, fully occupied asset that closes on schedule, where the diligence risk sits in the physical plant rather than in the rent roll."
+          },
+          {
+            "id": "rent-1",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "comps-rent:rent-hon-1",
+              "comps-rent:rent-hon-2"
+            ],
+            "framed_as": null,
+            "text": "Three competing La Crescenta and Montrose properties frame the rents, all within 1.5 miles. One bedrooms run $1,948 to $2,230 and two bedrooms run $2,595 to $2,800. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+          },
+          {
+            "id": "valuation-1",
+            "claim_type": "broker_opinion",
+            "support_refs": [
+              "pricing:decision",
+              "comps-sale:conclusions"
+            ],
+            "framed_as": "broker opinion of value",
+            "text": "$5,750,000, or $338,235 per unit and $422 per SF. That is a 5.73% cap on current net operating income of $329,284 and a 10.74 gross rent multiplier on in place rent of $535,260. Operating expenses run 36.58% of effective gross income. The recommended range is $5,550,000 to $5,950,000."
+          },
+          {
+            "id": "disclosure-1",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "financials:t12"
+            ],
+            "framed_as": null,
+            "text": "An on site manager is carried at $24,000, as California requires for a building of 16 units or more. Real estate taxes are reassessed to the recommended price."
+          },
+          {
+            "id": "disclosure-2",
+            "claim_type": "verified_fact",
+            "support_refs": [
+              "sources:assessor-1"
+            ],
+            "framed_as": null,
+            "text": "The rent control regime is not concluded in this report. The assessor record returns a postal city of Glendale for APN 5617-007-018 while the property is identified as La Crescenta. The City of Glendale ordinance and the Los Angeles County ordinance are different regimes, and the answer should be confirmed before it is relied on. The California Tenant Protection Act applies on building age under either."
+          }
+        ],
+        "exceptions": []
+      }
+    }
+  },
+  "portfolio_contract": {
+    "members": {
+      "shahbaznia-vanowen-16550": {
+        "copy": {
+          "deal_id": "shahbaznia-vanowen-16550",
+          "blocks": {
+            "track_record": {
+              "narrative": [
+                "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded.",
+                "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+              ],
+              "achievements": [
+                "Chairman's Club | Marcus & Millichap's top-tier annual honor",
+                "National Achievement Award | multiple years, both partners",
+                "#1 Most Active Multifamily Team in LA County | CoStar 2019-2021",
+                "Sales Recognition Award | every year since 2016",
+                "{closed} closed transactions | {volume} in sales volume"
+              ],
+              "press": [
+                "BISNOW",
+                "YAHOO FINANCE",
+                "CONNECT CRE",
+                "SFVBJ",
+                "THE PINNACLE LIST"
+              ]
+            },
+            "marketing": {
+              "channel_titles": [
+                "Targeted Buyer Outreach"
+              ],
+              "channel_copy": [
+                "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+              ],
+              "strategy_titles": [
+                "Lead with Supported Income"
+              ],
+              "strategy_copy": [
+                "Anchor the campaign in verified current operations and supported market evidence."
+              ],
+              "pull_quote": [
+                "We are proactive marketers, not reactive."
+              ],
+              "difference_titles": [
+                "Direct owner and buyer outreach",
+                "Marcus & Millichap platform",
+                "Dedicated digital presentation"
+              ],
+              "difference_copy": [
+                "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket.",
+                "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring.",
+                "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+              ],
+              "narrative": [
+                "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone.",
+                "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline.",
+                "That list runs well over 100 names, and we call every one of them."
+              ]
+            },
+            "investment": {
+              "highlights": [
+                "52 units across 41,099 gross SF on a 39,019 SF lot, built 1988.",
+                "Built 1988, so the building sits outside the Los Angeles Rent Stabilization Ordinance.",
+                "Gross Potential Rent of $1,666,800 against Gross Scheduled Rent of $1,480,136, a Loss to Lease of $186,664.",
+                "Pro forma net operating income of $1,080,725 against $910,487 in place, a 7.33% cap at the recommended price.",
+                "15 of 52 units were vacant or in active eviction at the August 2026 rent roll, which is where the pro forma comes from."
+              ],
+              "overview": [
+                "Terraces at the Lake is a 52 unit apartment building at 16550 Vanowen St in the Lake Balboa area of Los Angeles, built in 1988 and held by MSCO Corporation. The building runs 41,099 gross SF across 28 one bedroom and 24 two bedroom units on a 39,019 SF lot.",
+                "Value here turns on two numbers moving in the same direction. Gross Scheduled Rent of $1,480,136 sits $186,664 below Gross Potential Rent, and 15 units are either vacant or in eviction. Recover those units at market and the cap moves from 6.17% to 7.33% without a dollar of new capital going into the building."
+              ]
+            },
+            "location": {
+              "title": [
+                "Lake Balboa, 1988 Construction, Outside the RSO"
+              ],
+              "narrative": [
+                "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+              ]
+            },
+            "property_details": {
+              "physical_narrative": [
+                "One building, 52 units, 41,099 gross SF on a 39,019 SF lot. Unit mix is 28 one bedroom and 24 two bedroom, averaging 790 SF per unit. The courtyard carries a pool, and units have in unit laundry."
+              ]
+            },
+            "buyer_profile": {
+              "market_narrative": [
+                "Five closed Van Nuys sales from 2025 set the frame. Price per unit runs $225,758 to $310,119 and the recommendation sits inside that at $283,654. Price per SF runs $206 to $309 against $359 here, and that gap is unit size, not pricing: this building averages 790 SF per unit where four of the five comps run 1,057 to 1,160 SF. The one comp with a comparable 769 SF average, 6825 Haskell, carries the highest price per SF in the set at $309."
+              ],
+              "positioning_narrative": [
+                "This trades as a value add with the work already identified rather than a stabilized income purchase. The buyer is underwriting the recovery of 15 units and the closing of a $186,664 Loss to Lease, and is paying a 6.17% cap today for a 7.33% cap on the other side of that."
+              ],
+              "profile_titles": [
+                "Value Add Private Capital",
+                "1031 Exchange Buyer"
+              ],
+              "profile_copy": [
+                "A private operator who has turned units in the Valley before and can carry the vacancy and eviction load through to stabilization. This buyer prices off the pro forma, not the trailing.",
+                "An exchange buyer with a deadline who wants scale in one transaction. 52 units in a single 1988 building outside the RSO places a large amount of equity in one close."
+              ]
+            },
+            "rent_comps": {
+              "narrative": [
+                "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+              ]
+            },
+            "financial_analysis": {
+              "valuation_narrative": [
+                "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+              ],
+              "disclosures": [
+                "Stabilized basis. The pro forma reflects the building at full market rate occupancy. At the August 2026 rent roll 8 units were vacant and 7 were in active eviction, 15 of 52 or about 29%. The pro forma assumes those units are recovered and re leased at market. Owner collections for calendar 2025 were $1,226,612.",
+                "Real estate taxes are reassessed to the recommended price. Measure ULA applies a 5.5% transfer tax on a sale above $10M in the City of Los Angeles."
+              ]
+            }
+          },
+          "claims": [
+            {
+              "id": "track-1",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded."
+            },
+            {
+              "id": "track-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "what the record means for this assignment",
+              "text": "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+            },
+            {
+              "id": "achievement-1",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "Chairman's Club | Marcus & Millichap's top-tier annual honor"
+            },
+            {
+              "id": "achievement-2",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "National Achievement Award | multiple years, both partners"
+            },
+            {
+              "id": "achievement-3",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "#1 Most Active Multifamily Team in LA County | CoStar 2019-2021"
+            },
+            {
+              "id": "achievement-4",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "Sales Recognition Award | every year since 2016"
+            },
+            {
+              "id": "achievement-5",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "{closed} closed transactions | {volume} in sales volume"
+            },
+            {
+              "id": "press-1",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "BISNOW"
+            },
+            {
+              "id": "press-2",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "YAHOO FINANCE"
+            },
+            {
+              "id": "press-3",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "CONNECT CRE"
+            },
+            {
+              "id": "press-4",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "SFVBJ"
+            },
+            {
+              "id": "press-5",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "THE PINNACLE LIST"
+            },
+            {
+              "id": "marketing-title-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "recommended marketing channel",
+              "text": "Targeted Buyer Outreach"
+            },
+            {
+              "id": "marketing-channel-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "recommended marketing approach",
+              "text": "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+            },
+            {
+              "id": "strategy-title-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "recommended positioning",
+              "text": "Lead with Supported Income"
+            },
+            {
+              "id": "strategy-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "financials:t12",
+                "comps-sale:conclusions"
+              ],
+              "framed_as": "recommended positioning",
+              "text": "Anchor the campaign in verified current operations and supported market evidence."
+            },
+            {
+              "id": "marketing-quote",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "positioning",
+              "text": "We are proactive marketers, not reactive."
+            },
+            {
+              "id": "difference-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Direct owner and buyer outreach"
+            },
+            {
+              "id": "difference-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Marcus & Millichap platform"
+            },
+            {
+              "id": "difference-3",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Dedicated digital presentation"
+            },
+            {
+              "id": "difference-copy-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket."
+            },
+            {
+              "id": "difference-copy-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+            },
+            {
+              "id": "difference-copy-3",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+            },
+            {
+              "id": "marketing-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "positioning",
+              "text": "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone."
+            },
+            {
+              "id": "marketing-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline."
+            },
+            {
+              "id": "marketing-3",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "That list runs well over 100 names, and we call every one of them."
+            },
+            {
+              "id": "highlight-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:unit_count"
+              ],
+              "framed_as": null,
+              "text": "52 units across 41,099 gross SF on a 39,019 SF lot, built 1988."
+            },
+            {
+              "id": "highlight-2",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:year_built"
+              ],
+              "framed_as": null,
+              "text": "Built 1988, so the building sits outside the Los Angeles Rent Stabilization Ordinance."
+            },
+            {
+              "id": "highlight-3",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "financials:t12"
+              ],
+              "framed_as": null,
+              "text": "Gross Potential Rent of $1,666,800 against Gross Scheduled Rent of $1,480,136, a Loss to Lease of $186,664."
+            },
+            {
+              "id": "highlight-4",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": null,
+              "text": "Pro forma net operating income of $1,080,725 against $910,487 in place, a 7.33% cap at the recommended price."
+            },
+            {
+              "id": "highlight-5",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "financials:rent_roll"
+              ],
+              "framed_as": null,
+              "text": "15 of 52 units were vacant or in active eviction at the August 2026 rent roll, which is where the pro forma comes from."
+            },
+            {
+              "id": "overview-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:identity"
+              ],
+              "framed_as": null,
+              "text": "Terraces at the Lake is a 52 unit apartment building at 16550 Vanowen St in the Lake Balboa area of Los Angeles, built in 1988 and held by MSCO Corporation. The building runs 41,099 gross SF across 28 one bedroom and 24 two bedroom units on a 39,019 SF lot."
+            },
+            {
+              "id": "overview-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "financials:t12",
+                "comps-sale:conclusions",
+                "comps-rent:conclusions"
+              ],
+              "framed_as": "valuation framework",
+              "text": "Value here turns on two numbers moving in the same direction. Gross Scheduled Rent of $1,480,136 sits $186,664 below Gross Potential Rent, and 15 units are either vacant or in eviction. Recover those units at market and the cap moves from 6.17% to 7.33% without a dollar of new capital going into the building."
+            },
+            {
+              "id": "location-title-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "framed_as": "location positioning",
+              "text": "Lake Balboa, 1988 Construction, Outside the RSO"
+            },
+            {
+              "id": "location-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:rooftop_pin"
+              ],
+              "framed_as": null,
+              "text": "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+            },
+            {
+              "id": "physical-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:building_sf"
+              ],
+              "framed_as": null,
+              "text": "One building, 52 units, 41,099 gross SF on a 39,019 SF lot. Unit mix is 28 one bedroom and 24 two bedroom, averaging 790 SF per unit. The courtyard carries a pool, and units have in unit laundry."
+            },
+            {
+              "id": "market-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "comps-sale:conclusions",
+                "comps-rent:conclusions"
+              ],
+              "framed_as": "broker market assessment",
+              "text": "Five closed Van Nuys sales from 2025 set the frame. Price per unit runs $225,758 to $310,119 and the recommendation sits inside that at $283,654. Price per SF runs $206 to $309 against $359 here, and that gap is unit size, not pricing: this building averages 790 SF per unit where four of the five comps run 1,057 to 1,160 SF. The one comp with a comparable 769 SF average, 6825 Haskell, carries the highest price per SF in the set at $309."
+            },
+            {
+              "id": "positioning-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "broker positioning opinion",
+              "text": "This trades as a value add with the work already identified rather than a stabilized income purchase. The buyer is underwriting the recovery of 15 units and the closing of a $186,664 Loss to Lease, and is paying a 6.17% cap today for a 7.33% cap on the other side of that."
+            },
+            {
+              "id": "profile-title-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "comps-sale:conclusions"
+              ],
+              "framed_as": "target buyer profile",
+              "text": "Value Add Private Capital"
+            },
+            {
+              "id": "profile-title-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "target buyer profile",
+              "text": "1031 Exchange Buyer"
+            },
+            {
+              "id": "profile-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "target buyer profile",
+              "text": "A private operator who has turned units in the Valley before and can carry the vacancy and eviction load through to stabilization. This buyer prices off the pro forma, not the trailing."
+            },
+            {
+              "id": "profile-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "target buyer profile",
+              "text": "An exchange buyer with a deadline who wants scale in one transaction. 52 units in a single 1988 building outside the RSO places a large amount of equity in one close."
+            },
+            {
+              "id": "rent-1",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "comps-rent:rent-van-1",
+                "comps-rent:rent-van-2"
+              ],
+              "framed_as": null,
+              "text": "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+            },
+            {
+              "id": "valuation-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision",
+                "comps-sale:conclusions"
+              ],
+              "framed_as": "broker opinion of value",
+              "text": "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+            },
+            {
+              "id": "disclosure-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "financials:t12"
+              ],
+              "framed_as": null,
+              "text": "Stabilized basis. The pro forma reflects the building at full market rate occupancy. At the August 2026 rent roll 8 units were vacant and 7 were in active eviction, 15 of 52 or about 29%. The pro forma assumes those units are recovered and re leased at market. Owner collections for calendar 2025 were $1,226,612."
+            },
+            {
+              "id": "disclosure-2",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "framed_as": null,
+              "text": "Real estate taxes are reassessed to the recommended price. Measure ULA applies a 5.5% transfer tax on a sale above $10M in the City of Los Angeles."
+            }
+          ],
+          "exceptions": []
+        },
+        "media_selection": {
+          "deal_id": "shahbaznia-vanowen-16550",
+          "order": [
+            "vanowen-02",
+            "vanowen-01",
+            "vanowen-15",
+            "vanowen-13"
+          ],
+          "hero": "vanowen-02",
+          "items": [
+            {
+              "id": "vanowen-02",
+              "sha256": "8475307533d2710398291abd99c52a7809ce9a35154014c6517f07b9200a3291",
+              "phash": "ece3961fcc8c05a6",
+              "category": "exterior",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Address CONFIRMED: the street number 16550 is legible on the glass transom above the lobby entrance, and the black and white checkerboard entrance paving matches the Google satellite image at the resolved rooftop pin.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "vanowen-01",
+              "sha256": "d3be02c160e4e2657217df20201044d22d7aa65cdad0b6c9d71af0fda77a4911",
+              "phash": "d2d2d834b64b62cd",
+              "category": "exterior",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Same checkerboard entrance courtyard as the address-confirmed frame, viewed from the street approach.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "vanowen-15",
+              "sha256": "aad6dee541c603e782a7e9b9d35aded7b69f690b61eb5867fcd149a1a1b945fd",
+              "phash": "ed9272c41debc4b0",
+              "category": "interior",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Renovated unit interior, stainless appliances and quartz counters, consistent with the finishes cited in the rent comp file for this property.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "vanowen-13",
+              "sha256": "903db7d74965924d7b10f50d3db42e3ccf334553f3e30c8e1966cd5190ce5740",
+              "phash": "e97a6e5495035715",
+              "category": "parking",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Subterranean parking structure under the building, consistent with the 39,019 SF lot and the 41,099 SF improvement on the assessor record.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            }
+          ],
+          "presentation": {
+            "no_photo_cover": null,
+            "hero_tall": null
+          },
+          "exceptions": [
+            {
+              "id": "MEDIA-provenance",
+              "domain": "media_selection",
+              "status": "resolved",
+              "materiality": "immaterial",
+              "value_effect": 0,
+              "approved": true,
+              "description": "Photo provenance is not fully established. Unattributed screenshots captured 2026-06-02 and filed in the seller's deal folder. Published for this SELLER-FACING BOV only, which is delivered to the owner of the property depicted. NOT cleared for buyer-facing marketing, laaa.com, Mailchimp or any public surface without clearing rights and obtaining higher-resolution originals.",
+              "approval_note": "Analyst call recorded 2026-09-02 and reported to the deal owner in chat."
+            }
+          ]
+        },
+        "regulatory_conclusions": {
+          "deal_id": "shahbaznia-vanowen-16550",
+          "conclusions": {
+            "rent_control": {
+              "conclusion": "Built 1988. The Los Angeles Rent Stabilization Ordinance applies to units with a certificate of occupancy issued before October 1, 1978, so the building sits outside the RSO. The California Tenant Protection Act (AB 1482) applies on age. Confirm both against the certificate of occupancy before any buyer-facing use.",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "as_of_date": "2026-09-02",
+              "approved_exception_id": null
+            },
+            "zoning": {
+              "conclusion": "City of Los Angeles parcel, APN 2231-007-024, assessor property use 'Apartment house (5+ units)'. Zoning designation to be confirmed from ZIMAS before publication.",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "as_of_date": "2026-09-02",
+              "approved_exception_id": null
+            },
+            "development": {
+              "conclusion": "No development conclusion is drawn. The site is improved with a 52-unit building of 41,099 SF on a 39,019 SF lot and is valued as an operating apartment building, not on a development basis.",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "as_of_date": "2026-09-02",
+              "approved_exception_id": null
+            }
+          },
+          "exceptions": []
+        }
+      },
+      "shahbaznia-honolulu-3000": {
+        "copy": {
+          "deal_id": "shahbaznia-honolulu-3000",
+          "blocks": {
+            "track_record": {
+              "narrative": [
+                "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded.",
+                "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+              ],
+              "achievements": [
+                "Chairman's Club | Marcus & Millichap's top-tier annual honor",
+                "National Achievement Award | multiple years, both partners",
+                "#1 Most Active Multifamily Team in LA County | CoStar 2019-2021",
+                "Sales Recognition Award | every year since 2016",
+                "{closed} closed transactions | {volume} in sales volume"
+              ],
+              "press": [
+                "BISNOW",
+                "YAHOO FINANCE",
+                "CONNECT CRE",
+                "SFVBJ",
+                "THE PINNACLE LIST"
+              ]
+            },
+            "marketing": {
+              "channel_titles": [
+                "Targeted Buyer Outreach"
+              ],
+              "channel_copy": [
+                "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+              ],
+              "strategy_titles": [
+                "Lead with Supported Income"
+              ],
+              "strategy_copy": [
+                "Anchor the campaign in verified current operations and supported market evidence."
+              ],
+              "pull_quote": [
+                "We are proactive marketers, not reactive."
+              ],
+              "difference_titles": [
+                "Direct owner and buyer outreach",
+                "Marcus & Millichap platform",
+                "Dedicated digital presentation"
+              ],
+              "difference_copy": [
+                "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket.",
+                "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring.",
+                "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+              ],
+              "narrative": [
+                "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone.",
+                "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline.",
+                "That list runs well over 100 names, and we call every one of them."
+              ]
+            },
+            "investment": {
+              "highlights": [
+                "17 units across two structures on one parcel, 13,628 gross SF on a 17,616 SF lot, built 1958.",
+                "Fully occupied at the August 2026 rent roll, with no vacant units.",
+                "In place rent of $535,260 is 99.3% of Gross Potential Rent, a Loss to Lease of only $3,540.",
+                "5.73% cap on current net operating income of $329,284 at the recommended price."
+              ],
+              "overview": [
+                "Gardens at La Crescenta is a 17 unit apartment property at 3000 Honolulu Ave in La Crescenta, held by MSCO Corporation. Two structures sit on a single parcel, APN 5617-007-018, totalling 13,628 gross SF on a 17,616 SF lot, built in 1958.",
+                "This is the stabilized half of the portfolio. The building is full, in place rent is within 1% of potential, and the pro forma adds $3,296 of net operating income. Value rests on current income and the Montrose sale evidence rather than on a recovery story."
+              ]
+            },
+            "location": {
+              "title": [
+                "La Crescenta, Foothill Submarket, Fully Occupied"
+              ],
+              "narrative": [
+                "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+              ]
+            },
+            "property_details": {
+              "physical_narrative": [
+                "Two structures on one lot, 17 units totalling 13,628 gross SF on a 17,616 SF parcel. The mix is 15 one bedroom units, one studio and one two bedroom, averaging 802 SF."
+              ]
+            },
+            "buyer_profile": {
+              "market_narrative": [
+                "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+              ],
+              "positioning_narrative": [
+                "This is an income purchase. A full building at 99.3% of potential rent in a foothill submarket with four recent closings inside 1.2 miles offers a buyer predictability rather than upside."
+              ],
+              "profile_titles": [
+                "Local Income Buyer",
+                "1031 Exchange Buyer"
+              ],
+              "profile_copy": [
+                "An owner who already holds product in La Crescenta, Montrose or Glendale and wants a full building with no lease up risk and no deferred turn.",
+                "An exchange buyer needing a clean, fully occupied asset that closes on schedule, where the diligence risk sits in the physical plant rather than in the rent roll."
+              ]
+            },
+            "rent_comps": {
+              "narrative": [
+                "Three competing La Crescenta and Montrose properties frame the rents, all within 1.5 miles. One bedrooms run $1,948 to $2,230 and two bedrooms run $2,595 to $2,800. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+              ]
+            },
+            "financial_analysis": {
+              "valuation_narrative": [
+                "$5,750,000, or $338,235 per unit and $422 per SF. That is a 5.73% cap on current net operating income of $329,284 and a 10.74 gross rent multiplier on in place rent of $535,260. Operating expenses run 36.58% of effective gross income. The recommended range is $5,550,000 to $5,950,000."
+              ],
+              "disclosures": [
+                "An on site manager is carried at $24,000, as California requires for a building of 16 units or more. Real estate taxes are reassessed to the recommended price.",
+                "The rent control regime is not concluded in this report. The assessor record returns a postal city of Glendale for APN 5617-007-018 while the property is identified as La Crescenta. The City of Glendale ordinance and the Los Angeles County ordinance are different regimes, and the answer should be confirmed before it is relied on. The California Tenant Protection Act applies on building age under either."
+              ]
+            }
+          },
+          "claims": [
+            {
+              "id": "track-1",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "Of those closings, {apt_closed} are apartment sales covering {apt_units} units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded."
+            },
+            {
+              "id": "track-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "what the record means for this assignment",
+              "text": "Volume matters here for one reason: it is where the buyer list comes from. The buyer for this property is far more likely to be someone this team has already closed with than someone who finds it on a portal, and a team that closes every quarter is calling those people about something regardless."
+            },
+            {
+              "id": "achievement-1",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "Chairman's Club | Marcus & Millichap's top-tier annual honor"
+            },
+            {
+              "id": "achievement-2",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "National Achievement Award | multiple years, both partners"
+            },
+            {
+              "id": "achievement-3",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "#1 Most Active Multifamily Team in LA County | CoStar 2019-2021"
+            },
+            {
+              "id": "achievement-4",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "Sales Recognition Award | every year since 2016"
+            },
+            {
+              "id": "achievement-5",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "{closed} closed transactions | {volume} in sales volume"
+            },
+            {
+              "id": "press-1",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "BISNOW"
+            },
+            {
+              "id": "press-2",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "YAHOO FINANCE"
+            },
+            {
+              "id": "press-3",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "CONNECT CRE"
+            },
+            {
+              "id": "press-4",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "SFVBJ"
+            },
+            {
+              "id": "press-5",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": null,
+              "text": "THE PINNACLE LIST"
+            },
+            {
+              "id": "marketing-title-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "recommended marketing channel",
+              "text": "Targeted Buyer Outreach"
+            },
+            {
+              "id": "marketing-channel-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "recommended marketing approach",
+              "text": "Direct outreach and source-stamped digital exposure will focus on buyer groups most likely to pursue the property."
+            },
+            {
+              "id": "strategy-title-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "recommended positioning",
+              "text": "Lead with Supported Income"
+            },
+            {
+              "id": "strategy-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "financials:t12",
+                "comps-sale:conclusions"
+              ],
+              "framed_as": "recommended positioning",
+              "text": "Anchor the campaign in verified current operations and supported market evidence."
+            },
+            {
+              "id": "marketing-quote",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "positioning",
+              "text": "We are proactive marketers, not reactive."
+            },
+            {
+              "id": "difference-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Direct owner and buyer outreach"
+            },
+            {
+              "id": "difference-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Marcus & Millichap platform"
+            },
+            {
+              "id": "difference-3",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Dedicated digital presentation"
+            },
+            {
+              "id": "difference-copy-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Named calls into the local buyer pool, the 1031 exchange buyers who have traded in this size class, and the private capital already holding product in the submarket."
+            },
+            {
+              "id": "difference-copy-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "National listing distribution, the firm's investor database, and coordination with MMCC on debt terms so a buyer arrives pre-qualified rather than exploring."
+            },
+            {
+              "id": "difference-copy-3",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
+            },
+            {
+              "id": "marketing-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "positioning",
+              "text": "Most brokers are reactive. They post the listing, run an email blast, and wait for the phone to ring. We do all of that, and we do it well. Then we do the part almost nobody does. We pick up the phone."
+            },
+            {
+              "id": "marketing-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "Before your building goes to market, our system builds a probable buyer list for it specifically. It pulls the county assessment record for every property in the surrounding area: who owns it, where their mail goes, what they paid, when they bought, who financed it, and how many other buildings they hold. Out of that come the three groups most likely to buy your building: owners of comparable product nearby, buyers who have closed on buildings like yours recently, and exchange buyers with money that has to be placed on a deadline."
+            },
+            {
+              "id": "marketing-3",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:team-stats"
+              ],
+              "framed_as": "proposed campaign",
+              "text": "That list runs well over 100 names, and we call every one of them."
+            },
+            {
+              "id": "highlight-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:unit_count"
+              ],
+              "framed_as": null,
+              "text": "17 units across two structures on one parcel, 13,628 gross SF on a 17,616 SF lot, built 1958."
+            },
+            {
+              "id": "highlight-2",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "financials:rent_roll"
+              ],
+              "framed_as": null,
+              "text": "Fully occupied at the August 2026 rent roll, with no vacant units."
+            },
+            {
+              "id": "highlight-3",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "financials:t12"
+              ],
+              "framed_as": null,
+              "text": "In place rent of $535,260 is 99.3% of Gross Potential Rent, a Loss to Lease of only $3,540."
+            },
+            {
+              "id": "highlight-4",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": null,
+              "text": "5.73% cap on current net operating income of $329,284 at the recommended price."
+            },
+            {
+              "id": "overview-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:identity"
+              ],
+              "framed_as": null,
+              "text": "Gardens at La Crescenta is a 17 unit apartment property at 3000 Honolulu Ave in La Crescenta, held by MSCO Corporation. Two structures sit on a single parcel, APN 5617-007-018, totalling 13,628 gross SF on a 17,616 SF lot, built in 1958."
+            },
+            {
+              "id": "overview-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "financials:t12",
+                "comps-sale:conclusions",
+                "comps-rent:conclusions"
+              ],
+              "framed_as": "valuation framework",
+              "text": "This is the stabilized half of the portfolio. The building is full, in place rent is within 1% of potential, and the pro forma adds $3,296 of net operating income. Value rests on current income and the Montrose sale evidence rather than on a recovery story."
+            },
+            {
+              "id": "location-title-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "framed_as": "location positioning",
+              "text": "La Crescenta, Foothill Submarket, Fully Occupied"
+            },
+            {
+              "id": "location-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:rooftop_pin"
+              ],
+              "framed_as": null,
+              "text": "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+            },
+            {
+              "id": "physical-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "deal:building_sf"
+              ],
+              "framed_as": null,
+              "text": "Two structures on one lot, 17 units totalling 13,628 gross SF on a 17,616 SF parcel. The mix is 15 one bedroom units, one studio and one two bedroom, averaging 802 SF."
+            },
+            {
+              "id": "market-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "comps-sale:conclusions",
+                "comps-rent:conclusions"
+              ],
+              "framed_as": "broker market assessment",
+              "text": "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+            },
+            {
+              "id": "positioning-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "broker positioning opinion",
+              "text": "This is an income purchase. A full building at 99.3% of potential rent in a foothill submarket with four recent closings inside 1.2 miles offers a buyer predictability rather than upside."
+            },
+            {
+              "id": "profile-title-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "comps-sale:conclusions"
+              ],
+              "framed_as": "target buyer profile",
+              "text": "Local Income Buyer"
+            },
+            {
+              "id": "profile-title-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "target buyer profile",
+              "text": "1031 Exchange Buyer"
+            },
+            {
+              "id": "profile-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "target buyer profile",
+              "text": "An owner who already holds product in La Crescenta, Montrose or Glendale and wants a full building with no lease up risk and no deferred turn."
+            },
+            {
+              "id": "profile-2",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision"
+              ],
+              "framed_as": "target buyer profile",
+              "text": "An exchange buyer needing a clean, fully occupied asset that closes on schedule, where the diligence risk sits in the physical plant rather than in the rent roll."
+            },
+            {
+              "id": "rent-1",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "comps-rent:rent-hon-1",
+                "comps-rent:rent-hon-2"
+              ],
+              "framed_as": null,
+              "text": "Three competing La Crescenta and Montrose properties frame the rents, all within 1.5 miles. One bedrooms run $1,948 to $2,230 and two bedrooms run $2,595 to $2,800. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+            },
+            {
+              "id": "valuation-1",
+              "claim_type": "broker_opinion",
+              "support_refs": [
+                "pricing:decision",
+                "comps-sale:conclusions"
+              ],
+              "framed_as": "broker opinion of value",
+              "text": "$5,750,000, or $338,235 per unit and $422 per SF. That is a 5.73% cap on current net operating income of $329,284 and a 10.74 gross rent multiplier on in place rent of $535,260. Operating expenses run 36.58% of effective gross income. The recommended range is $5,550,000 to $5,950,000."
+            },
+            {
+              "id": "disclosure-1",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "financials:t12"
+              ],
+              "framed_as": null,
+              "text": "An on site manager is carried at $24,000, as California requires for a building of 16 units or more. Real estate taxes are reassessed to the recommended price."
+            },
+            {
+              "id": "disclosure-2",
+              "claim_type": "verified_fact",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "framed_as": null,
+              "text": "The rent control regime is not concluded in this report. The assessor record returns a postal city of Glendale for APN 5617-007-018 while the property is identified as La Crescenta. The City of Glendale ordinance and the Los Angeles County ordinance are different regimes, and the answer should be confirmed before it is relied on. The California Tenant Protection Act applies on building age under either."
+            }
+          ],
+          "exceptions": []
+        },
+        "media_selection": {
+          "deal_id": "shahbaznia-honolulu-3000",
+          "order": [
+            "honolulu-01",
+            "honolulu-24",
+            "honolulu-22"
+          ],
+          "hero": "honolulu-01",
+          "items": [
+            {
+              "id": "honolulu-01",
+              "sha256": "f19667af70986eff322042df94c1b776408e4f6ca90bf78dff52c6f7d068be1d",
+              "phash": "d3bd095b40c4e1e7",
+              "category": "exterior",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Two-story garden-style courtyard structure with the San Gabriel foothills behind, consistent with the assessor record for APN 5617-007-018: 17 units in two structures built 1958.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "honolulu-24",
+              "sha256": "41ca7a90e541a70dc9d85865910bcb3885475a72bd7cece39e548fe7369ecce7",
+              "phash": "eea19cda41947d0e",
+              "category": "exterior",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Courtyard elevation of the second structure on the parcel, showing the two-story walk-up form.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "honolulu-22",
+              "sha256": "90fc4cbb76ff442227b913ca97eb8e1f6c372621c6d088f0d103d1a7724a17fc",
+              "phash": "b2d59df8688cec60",
+              "category": "exterior",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Street-frontage landscaping and the gated parking approach on the same parcel.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            }
+          ],
+          "presentation": {
+            "no_photo_cover": null,
+            "hero_tall": null
+          },
+          "exceptions": [
+            {
+              "id": "MEDIA-provenance",
+              "domain": "media_selection",
+              "status": "resolved",
+              "materiality": "immaterial",
+              "value_effect": 0,
+              "approved": true,
+              "description": "Photo provenance is not fully established. Extracted from the seller's pictures.docx; the images carry a visible third-party MLS copyright watermark. Published for this SELLER-FACING BOV only, which is delivered to the owner of the property depicted. NOT cleared for buyer-facing marketing, laaa.com, Mailchimp or any public surface without clearing rights and obtaining higher-resolution originals. The watermark reads 'Pasadena-Foothills MLS' with a 2020 copyright date, so these images are roughly six years old and 640px wide. They are adequate for a seller-facing BOV and are NOT adequate for buyer-facing marketing.",
+              "approval_note": "Analyst call recorded 2026-09-02 and reported to the deal owner in chat."
+            }
+          ]
+        },
+        "regulatory_conclusions": {
+          "deal_id": "shahbaznia-honolulu-3000",
+          "conclusions": {
+            "rent_control": {
+              "conclusion": "NOT CONCLUDED, VERIFICATION REQUIRED BEFORE BUYER-FACING USE. Built 1958, old enough to be regulated under whichever regime governs. The assessor record and Google both return a postal city of Glendale for APN 5617-007-018, while the deal team identifies the location as La Crescenta. The City of Glendale runs its own rent stabilization ordinance and unincorporated Los Angeles County runs the County RSO, and those are different answers for a buyer. The California Tenant Protection Act (AB 1482) applies on age under either. ZIMAS cannot settle it because ZIMAS covers City of Los Angeles parcels only.",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "as_of_date": "2026-09-02",
+              "approved_exception_id": null
+            },
+            "zoning": {
+              "conclusion": "Los Angeles County parcel, APN 5617-007-018, assessor property use 'Apartment house (5+ units)', two structures on one lot. Zoning designation to be confirmed from the governing jurisdiction.",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "as_of_date": "2026-09-02",
+              "approved_exception_id": null
+            },
+            "development": {
+              "conclusion": "No development conclusion is drawn. The site is improved with 17 units across two structures totaling 13,628 SF on a 17,616 SF lot and is valued as an operating apartment building.",
+              "support_refs": [
+                "sources:assessor-1"
+              ],
+              "as_of_date": "2026-09-02",
+              "approved_exception_id": null
+            }
+          },
+          "exceptions": []
+        }
+      }
+    }
+  },
+  "approval_binding": {
+    "deal_id": "shahbaznia-portfolio",
+    "domains": {
+      "identity": "d808948e7eb5c58ff93cc648839627d96dcea0e76a8820b44bd1839400edc2d5",
+      "financial_inputs": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b",
+      "pricing_decision": "5fbf4020c58f6f4a60c2ecbd844540702a2939e69958aa42aba3c4025dcc95cb",
+      "sale_comps": "c98b2a0dcf43a4cd982b3b760c138267c521ceb4cfa14bdc5c8523bd817a39fa",
+      "rent_comps": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2",
+      "copy": "d4310f2a0d12b258630826d2522de5a37cbddd0dbcf58783ad774f1d762f0d1f",
+      "media_selection": "bdc59ed09bad9e91de304769677ab81600d1579f12750b39ddaf4ccade56f3dc",
+      "regulatory_conclusions": "aebaad476ba4746df8611977b480ecdad93795c04c46e0f97d94b5863d04d813"
+    },
+    "members": {
+      "shahbaznia-vanowen-16550": {
+        "identity": "551620fe17c6b8c1e9ab06040ce3cd917414111b22154eb2057778f81ff4d77e",
+        "financial_inputs": "37616713854f19238c86b53956a26121e20a8a62d68ef2dac13fbd17342cd805",
+        "pricing_decision": "a91f0523646fd59bb82a95a8d5e74323f8ca4d9eb4417804501cfb4be162f1bf",
+        "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
+        "rent_comps": "a5d5a0bf362d695d68d2e434cc8d7e2865e324146269645483b8b8accb2c9f4b",
+        "copy": "9b9e789ef06e247e8f12f420fae0cf1bcd9535318b8c6d173ed4590a5b037990",
+        "media_selection": "675d314e74b289891c287c42bf6cd7c2b26241c169c33b99ab77031450b162f9",
+        "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
+      },
+      "shahbaznia-honolulu-3000": {
+        "identity": "441b70a3fb36b8459694c5805dd4222097e4c79b2731bc40817535acb9638419",
+        "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
+        "pricing_decision": "57a9259ee19549634e54432751f5c26b4e25a38fea465cb3ecad972766f94f62",
+        "sale_comps": "a90fe6ae77373ab6c1277eda98801995f2896eeab605e522edfd9281e4b5dd0e",
+        "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
+        "copy": "2c53f992b331e1635bda816f86d9554cf0116d875f5727002efba9225511031c",
+        "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",
+        "regulatory_conclusions": "220f85881ba693876f3e1a607289a43d25fad7df1b09b1316f42a5d8fe09359e"
+      }
+    },
+    "presentation_hashes": {
+      "identity": "5c7a6c2cecfd1ac1d5affff93c1db705e8e5d63a216ff3ea76541b6ea3aa6e6f",
+      "financial_inputs": "8b41671866e7413456285ed0e276cc4066aeb8975ccc434e72852c45eaae3c84",
+      "pricing_decision": "40a0fa4f02b31f39e4f374c5018e1104e423273d20e44d29b5a722cd936802b0",
+      "sale_comps": "525dded9d911bcba2f03ef54029647ec15d205239e60306d0fb4540869c2a895",
+      "rent_comps": "223ea8925b250165c0ae6a28d46cd8c5d012ef0dda93894f8e5ce7c84fd3e5c8",
+      "copy": "3b2d3cd80c21d355aa77f42782c3f151502414625e12b60e0335e6ec1c6373b3",
+      "media_selection": "1fc8e300d1574324bea6f05d08a667171c0816123374a05491ef988b3f1835fc",
+      "regulatory_conclusions": "cc752caa3878fc117582c3ec2fa281d6441ecbd832a04042861d2e48dd379354"
+    }
+  },
+  "stats": {
+    "live": true,
+    "generated": "2026-09-03T20:28:34+00:00",
+    "geography": {
+      "states": 21,
+      "has_dc": true,
+      "label": "21 states and Washington, D.C.",
+      "outside_ca": 54,
+      "outside_ca_volume": 129156383
+    },
+    "sources": {
+      "track_record": "https://www.laaa.com/track-record",
+      "marketing": "https://www.laaa.com/; approved public reach claims"
+    },
+    "marketing": {
+      "source_mode": "public",
+      "active_email_subscribers": 23500,
+      "owner_investor_contacts": 36000,
+      "owners_buildings": 60000,
+      "buyer_calls": 100
+    },
+    "performance": {
+      "pricing_accuracy": 96.7,
+      "median_days_on_market": 34,
+      "source": "https://www.laaa.com/track-record"
+    },
+    "portfolio_track_record": {
+      "all": {
+        "count": 494,
+        "volume": 1556428899.5,
+        "units": 4719
+      },
+      "asset_class": {
+        "count": 342,
+        "volume": 1163835729.5,
+        "units": 4703
+      },
+      "asset_class_label": "Apartments",
+      "local": null,
+      "local_basis": {
+        "type": "not_applicable",
+        "label": "not applicable to a portfolio-wide summary"
+      }
+    }
+  }
+}

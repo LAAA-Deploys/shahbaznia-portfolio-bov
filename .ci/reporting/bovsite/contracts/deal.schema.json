@@ -1,0 +1,877 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://laaa.com/contracts/bov/deal-1.1.0.schema.json",
+  "title": "BOV deal identity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "document_type",
+    "deal_id",
+    "slug",
+    "seller_side",
+    "workspace_root",
+    "primary_address",
+    "addresses",
+    "address_provenance",
+    "apns",
+    "apn_provenance",
+    "unit_count",
+    "year_built",
+    "building_sf",
+    "lot",
+    "jurisdiction",
+    "rooftop_pin",
+    "portfolio_ref",
+    "public_names",
+    "workspace_layout",
+    "presentation",
+    "regulatory_conclusions",
+    "unit_sf"
+  ],
+  "properties": {
+    "schema_version": {
+      "description": "1.1.0 resolves team headshots from the canonical registry instead of an authored path. 1.0.0 is still accepted and still builds: the authored headshot field is ignored, so no workspace needs migrating.",
+      "enum": [
+        "1.0.0",
+        "1.1.0"
+      ]
+    },
+    "document_type": {
+      "const": "bov"
+    },
+    "deal_type": {
+      "enum": [
+        "multifamily",
+        "land"
+      ],
+      "default": "multifamily",
+      "description": "Absent means 'multifamily', so every spine written before this field existed stays valid. 'land' is a parcel carrying NO residential units: a redevelopment or owner-user site. It relaxes exactly three things, each of which is UNDEFINED rather than merely unknown on such a deal: unit_count may be 0, unit_sf may be empty, and comps-rent may carry no rows. Everything else is unchanged, both principals and the rooftop pin included. Never set it to dodge a figure that is merely missing on a real apartment building."
+    },
+    "deal_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,63}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "seller_side": {
+      "type": "boolean"
+    },
+    "workspace_root": {
+      "type": "string",
+      "pattern": "^(?![A-Za-z]:|/|\\\\)(?!.*(?:^|[\\\\/])\\.\\.(?:[\\\\/]|$)).+$"
+    },
+    "primary_address": {
+      "type": "string",
+      "minLength": 3
+    },
+    "addresses": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 3
+      }
+    },
+    "address_provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "apns": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 3
+      }
+    },
+    "apn_provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "unit_count": {
+      "$ref": "#/$defs/provenancedCount"
+    },
+    "year_built": {
+      "$ref": "#/$defs/provenancedInteger"
+    },
+    "renovated_year": {
+      "$ref": "#/$defs/provenancedInteger"
+    },
+    "building_sf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "provenance",
+        "sf_basis"
+      ],
+      "properties": {
+        "value": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "sf_basis": {
+          "enum": [
+            "verified_gross",
+            "verified_rentable",
+            "labelled_estimate",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "lot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "square_feet",
+        "provenance"
+      ],
+      "properties": {
+        "square_feet": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "acres": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      }
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 2
+    },
+    "rooftop_pin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "place_id",
+        "latitude",
+        "longitude",
+        "review_state",
+        "reviewed_by",
+        "reviewed_at"
+      ],
+      "properties": {
+        "place_id": {
+          "type": "string",
+          "minLength": 5
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "review_state": {
+          "const": "approved_rooftop"
+        },
+        "reviewed_by": {
+          "type": "string",
+          "minLength": 2
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "portfolio_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "public_names": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 2
+      }
+    },
+    "workspace_layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "site_repo",
+        "model_workbook",
+        "source_documents",
+        "media_root"
+      ],
+      "properties": {
+        "site_repo": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "model_workbook": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "source_documents": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "media_root": {
+          "$ref": "#/$defs/relativePath"
+        }
+      }
+    },
+    "presentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain",
+        "client",
+        "title",
+        "subtitle",
+        "month_year",
+        "short_name",
+        "city",
+        "submarket",
+        "parking",
+        "team"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "minLength": 3
+        },
+        "client": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "month_year": {
+          "type": "string",
+          "minLength": 3
+        },
+        "cover_label": {
+          "type": "string"
+        },
+        "short_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "city": {
+          "type": "string",
+          "minLength": 2
+        },
+        "submarket": {
+          "type": "string",
+          "minLength": 2
+        },
+        "parking": {
+          "type": "string"
+        },
+        "noindex": {
+          "type": "boolean",
+          "description": "Emit <meta name=\"robots\" content=\"noindex, nofollow\">. A seller-facing opinion of value sits on a public URL, and this is what keeps it out of search. Preferred over robots.txt, which only asks a crawler not to FETCH the page: a URL shared by email can still be indexed from that reference alone. Off by default, because a marketing site may want indexing."
+        },
+        "show_value_scenarios": {
+          "type": "boolean",
+          "description": "OPT-IN, off by default, exactly like show_buyout_model. Renders the Value Scenarios section."
+        },
+        "value_scenarios": {
+          "type": ["array", "null"],
+          "minItems": 2,
+          "description": "Two or more DISTINCT dispositions of the same property, each with its own buyer and its own value. Not a sensitivity ladder around one number: the four-rung Opinion of Value table already does that, and it stays the headline recommendation. This section is for a property that is genuinely several different assets depending on who buys it, which is why one is missing the point on a site like a church campus that an owner-user, an affordable developer, and a market-rate developer would each price on unrelated logic. Sits AFTER the valuation reveal because every figure in it is a price.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "buyer", "summary", "value_low", "value_high", "units", "basis", "metrics"],
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "buyer": {"type": "string", "minLength": 1, "description": "Who actually bids in this scenario. Different buyers are the whole reason the values differ."},
+              "summary": {"type": "string", "minLength": 1},
+              "value_low": {"type": "number", "exclusiveMinimum": 0},
+              "value_high": {"type": "number", "exclusiveMinimum": 0},
+              "units": {"type": ["integer", "null"], "minimum": 0, "description": "Unit yield under this scenario, or null where the scenario is not a housing play at all."},
+              "basis": {"type": "string", "minLength": 1, "description": "What the value rests on, named plainly: a comparable set, a land residual, a statutory pathway. A reader must be able to tell which scenarios are corroborated by sales evidence and which are not."},
+              "metrics": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["label", "value"],
+                  "properties": {"label": {"type": "string", "minLength": 1}, "value": {"type": "string", "minLength": 1}}
+                }
+              }
+            }
+          }
+        },
+        "buildable_units": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "description": "OPTIONAL, land deals only. The unit yield the valuation actually rests on, so the Opinion of Value can publish $/buildable unit, which is how a developer prices a site. It is an UNDERWRITTEN figure, not an entitlement: it must trace to the density chain recorded in regulatory_conclusions.development, and it must never be presented as approved units. Omit it rather than guess, and never set it on a deal that is being valued on its existing improvements."
+        },
+        "track_record_submarkets": {
+          "description": "OPTIONAL. Adjacent submarkets to count TOGETHER as this property's local track record, with the label to print. A single submarket is the default and needs nothing here; a property whose market is genuinely read as a cluster of adjacent submarkets declares that cluster explicitly rather than the engine guessing which names belong together. 'submarkets' must be Airtable Submarket values matched exactly, and 'label' is the client-facing phrase after the count, e.g. 'in the South Valley'. Every named submarket is aggregated, so the published count is auditable against the same closed-deal source as every other track-record figure.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "submarkets",
+            "label"
+          ],
+          "properties": {
+            "submarkets": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "string",
+                "minLength": 2
+              }
+            },
+            "label": {
+              "type": "string",
+              "minLength": 2
+            }
+          }
+        },
+        "team": {
+          "$ref": "#/$defs/team"
+        },
+        "maps": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "subject": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sale": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "rent": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "active": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "no_photo_cover": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hero_tall": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "show_active_listings": {
+          "type": "boolean"
+        },
+        "show_buyout_model": {
+          "type": "boolean",
+          "description": "Opt in to the Buyout Scenarios section. Off for every deal that does not set it, exactly like show_active_listings. Requires buyout_model."
+        },
+        "buyout_model": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Inputs for the interactive Buyout Scenarios section. Every figure is an author-set assumption the reader can move; the section computes and recommends nothing on its own.",
+          "required": [
+            "units_turned",
+            "intro",
+            "as_is_default",
+            "as_is_min",
+            "as_is_max",
+            "vacant_default",
+            "vacant_min",
+            "vacant_max",
+            "reno_default",
+            "reno_min",
+            "reno_max",
+            "margin_default",
+            "soft_costs",
+            "benchmarks",
+            "benchmark_note",
+            "method_note"
+          ],
+          "properties": {
+            "units_turned": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Units assumed delivered vacant and renovated."
+            },
+            "intro": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              },
+              "description": "Paragraphs above the model."
+            },
+            "as_is_default": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Opinion point of value, as is.",
+              "multipleOf": 5000
+            },
+            "as_is_min": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Low end of the as-is slider.",
+              "multipleOf": 5000
+            },
+            "as_is_max": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "High end of the as-is slider.",
+              "multipleOf": 5000
+            },
+            "vacant_default": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Opinion point of value, units delivered vacant.",
+              "multipleOf": 5000
+            },
+            "vacant_min": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Low end of the vacant slider.",
+              "multipleOf": 5000
+            },
+            "vacant_max": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "High end of the vacant slider.",
+              "multipleOf": 5000
+            },
+            "reno_default": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Renovation per unit, point assumption.",
+              "multipleOf": 500
+            },
+            "reno_min": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Low end of the renovation slider.",
+              "multipleOf": 500
+            },
+            "reno_max": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "High end of the renovation slider.",
+              "multipleOf": 500
+            },
+            "margin_default": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 40,
+              "description": "Required profit margin percent, 0-40.",
+              "multipleOf": 5
+            },
+            "soft_costs": {
+              "type": "array",
+              "minItems": 1,
+              "description": "Transaction costs held constant. The section sums them; never author the total.",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "amount"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "amount": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Cost per unit turned."
+                  }
+                }
+              }
+            },
+            "benchmarks": {
+              "type": "array",
+              "minItems": 1,
+              "description": "Published reference amounts the result is measured against, e.g. LAHD relocation. Never a figure the agent invented.",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "amount"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "amount": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Published benchmark amount."
+                  }
+                }
+              }
+            },
+            "benchmark_note": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Source and effective date of the benchmarks."
+            },
+            "method_note": {
+              "type": "string",
+              "minLength": 1,
+              "description": "What the arithmetic does and does not assume."
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "show_buyout_model": {
+                "const": true
+              }
+            },
+            "required": [
+              "show_buyout_model"
+            ]
+          },
+          "then": {
+            "required": [
+              "buyout_model"
+            ]
+          }
+        }
+      ]
+    },
+    "regulatory_conclusions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rent_control",
+        "zoning",
+        "development"
+      ],
+      "properties": {
+        "rent_control": {
+          "$ref": "#/$defs/conclusion"
+        },
+        "zoning": {
+          "$ref": "#/$defs/conclusion"
+        },
+        "development": {
+          "$ref": "#/$defs/conclusion"
+        }
+      }
+    },
+    "unit_sf": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "unit_type",
+          "value",
+          "sf_basis",
+          "approval_exception_id"
+        ],
+        "properties": {
+          "unit_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "exclusiveMinimum": 0
+          },
+          "sf_basis": {
+            "enum": [
+              "verified",
+              "labelled_estimate",
+              "omitted"
+            ]
+          },
+          "approval_exception_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "sf_basis": {
+                  "const": "omitted"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "value": {
+                  "type": "null"
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "allOf": [
+    {
+      "description": "The floors that only a land deal may drop. Holding them here rather than in the base definitions means a multifamily spine still cannot ship a zero unit count or an empty unit-SF table, so the relaxation cannot leak into the deal type it was never written for.",
+      "if": {
+        "properties": {
+          "deal_type": {
+            "const": "land"
+          }
+        },
+        "required": [
+          "deal_type"
+        ]
+      },
+      "then": true,
+      "else": {
+        "properties": {
+          "unit_count": {
+            "properties": {
+              "value": {
+                "minimum": 1
+              }
+            }
+          },
+          "unit_sf": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "relativePath": {
+      "type": "string",
+      "pattern": "^(?![A-Za-z]:|/|\\\\)(?!.*(?:^|[\\\\/])\\.\\.(?:[\\\\/]|$)).+$"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority",
+        "source_ids"
+      ],
+      "properties": {
+        "authority": {
+          "type": "string",
+          "minLength": 2
+        },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "conflict_exception_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "provenancedInteger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "provenance"
+      ],
+      "properties": {
+        "value": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      }
+    },
+    "provenancedCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A provenanced integer that may legitimately be zero. Separate from provenancedInteger because year_built and renovated_year share that definition and neither can ever be 0, so widening it in place would have silently accepted a nonsense build year.",
+      "required": [
+        "value",
+        "provenance"
+      ],
+      "properties": {
+        "value": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "conclusion",
+        "support_refs",
+        "as_of_date",
+        "approved_exception_id"
+      ],
+      "properties": {
+        "conclusion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "support_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "as_of_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "approved_exception_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "team": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "leads",
+        "grid"
+      ],
+      "properties": {
+        "leads": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/teamMember"
+          }
+        },
+        "grid": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/teamMember"
+          }
+        }
+      }
+    },
+    "teamMember": {
+      "type": "object",
+      "description": "A member's headshot is not authored: it is resolved from branding/headshots/canonical-headshots.json by the member's name at build time.",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "title",
+        "phone",
+        "tel",
+        "email",
+        "license",
+        "bio"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "tel": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "headshot": {
+          "type": "string",
+          "description": "LEGACY and IGNORED. Pre-1.1.0 spines authored a headshot path here. The build resolves each member's approved headshot from branding/headshots/canonical-headshots.json by name and overwrites this value, so an old spine still builds correctly and needs no migration. Never author it in a new spine."
+        },
+        "bio": {
+          "type": "string"
+        },
+        "role_kicker": {
+          "enum": [
+            "Principal"
+          ],
+          "description": "DERIVED, not authored. A LAAA principal carries 'Principal'; everyone else carries no kicker unless a business role is added to APPROVED_ROLE_KICKERS in blocks.py and checks/identity.py in a reviewed change. This was any nonempty string until 2026-08-20, which is how the filler label 'Assignment Team' shipped on the seller-facing 524 Lincoln page."
+        }
+      }
+    }
+  }
+}

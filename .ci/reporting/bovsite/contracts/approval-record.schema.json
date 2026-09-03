@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://laaa.com/contracts/bov/approval-record-1.0.0.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "scope", "deal_id", "portfolio_id", "package_version", "approved_at", "approver", "channel", "approval_note", "price", "domains", "artifacts", "exceptions", "versions", "legacy_snapshot", "legacy_label", "members"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"}, "scope": {"enum": ["deal", "portfolio"]}, "deal_id": {"type": "string"}, "portfolio_id": {"type": ["string", "null"]}, "package_version": {"type": "string", "pattern": "^v[1-9][0-9]*$"},
+    "approved_at": {"type": "string", "format": "date-time"}, "approver": {"type": "string", "minLength": 2}, "channel": {"type": "string", "minLength": 2}, "approval_note": {"type": "string", "minLength": 1},
+    "price": {"type": "object", "additionalProperties": false, "required": ["value", "range_low", "range_high", "confidence", "basis_ref"], "properties": {"value": {"type": "number", "exclusiveMinimum": 0}, "range_low": {"type": "number", "exclusiveMinimum": 0}, "range_high": {"type": "number", "exclusiveMinimum": 0}, "confidence": {"enum": ["high", "medium", "low"]}, "basis_ref": {"type": "string", "minLength": 1}}},
+    "domains": {"type": "object", "additionalProperties": false, "required": ["identity", "financial_inputs", "pricing_decision", "sale_comps", "rent_comps", "copy", "media_selection", "regulatory_conclusions"], "properties": {"identity": {"$ref": "#/$defs/domain"}, "financial_inputs": {"$ref": "#/$defs/domain"}, "pricing_decision": {"$ref": "#/$defs/domain"}, "sale_comps": {"$ref": "#/$defs/domain"}, "rent_comps": {"$ref": "#/$defs/domain"}, "copy": {"$ref": "#/$defs/domain"}, "media_selection": {"$ref": "#/$defs/domain"}, "regulatory_conclusions": {"$ref": "#/$defs/domain"}}},
+    "artifacts": {"type": "object", "additionalProperties": false, "properties": {"workbook": {"$ref": "#/$defs/artifact"}, "copy_docx": {"$ref": "#/$defs/artifact"}, "contact_sheet": {"$ref": "#/$defs/artifact"}, "xlsm_copy": {"$ref": "#/$defs/artifact"}, "questions": {"$ref": "#/$defs/artifact"}, "models": {"type": "array", "items": {"$ref": "#/$defs/artifact"}}, "images": {"type": "array", "items": {"$ref": "#/$defs/artifact"}}}},
+    "exceptions": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "description", "domain", "approved"], "properties": {"id": {"type": "string"}, "description": {"type": "string"}, "domain": {"enum": ["identity", "financial_inputs", "pricing_decision", "sale_comps", "rent_comps", "copy", "media_selection", "regulatory_conclusions"]}, "approved": {"type": "boolean"}}}},
+    "versions": {"type": "object", "additionalProperties": false, "required": ["generator_git_sha", "comp_analysis", "bov_workflow"], "properties": {"generator_git_sha": {"type": "string", "pattern": "^[a-f0-9]{40}$"}, "comp_analysis": {"type": "string"}, "bov_workflow": {"type": "string"}}},
+    "legacy_snapshot": {"type": "boolean"}, "legacy_label": {"type": ["string", "null"]}, "members": {"oneOf": [{"type": "null"}, {"type": "object", "additionalProperties": {"$ref": "#/$defs/memberDomains"}}]}
+  },
+  "allOf": [
+    {"if": {"properties": {"scope": {"const": "deal"}}}, "then": {"properties": {"portfolio_id": {"type": "null"}, "members": {"type": "null"}, "artifacts": {"required": ["workbook", "copy_docx", "contact_sheet", "xlsm_copy", "questions", "images"]}}}},
+    {"if": {"properties": {"scope": {"const": "portfolio"}}}, "then": {"properties": {"portfolio_id": {"type": "string", "minLength": 1}, "members": {"type": "object", "minProperties": 2}, "artifacts": {"required": ["workbook", "copy_docx", "contact_sheet", "questions", "models", "images"]}, "legacy_snapshot": {"const": false}, "legacy_label": {"type": "null"}}}},
+    {"if": {"properties": {"legacy_snapshot": {"const": true}}}, "then": {"properties": {"legacy_label": {"const": "NOT A RETROACTIVE APPROVAL"}}}, "else": {"properties": {"legacy_label": {"type": "null"}}}}
+  ],
+  "$defs": {
+    "domain": {"type": "object", "additionalProperties": false, "required": ["content_sha256"], "properties": {"content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}},
+    "artifact": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}},
+    "memberDomains": {"type": "object", "additionalProperties": false, "required": ["identity", "financial_inputs", "pricing_decision", "sale_comps", "rent_comps", "copy", "media_selection", "regulatory_conclusions"], "properties": {"identity": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "financial_inputs": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "pricing_decision": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "sale_comps": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "rent_comps": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "copy": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "media_selection": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "regulatory_conclusions": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}
+  }
+}

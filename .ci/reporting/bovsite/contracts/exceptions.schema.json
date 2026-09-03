@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://laaa.com/contracts/bov/exceptions-1.0.0.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "deal_id", "items"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"}, "deal_id": {"type": "string"},
+    "items": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "description", "domain", "status", "materiality", "value_effect", "approved", "approval_note"], "properties": {"id": {"type": "string"}, "description": {"type": "string"}, "domain": {"enum": ["identity", "financial_inputs", "pricing_decision", "sale_comps", "rent_comps", "copy", "media_selection", "regulatory_conclusions"]}, "status": {"enum": ["open", "escalated", "resolved", "not_applicable"]}, "materiality": {"enum": ["immaterial", "material", "identity", "regulatory", "no_safe_hero"]}, "value_effect": {"type": ["number", "null"]}, "approved": {"type": "boolean"}, "approval_note": {"type": ["string", "null"]}}}}
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "portfolio",
+  "deal_id": "shahbaznia-portfolio",
+  "portfolio_id": "shahbaznia-portfolio",
+  "package_version": "v3",
+  "approved_at": "2026-09-03T20:28:16.724573+00:00",
+  "approver": "Morgan Wetmore",
+  "price": {
+    "value": 20500000
+  },
+  "approved_exception_ids": [
+    "shahbaznia-honolulu-3000:MEDIA-provenance",
+    "shahbaznia-honolulu-3000:RECON-honolulu-gsr",
+    "shahbaznia-honolulu-3000:RULING-onsite-manager",
+    "shahbaznia-honolulu-3000:TAX-rate-derivation",
+    "shahbaznia-vanowen-16550:MEDIA-provenance",
+    "shahbaznia-vanowen-16550:RECON-vanowen-gsr",
+    "shahbaznia-vanowen-16550:RECON-vanowen-opex-ratio",
+    "shahbaznia-vanowen-16550:RULING-onsite-manager",
+    "shahbaznia-vanowen-16550:RULING-vacancy-credit-355",
+    "shahbaznia-vanowen-16550:SOURCE-rent-roll-selection",
+    "shahbaznia-vanowen-16550:TAX-rate-derivation"
+  ],
+  "domains": {
+    "copy": {
+      "content_sha256": "d4310f2a0d12b258630826d2522de5a37cbddd0dbcf58783ad774f1d762f0d1f"
+    },
+    "financial_inputs": {
+      "content_sha256": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b"
+    },
+    "identity": {
+      "content_sha256": "d808948e7eb5c58ff93cc648839627d96dcea0e76a8820b44bd1839400edc2d5"
+    },
+    "media_selection": {
+      "content_sha256": "bdc59ed09bad9e91de304769677ab81600d1579f12750b39ddaf4ccade56f3dc"
+    },
+    "pricing_decision": {
+      "content_sha256": "5fbf4020c58f6f4a60c2ecbd844540702a2939e69958aa42aba3c4025dcc95cb"
+    },
+    "regulatory_conclusions": {
+      "content_sha256": "aebaad476ba4746df8611977b480ecdad93795c04c46e0f97d94b5863d04d813"
+    },
+    "rent_comps": {
+      "content_sha256": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2"
+    },
+    "sale_comps": {
+      "content_sha256": "c98b2a0dcf43a4cd982b3b760c138267c521ceb4cfa14bdc5c8523bd817a39fa"
+    }
+  },
+  "legacy_snapshot": false,
+  "legacy_label": null,
+  "members": {
+    "shahbaznia-vanowen-16550": {
+      "identity": "551620fe17c6b8c1e9ab06040ce3cd917414111b22154eb2057778f81ff4d77e",
+      "financial_inputs": "37616713854f19238c86b53956a26121e20a8a62d68ef2dac13fbd17342cd805",
+      "pricing_decision": "a91f0523646fd59bb82a95a8d5e74323f8ca4d9eb4417804501cfb4be162f1bf",
+      "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
+      "rent_comps": "a5d5a0bf362d695d68d2e434cc8d7e2865e324146269645483b8b8accb2c9f4b",
+      "copy": "9b9e789ef06e247e8f12f420fae0cf1bcd9535318b8c6d173ed4590a5b037990",
+      "media_selection": "675d314e74b289891c287c42bf6cd7c2b26241c169c33b99ab77031450b162f9",
+      "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
+    },
+    "shahbaznia-honolulu-3000": {
+      "identity": "441b70a3fb36b8459694c5805dd4222097e4c79b2731bc40817535acb9638419",
+      "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
+      "pricing_decision": "57a9259ee19549634e54432751f5c26b4e25a38fea465cb3ecad972766f94f62",
+      "sale_comps": "a90fe6ae77373ab6c1277eda98801995f2896eeab605e522edfd9281e4b5dd0e",
+      "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
+      "copy": "2c53f992b331e1635bda816f86d9554cf0116d875f5727002efba9225511031c",
+      "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",
+      "regulatory_conclusions": "220f85881ba693876f3e1a607289a43d25fad7df1b09b1316f42a5d8fe09359e"
+    }
+  }
+}

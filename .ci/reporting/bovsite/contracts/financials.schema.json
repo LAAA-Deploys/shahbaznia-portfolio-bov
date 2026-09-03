@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://laaa.com/contracts/bov/financials-1.0.0.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "deal_id", "currency", "tolerances", "rent_roll", "t12", "reconciliations", "exceptions"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"}, "deal_id": {"type": "string"}, "currency": {"const": "USD"},
+    "decision_ledger": {"description": "The Expense Decision Ledger, structured. Every income and expense line that appears in the operating statement carries an entry, so the basis is authored once during underwriting and derived at BOV time rather than retyped.", "type": "array", "items": {"$ref": "#/$defs/decisionLedgerEntry"}},
+    "tolerances": {"type": "object", "additionalProperties": false, "required": ["printed_total", "material_category", "gsr"], "properties": {"printed_total": {"type": "number", "minimum": 0}, "material_category": {"type": "number", "minimum": 0}, "gsr": {"type": "number", "minimum": 0}}},
+    "rent_roll": {"type": "object", "additionalProperties": false, "required": ["printed_total_annual", "rows"], "properties": {"printed_total_annual": {"type": "number", "minimum": 0}, "rows": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/rentRow"}}}},
+    "t12": {"type": "object", "additionalProperties": false, "required": ["months", "rows", "printed_totals"], "properties": {"months": {"type": "array", "minItems": 12, "maxItems": 12, "uniqueItems": true, "items": {"type": "string"}}, "rows": {"description": "Empty ONLY on a land deal that carries no operating statement at all. checks/financials.py then requires the GSR reconciliation to record a zero T12 basis and no adjustments, and it applies every material-category rule the moment a single row appears: on such a deal you may publish NO statement or a complete one, never a partial one.", "type": "array", "minItems": 0, "items": {"$ref": "#/$defs/t12Row"}}, "printed_totals": {"description": "Totals of the NORMALIZED statement as classified in rows[], not the totals printed on the seller's document. checks/financials.py sums the parsed rows and reconciles against these, so a figure copied off the source document fails whenever normalization reclassified any line.", "type": "object", "additionalProperties": false, "required": ["income", "expenses", "noi"], "properties": {"income": {"type": "number"}, "expenses": {"type": "number"}, "noi": {"type": "number"}}}}},
+    "reconciliations": {
+      "type": "object", "additionalProperties": false,
+      "required": ["gross_scheduled_rent"],
+      "properties": {
+        "gross_scheduled_rent": {
+          "type": "object", "additionalProperties": false,
+          "required": ["rent_roll_annual", "t12_annual", "adjustments"],
+          "properties": {
+            "rent_roll_annual": {"type": "number"},
+            "t12_annual": {"type": "number"},
+            "adjustments": {
+              "type": "array",
+              "items": {
+                "type": "object", "additionalProperties": false,
+                "required": ["description", "amount", "support_ref"],
+                "properties": {
+                  "description": {"type": "string"},
+                  "amount": {"type": "number"},
+                  "support_ref": {"type": "string"}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "presentation": {"$ref": "#/$defs/presentation"},
+    "exceptions": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+  },
+  "$defs": {
+    "decisionLedgerEntry": {
+      "description": "One line of the Expense Decision Ledger from underwriting_internal.md, carried as STRUCTURED data so the basis is written ONCE, by the analyst, at the moment the underwriting decision is made, and never retyped at BOV time. Retyping is what put a false provenance on a client page: a hand-authored note claimed a line included a registration fee it did not. 'line' joins by EXACT label to an expense line, or is one of the reserved income keys. 'client_basis' is the ONLY field that reaches the seller. 'reason', 'confidence' and 'glen_approval_needed' are internal deliberation and must never appear in a payload.",
+      "type": "object", "additionalProperties": false,
+      "required": ["line", "selected_basis", "client_basis"],
+      "properties": {
+        "line": {"type": "string", "minLength": 1},
+        "selected_basis": {"enum": ["seller_actual", "normalized_actual", "required_buyer_normalization", "benchmark_gap_fill", "excluded", "open_confirmation", "sensitivity_only"]},
+        "client_basis": {"description": "The short, client-facing sentence stating how this number was set: per unit, per square foot, an estimate, or the seller's T12 or P&L. State the number and its source, never the internal rung that produced it: no 'benchmark', 'Tier N', 'doctrine', 'protocol', or Selected Basis enum name (underwriting_internal.md, Client Basis rule 5). schema.py enforces 'benchmark' and 'Tier N' at build time; the rest of the ban is authoring guidance, not yet an automated gate. Written during underwriting, published verbatim.", "type": "string", "minLength": 3},
+        "reason": {"description": "INTERNAL defensibility rationale. Never published.", "type": ["string", "null"]},
+        "confidence": {"description": "INTERNAL. Never published; a confidence level must never reach a client-facing BOV.", "enum": ["high", "medium", "low", null]},
+        "glen_approval_needed": {"type": ["boolean", "null"]}
+      }
+    },
+    "rentRow": {"type": "object", "additionalProperties": false, "required": ["id", "source_row_ref", "classification", "label", "units", "current_monthly_rent", "scheduled_monthly_rent", "annual_scheduled_rent", "classification_reason", "exception_id"], "properties": {"id": {"type": "string"}, "source_row_ref": {"type": "string"}, "classification": {"enum": ["parsed", "excluded", "nonfinancial"]}, "label": {"type": "string"}, "units": {"type": ["integer", "null"]}, "current_monthly_rent": {"type": ["number", "null"]}, "scheduled_monthly_rent": {"type": ["number", "null"]}, "annual_scheduled_rent": {"type": ["number", "null"]}, "classification_reason": {"type": ["string", "null"]}, "exception_id": {"type": ["string", "null"]}}},
+    "t12Row": {"type": "object", "additionalProperties": false, "required": ["id", "source_row_ref", "classification", "category", "label", "monthly", "annual", "printed_annual", "material", "classification_reason", "exception_id"], "properties": {"id": {"type": "string"}, "source_row_ref": {"type": "string"}, "classification": {"enum": ["parsed", "excluded", "nonfinancial"]}, "category": {"description": "Normalized line category. The vocabulary is open, but checks/financials.py requires at least one row in each of taxes, insurance, utilities and repairs_maintenance, plus at least one in payroll or manager, and every such row must carry material=true. vacancy and credit_loss are always their own lines even when zero. Spell these exactly; a synonym such as property_taxes leaves the required category missing.", "type": "string"}, "label": {"type": "string"}, "basis": {"enum": ["t12_actuals", "annual_estimate"]}, "monthly": {"type": "array", "minItems": 0, "maxItems": 12, "items": {"type": ["number", "null"]}}, "annual": {"type": ["number", "null"]}, "printed_annual": {"type": ["number", "null"]}, "material": {"type": "boolean"}, "classification_reason": {"type": ["string", "null"]}, "exception_id": {"type": ["string", "null"]}}},
+    "presentation": {
+      "description": "Client-facing figures. UNITS AND SIGNS ARE DECLARED HERE, AND ONLY HERE. Every percent-shaped field states which of the two forms it carries and is bounded so the other form is refused rather than silently rendered: presentation percents are PERCENT-AS-PERCENT (5.85 means 5.85%), while comp and pricing cap rates are fractions in their own contracts. Cash outflows are NEGATIVE and cash benefits are POSITIVE. On 2026-08-07 a spine carrying a fraction-shaped 0.0585 rendered 'Interest Rate 0.06%' and a positive loan payment produced a Pre-Tax Cash Flow $248,260 larger than NOI on a leveraged asset. Both were schema-valid.",
+      "type": "object", "additionalProperties": false,
+      "required": ["unit_mix", "expense_notes", "tax_rate", "financing_structure"],
+      "properties": {
+        "unit_mix": {"description": "Empty ONLY on a land deal, which has no units to mix. The floor is not lost: checks/financials.py requires the mix to total deal.unit_count, so a multifamily spine with an empty mix fails on a sum of 0 against its real unit count, and a land deal with a mix present fails the other way.", "type": "array", "minItems": 0, "items": {"type": "object", "additionalProperties": false, "required": ["count", "type", "sf", "rent_current", "monthly_current", "rent_market", "monthly_market"], "properties": {"count": {"type": "integer", "minimum": 1}, "type": {"type": "string"}, "sf": {"type": ["number", "null"]}, "rent_current": {"type": "number"}, "monthly_current": {"type": "number"}, "rent_market": {"type": "number"}, "monthly_market": {"type": "number"}}}},
+        "expense_notes": {"description": "Operating-statement note registry, keyed by marker. Expense AND income notes share this one registry so the page renders a single numbered list under the whole statement. The note text for an income line comes from that line's decision_ledger entry, not from this object: the build reads the ledger and assigns the next marker here. Each value is the [label, text] pair.", "type": "object", "additionalProperties": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string"}}},
+        "expense_lines": {"type": "array", "items": {"type": "array", "minItems": 4, "maxItems": 4}},
+        "tax_rate": {
+          "description": "Reassessed property tax rate as PERCENT-AS-PERCENT: 1.25 means 1.25%. A fraction such as 0.0125 would print as 0.01%.",
+          "type": "number", "minimum": 0, "maximum": 25
+        },
+        "tax_anchor": {
+          "description": "Declares the tax basis INSIDE the approved NOI so a published cap is a checked reassessment rather than a claim. ad_valorem is the value-based annual dollars and must equal pricing.decision.exact_price * tax_rate within $1.00. flat_assessments is the direct-assessment annual dollars that do not scale with price. expense_line names the EXACT label of the expense line carrying the tax; each of that line's current and pro forma columns must equal ad_valorem + flat_assessments within $1.00, an EQUALITY, because a one-sided 'large enough' comparison passes a $35,000 line holding an old $30,000 ad valorem plus a real $5,000 flat assessment while the reassessed line should be $36,250, leaving the NOI $1,250 high and the cap unreassessed. Required whenever the deal publishes a cap (pricing.decision.cap_rate non-null); a withheld-cap deal claims no reassessment anywhere and may omit it entirely.",
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["ad_valorem", "flat_assessments", "expense_line"],
+          "properties": {
+            "ad_valorem": {"type": "number", "minimum": 0},
+            "flat_assessments": {"type": "number", "minimum": 0},
+            "expense_line": {"type": "string", "minLength": 1}
+          }
+        },
+        "financing_structure": {
+          "description": "How the buyer is assumed to acquire the asset. This is a DEAL INPUT, not a template slot. 'all_cash' is a complete, valid answer and forbids a financing block entirely: the engine must never make inventing loan terms the only way to satisfy a required section. Before 2026-08-08 the payload hard-raised without financing, loan_payments and principal_reduction, so deleting an unsourced financing block was impossible and inventing one was easy.",
+          "enum": ["all_cash", "new_financing", "assumed", "seller_financed"]
+        },
+        "financing": {"$ref": "#/$defs/financing"},
+        "loan_payments": {
+          "description": "Annual debt service, current and pro forma, as a NEGATIVE cash outflow in the M&M convention. payload.build_payload computes pre-tax cash flow as noi + loan_payments[i], so a positive value silently ADDS the debt service to cash flow.",
+          "type": "array", "minItems": 2, "maxItems": 2,
+          "items": {"type": "number", "maximum": 0}
+        },
+        "principal_reduction": {
+          "description": "Annual principal paydown, current and pro forma, as a POSITIVE benefit. Added to pre-tax cash flow to reach total return.",
+          "type": "array", "minItems": 2, "maxItems": 2,
+          "items": {"type": "number", "minimum": 0}
+        }
+      },
+      "allOf": [
+        {
+          "if": {"required": ["financing_structure"], "properties": {"financing_structure": {"const": "all_cash"}}},
+          "then": {
+            "description": "An all-cash BOV carries no financing block and no debt lines at all.",
+            "allOf": [
+              {"not": {"required": ["financing"]}},
+              {"not": {"required": ["loan_payments"]}},
+              {"not": {"required": ["principal_reduction"]}}
+            ]
+          },
+          "else": {"required": ["financing", "loan_payments", "principal_reduction"]}
+        }
+      ]
+    },
+    "financing": {
+      "description": "Proposed financing. Every figure here reaches a client-facing page, so the block declares its BASIS the same way deal.unit_sf declares sf_basis, and an illustrative figure is labelled on the page rather than presented as a quote.",
+      "type": "object", "additionalProperties": false,
+      "required": ["loan_amount", "rate", "amortization", "dcr", "basis", "support_ref", "approval_exception_id"],
+      "properties": {
+        "loan_amount": {"type": "number", "exclusiveMinimum": 0},
+        "rate": {
+          "description": "Annual interest rate as PERCENT-AS-PERCENT: 5.85 means 5.85%. The bounds are a units check, not a market view: a commercial mortgage below 1% or above 20% is a fraction or a basis-point value entered in the wrong form.",
+          "type": "number", "minimum": 1, "maximum": 20
+        },
+        "amortization": {
+          "description": "Amortization term in YEARS. 0 means interest only and renders as 'Interest Only', never '0 years'.",
+          "type": "number", "minimum": 0, "maximum": 40
+        },
+        "dcr": {
+          "description": "Debt coverage ratio, NOI divided by annual debt service. This is an identity, not an estimate: checks/financials.py reconciles it against the approved NOI and loan_payments[0] and refuses a stated value that the page's own arithmetic contradicts.",
+          "type": "number", "exclusiveMinimum": 0, "maximum": 10
+        },
+        "basis": {
+          "description": "verified: quoted or committed terms from a named lender source. derived: computed from a source figure. illustrative_assumption: a market-typical illustration, which MUST be labelled as such on the page.",
+          "enum": ["verified", "derived", "illustrative_assumption"]
+        },
+        "support_ref": {
+          "description": "Structured reference to the source that supports these terms, e.g. sources:lender-quote-1. Internal; never rendered.",
+          "type": ["string", "null"], "minLength": 1
+        },
+        "approval_exception_id": {
+          "description": "Exception id recording Glen's approval when no source exists. Internal; never rendered.",
+          "type": ["string", "null"], "minLength": 1
+        }
+      },
+      "anyOf": [
+        {"required": ["support_ref"], "properties": {"support_ref": {"type": "string", "minLength": 1}}},
+        {"required": ["approval_exception_id"], "properties": {"approval_exception_id": {"type": "string", "minLength": 1}}}
+      ]
+    }
+  }
+}

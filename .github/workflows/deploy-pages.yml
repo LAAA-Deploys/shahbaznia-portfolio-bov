@@ -1,0 +1,233 @@
+name: Deploy website
+
+# Copied into every deal repo by build_bov_site.py, along with the gate and the
+# audits it runs. The build overwrites them on every run, so a deal repo cannot
+# drift onto an old copy of the checks.
+#
+# Deployment is manual after either partner approves the reviewed site. The
+# workflow runs the full deterministic gate immediately before publishing, so
+# approval never bypasses verification and an ordinary push cannot publish by
+# accident. The BROWSER audits do not run here; they run once on the shared
+# generator in LAAA-AI-Prompts (.github/workflows/bov-generator-audit.yml).
+# See the note above upload-pages-artifact for why.
+
+on:
+  push:
+    # Default branch only. An unfiltered `push:` fired this workflow a second
+    # time for the same commit the moment a branch was pushed alongside its PR,
+    # so every release candidate burned two validation runs and the run list
+    # showed double green for one SHA. Pull requests keep their own trigger.
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      approved_sha:
+        description: Exact site commit the approving partner approved for release
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  # Lets the validate job ask whether the approved SHA already has a green
+  # validation run, which is what the freshness exemption below is bound to.
+  actions: read
+
+# One global `pages` group used to hold BOTH the push validations and the
+# release dispatches, so a dispatch queued behind a run that validates and
+# never publishes. On 2026-08-19 that put a release 21 minutes behind a
+# validation run and it had to be cancelled by hand twice to get the deploy
+# out. Splitting by event removes the wait entirely:
+#
+#   push       supersedes itself. A newer push makes an older validation
+#              pointless, so cancel it rather than making anyone wait for it.
+#   dispatch   never cancelled, and never queues behind a validation. Two
+#              dispatches still serialize against each other, which is the one
+#              case that genuinely must not race: concurrent Pages deploys.
+concurrency:
+  group: pages-${{ github.event_name }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Bind dispatch to the approved SHA
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          APPROVED_SHA: ${{ inputs.approved_sha }}
+          ACTUAL_SHA: ${{ github.sha }}
+        run: |
+          if [ "$ACTUAL_SHA" != "$APPROVED_SHA" ]; then
+            echo "FAIL: dispatch resolved $ACTUAL_SHA, but the approved SHA is $APPROVED_SHA"
+            exit 1
+          fi
+
+      # The approval and media gates ship with their writers and pinned runtime
+      # in the same root-repair release. They run on every push/PR/dispatch;
+      # there is no event path that can publish without them.
+      - name: Install pinned BOV gate dependencies
+        run: python -m pip install -r .ci/requirements.txt
+
+      - name: BOV content approval gate
+        env:
+          PYTHONPATH: .ci
+        run: python .ci/check_bov_approval.py --site .
+
+      - name: BOV media publication gate
+        env:
+          PYTHONPATH: .ci
+        run: python -m reporting.bovsite.checks.media --site .
+
+      # Validated-SHA freshness exemption (Glen, 2026-08-07). A release
+      # dispatch republishes bytes an approving partner already approved;
+      # forcing a rebuild
+      # because the figures aged past the window would CHANGE those bytes and
+      # invalidate the approval (that trap cost a duplicate approval on
+      # 2026-08-07). So: on workflow_dispatch only, if this exact SHA already
+      # has a successful validate run recorded, export BOV_VALIDATED_SHA and
+      # the gate downgrades the figure-age failure to a warning. Every other
+      # rule still blocks. The claim is queried from the Actions API, never
+      # asserted by the operator.
+      - name: Check for a prior green validation of the approved SHA
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          APPROVED_SHA: ${{ inputs.approved_sha }}
+        run: |
+          prior=$(gh api "repos/${{ github.repository }}/actions/runs?head_sha=$APPROVED_SHA&status=success" \
+            --jq '[.workflow_runs[] | select(.path == ".github/workflows/deploy-pages.yml")] | length' || echo 0)
+          echo "prior green validation runs for $APPROVED_SHA: $prior"
+          if [ "$prior" -gt 0 ]; then
+            echo "BOV_VALIDATED_SHA=$APPROVED_SHA" >> "$GITHUB_ENV"
+          fi
+
+      # The design lock, the framework ban, price discipline, section order,
+      # broken images, certified map-render digests, double-escaped entities,
+      # and whether the published figures came from a live pull. Every rule is
+      # an actual failure that reached a page; see the docstring in the script.
+      - name: BOV site gate
+        run: python .ci/check_bov_site.py .
+
+      # Deploy an explicit allowlist, never the repo. This workflow used to
+      # upload `path: .`, which served make_data.py, bov-site.json and the raw
+      # research dump at guessable public URLs. Fail-closed: a new build script
+      # or data dump is excluded unless someone deliberately adds it here.
+      - name: Stage the site
+        run: |
+          rm -rf _site && mkdir _site
+          fail=0
+          for f in index.html CNAME .nojekyll og.jpg; do
+            if [ -f "$f" ]; then cp "$f" _site/; else echo "FAIL: missing $f"; fail=1; fi
+          done
+          [ -f robots.txt ] && cp robots.txt _site/
+          # Copy only the generated page for each manifest-declared route.
+          # Source documents or scratch files beside it must never be published.
+          python - <<'PY'
+          import json
+          import re
+          import shutil
+          from html import unescape
+          from pathlib import Path
+
+          data = json.loads(Path("bov-site.json").read_text(encoding="utf-8"))
+          properties = data.get("properties", [])
+          if len(properties) > 1:
+              for prop in properties:
+                  slug = prop.get("slug", "")
+                  if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+                      raise SystemExit(f"FAIL: unsafe property route slug: {slug!r}")
+                  source = Path(slug) / "index.html"
+                  if not source.is_file():
+                      raise SystemExit(f"FAIL: missing manifest route page: {source}")
+                  destination = Path("_site") / slug
+                  destination.mkdir(parents=True, exist_ok=True)
+                  shutil.copy2(source, destination / "index.html")
+
+          # Derive the public image allowlist from the generated pages. This
+          # includes HTML attributes, inline hero styles, and lightbox data.
+          referenced_images = set()
+          image_patterns = (
+              re.compile(r"'(?:\.\./)*(images/[^']+)'"),
+              re.compile(r'"(?:\.\./)*(images/[^"]+)"'),
+          )
+          for page in Path("_site").rglob("*.html"):
+              markup = page.read_text(encoding="utf-8")
+              for pattern in image_patterns:
+                  referenced_images.update(unescape(path) for path in pattern.findall(markup))
+          if not referenced_images:
+              raise SystemExit("FAIL: generated pages reference no image assets")
+          images_root = Path("images").resolve()
+          allowed_suffixes = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".avif"}
+          for relative in sorted(referenced_images):
+              source = Path(relative)
+              try:
+                  source.resolve().relative_to(images_root)
+              except ValueError:
+                  raise SystemExit(f"FAIL: referenced image escapes images/: {source}")
+              if source.suffix.lower() not in allowed_suffixes:
+                  raise SystemExit(f"FAIL: referenced asset is not an approved image type: {source}")
+              if not source.is_file():
+                  raise SystemExit(f"FAIL: missing referenced image: {source}")
+              destination = Path("_site") / relative
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, destination)
+          PY
+          if find _site -type f \( -name '*.py' -o -name '*.mjs' -o -name '*.json' \
+                                   -o -name '*.md' -o -name '*.yml' \) | grep -q .; then
+            echo "FAIL: build source or data reached the deploy artifact:"
+            find _site -type f \( -name '*.py' -o -name '*.mjs' -o -name '*.json' \
+                                  -o -name '*.md' -o -name '*.yml' \)
+            fail=1
+          fi
+          echo "staged $(find _site -type f | wc -l) files"
+          exit $fail
+
+      # The browser audit suite used to run HERE, and it installed npm,
+      # playwright and Chromium with system deps on every single release. That
+      # was minutes of wall clock on the critical path of publishing a deal, and
+      # a deal repo only ever receives DATA, so the suite re-tested the shared
+      # template once per deal. Removing it was on the 2026-08-18 retrospective's
+      # must-fix list (Glen, 2026-08-19).
+      #
+      # Coverage moved to where it is actionable and is verifiable there:
+      # LAAA-AI-Prompts runs .github/workflows/bov-generator-audit.yml on any
+      # change to reporting/bovsite/** or the vendored copy, which builds the
+      # synthetic fixture and runs all three audits against it. That workflow
+      # did NOT exist when this comment first claimed it did, so between
+      # 2026-08-19 and 2026-08-20 the audits ran nowhere at all. They are not
+      # all cosmetic: audit_tables' NO_SUMMARY, SUMMARY_GAP and SUMMED_RATE are
+      # the "every data table ends with a real summary" rule, and
+      # audit_pages.assertRendered fails a silently-empty render.
+      #
+      # The operator still reviews the changed page at 390px and 1440px locally
+      # before release, which is what catches a DEAL's own content.
+      #
+      # What stays here is every deterministic, fact-class check: approval
+      # binding, media publication, the site gate, artifact scope, and secrets.
+      # Those are the ones that block, they take seconds, and they need no
+      # browser.
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name == 'workflow_dispatch'
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v6
+      - id: deployment
+        uses: actions/deploy-pages@v5

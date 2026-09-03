@@ -1,0 +1,7 @@
+ImageHash==4.3.2
+jsonschema==4.26.0
+openpyxl==3.1.5
+Pillow==12.2.0
+python-docx==1.2.0
+XlsxWriter==3.2.3
+pywin32==311; sys_platform == "win32"
