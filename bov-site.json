@@ -132,7 +132,70 @@
         "title": "Dedicated digital presentation",
         "copy": "A property-specific offering site, targeted email, and syndication to the platforms buyers in this market actually search."
       }
-    ]
+    ],
+    "firm_ranking": {
+      "charts": [
+        {
+          "title": "Multifamily Investment Sales, Brokerage Company Ranking",
+          "subtitle": "Closed apartment transactions, trailing twelve months through Q1 2026",
+          "rows": [
+            {
+              "label": "Marcus & Millichap",
+              "value": 1415,
+              "highlight": true
+            },
+            {
+              "label": "CBRE",
+              "value": 778
+            },
+            {
+              "label": "Keller Williams",
+              "value": 455
+            },
+            {
+              "label": "Berkadia",
+              "value": 398
+            },
+            {
+              "label": "Newmark",
+              "value": 352
+            },
+            {
+              "label": "Compass",
+              "value": 334
+            },
+            {
+              "label": "JLL",
+              "value": 312
+            },
+            {
+              "label": "Colliers International",
+              "value": 285
+            },
+            {
+              "label": "Cushman & Wakefield",
+              "value": 278
+            },
+            {
+              "label": "RE/MAX",
+              "value": 260
+            }
+          ],
+          "source": "Marcus & Millichap Research Services, CoStar Group, Real Capital Analytics, NICMap. \u00a9 2026 Marcus & Millichap.",
+          "footnote": "Trailing twelve months through 1Q 2026. Apartment transactions include multifamily buildings of 5 units and greater, and sales of $1 million and greater in which the brokerage represented either the buyer or the seller. Deals double-ended by one brokerage count once. Rankings and reported numbers may change under other calculation methodologies."
+        }
+      ],
+      "callouts": [
+        {
+          "value": "48%",
+          "label": "of Marcus & Millichap buyers come from out of state"
+        },
+        {
+          "value": "1.8x",
+          "label": "the apartment transactions of the next firm, and more than the next two combined"
+        }
+      ]
+    }
   },
   "portfolio": {
     "total_units": 69,
@@ -3909,14 +3972,14 @@
       "pricing_decision": "6bb890fea1c7124d0711c921150c6769fb6fb431267b819c060c85c1ea5a2e84",
       "sale_comps": "aff3df9f9eadf3230069b1ccd5e99d05153e02f77bbdcb7e58164d76a17a6b8b",
       "rent_comps": "223ea8925b250165c0ae6a28d46cd8c5d012ef0dda93894f8e5ce7c84fd3e5c8",
-      "copy": "d02eca9a2bdb866c3b7a17f6bf4d03c5f8ee2d8f0053f398982be9ec828093a9",
+      "copy": "c295f993655566f1c1c29d70303d804620f5d8e3bf90442fd5d932985a87e44d",
       "media_selection": "92dcf52217f187976a7d0b86e1d4fc74a8b58474502e3586c1f2cc3d0a7f6b95",
       "regulatory_conclusions": "cc752caa3878fc117582c3ec2fa281d6441ecbd832a04042861d2e48dd379354"
     }
   },
   "stats": {
     "live": true,
-    "generated": "2026-09-03T22:23:57+00:00",
+    "generated": "2026-09-03T22:31:05+00:00",
     "geography": {
       "states": 21,
       "has_dc": true,

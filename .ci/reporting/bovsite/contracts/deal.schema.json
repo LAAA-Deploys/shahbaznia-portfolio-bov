@@ -401,6 +401,55 @@
         "show_active_listings": {
           "type": "boolean"
         },
+        "firm_ranking": {
+          "description": "Brokerage-ranking exhibits for the Marketing section, rendered as native bar charts in the locked palette rather than as a pasted image. Present it and the campaign difference cards are replaced by the charts, because a ranking chart and three claim tiles compete for the same job. Every row is a published figure and the source line travels with the chart: a ranking is a market claim, so it carries its attribution the same way a comp carries its source.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["charts"],
+          "properties": {
+            "charts": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["title", "rows", "source"],
+                "properties": {
+                  "title": {"type": "string", "minLength": 1},
+                  "subtitle": {"type": "string"},
+                  "rows": {
+                    "type": "array",
+                    "minItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["label", "value"],
+                      "properties": {
+                        "label": {"type": "string", "minLength": 1},
+                        "value": {"type": "number", "minimum": 0},
+                        "highlight": {"type": "boolean"}
+                      }
+                    }
+                  },
+                  "source": {"type": "string", "minLength": 1},
+                  "footnote": {"type": "string"}
+                }
+              }
+            },
+            "callouts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["value", "label"],
+                "properties": {
+                  "value": {"type": "string", "minLength": 1},
+                  "label": {"type": "string", "minLength": 1}
+                }
+              }
+            }
+          }
+        },
         "show_local_closings": {
           "type": "boolean",
           "description": "Show the Representative Local Closings table in the Track Record section. Defaults to TRUE, unlike the opt-in show_ flags: the table has always rendered, so an absent value must keep rendering it. Set false where the local closed-deal population is too thin to help, e.g. a submarket below the MIN_SALES floor whose radius rung scrapes in distant or very small transactions."

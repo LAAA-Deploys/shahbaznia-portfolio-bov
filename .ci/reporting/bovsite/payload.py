@@ -1304,6 +1304,7 @@ def _build_payload(workspace: DealWorkspace) -> dict:
             "pull_quote": (_paragraphs(copy, "marketing", "pull_quote", required=False) or [None])[0],
             "differences": _paired(copy, "marketing", "difference_titles",
                                    "difference_copy", required=False),
+            "firm_ranking": presentation.get("firm_ranking"),
         },
         "properties": [property_payload],
         "regulatory_conclusions": deal["regulatory_conclusions"],
