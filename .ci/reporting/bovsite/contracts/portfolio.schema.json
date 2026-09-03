@@ -1,28 +1,297 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://laaa.com/contracts/bov/portfolio-1.1.0.schema.json",
-  "type": "object", "additionalProperties": false,
-  "required": ["schema_version", "portfolio_id", "name", "members", "portfolio_price", "portfolio_price_basis", "site_repo", "presentation"],
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "portfolio_id",
+    "name",
+    "members",
+    "portfolio_price",
+    "portfolio_price_basis",
+    "site_repo",
+    "presentation"
+  ],
   "properties": {
-    "schema_version": {"description": "1.1.0 resolves team headshots from the canonical registry instead of an authored path. 1.0.0 is still accepted and still builds: the authored headshot field is ignored, so no workspace needs migrating.", "enum": ["1.0.0", "1.1.0"]}, "portfolio_id": {"type": "string"}, "name": {"type": "string"},
-    "members": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "object", "additionalProperties": false, "required": ["deal_id", "workspace"], "properties": {"deal_id": {"type": "string"}, "workspace": {"type": "string"}}}},
-    "portfolio_price": {"type": ["number", "null"]}, "portfolio_price_basis": {"type": ["string", "null"]},
-    "site_repo": {"type": "string", "pattern": "^(?![A-Za-z]:|/|\\\\)(?!.*(?:^|[\\\\/])\\.\\.(?:[\\\\/]|$)).+$"},
+    "schema_version": {
+      "description": "1.1.0 resolves team headshots from the canonical registry instead of an authored path. 1.0.0 is still accepted and still builds: the authored headshot field is ignored, so no workspace needs migrating.",
+      "enum": [
+        "1.0.0",
+        "1.1.0"
+      ]
+    },
+    "portfolio_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "members": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "deal_id",
+          "workspace"
+        ],
+        "properties": {
+          "deal_id": {
+            "type": "string"
+          },
+          "workspace": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "portfolio_price": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "portfolio_price_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "site_repo": {
+      "type": "string",
+      "pattern": "^(?![A-Za-z]:|/|\\\\)(?!.*(?:^|[\\\\/])\\.\\.(?:[\\\\/]|$)).+$"
+    },
     "presentation": {
-      "type": "object", "additionalProperties": false,
-      "required": ["domain", "client", "subtitle", "month_year", "team", "hero_member", "hero_media_id", "portfolio_map"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain",
+        "client",
+        "subtitle",
+        "month_year",
+        "team",
+        "hero_member",
+        "hero_media_id",
+        "portfolio_map"
+      ],
       "properties": {
-        "domain": {"type": "string"}, "client": {"type": "string"}, "subtitle": {"type": "string"}, "month_year": {"type": "string"},
-        "cover_label": {"type": "string"}, "hero_tall": {"type": ["string", "null"]},
-        "team": {"$ref": "#/$defs/team"}, "hero_member": {"type": "string"}, "hero_media_id": {"type": "string"}, "portfolio_map": {"type": "string"}
+        "domain": {
+          "type": "string"
+        },
+        "client": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "month_year": {
+          "type": "string"
+        },
+        "cover_label": {
+          "type": "string"
+        },
+        "hero_tall": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "team": {
+          "$ref": "#/$defs/team"
+        },
+        "hero_member": {
+          "type": "string"
+        },
+        "hero_media_id": {
+          "type": "string"
+        },
+        "portfolio_map": {
+          "type": "string"
+        },
+        "firm_ranking": {
+          "description": "Brokerage-ranking exhibits for the portfolio hub. Identical shape to the deal-level field. Declared here so a portfolio can carry the firm credential ONCE on the hub instead of repeating it on every member page: the hub inherits its marketing block from the first member, so without this the only way to show the chart at all was to put it on every property page.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "charts"
+          ],
+          "properties": {
+            "charts": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "title",
+                  "rows",
+                  "source"
+                ],
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "subtitle": {
+                    "type": "string"
+                  },
+                  "rows": {
+                    "type": "array",
+                    "minItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "value"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "value": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "highlight": {
+                          "type": "boolean"
+                        }
+                      }
+                    }
+                  },
+                  "source": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "footnote": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "callouts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "label"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
   "allOf": [
-    {"if": {"properties": {"portfolio_price": {"type": "number"}}}, "then": {"properties": {"portfolio_price": {"exclusiveMinimum": 0}, "portfolio_price_basis": {"type": "string", "minLength": 1}}}, "else": {"properties": {"portfolio_price_basis": {"type": "null"}}}}
+    {
+      "if": {
+        "properties": {
+          "portfolio_price": {
+            "type": "number"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "portfolio_price": {
+            "exclusiveMinimum": 0
+          },
+          "portfolio_price_basis": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "portfolio_price_basis": {
+            "type": "null"
+          }
+        }
+      }
+    }
   ],
   "$defs": {
-    "team": {"type": "object", "additionalProperties": false, "required": ["leads", "grid"], "properties": {"leads": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/teamMember"}}, "grid": {"type": "array", "items": {"$ref": "#/$defs/teamMember"}}}},
-    "teamMember": {"type": "object", "description": "A member's headshot is not authored: it is resolved from branding/headshots/canonical-headshots.json by the member's name at build time.", "additionalProperties": false, "required": ["name", "title", "phone", "tel", "email", "license", "bio"], "properties": {"name": {"type": "string"}, "title": {"type": "string"}, "phone": {"type": "string"}, "tel": {"type": "string"}, "email": {"type": "string"}, "license": {"type": "string"}, "headshot": {"type": "string", "description": "LEGACY and IGNORED. Pre-1.1.0 spines authored a headshot path here. The build resolves each member's approved headshot from branding/headshots/canonical-headshots.json by name and overwrites this value, so an old spine still builds correctly and needs no migration. Never author it in a new spine."}, "bio": {"type": "string"}}}
+    "team": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "leads",
+        "grid"
+      ],
+      "properties": {
+        "leads": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/teamMember"
+          }
+        },
+        "grid": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/teamMember"
+          }
+        }
+      }
+    },
+    "teamMember": {
+      "type": "object",
+      "description": "A member's headshot is not authored: it is resolved from branding/headshots/canonical-headshots.json by the member's name at build time.",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "title",
+        "phone",
+        "tel",
+        "email",
+        "license",
+        "bio"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "tel": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "headshot": {
+          "type": "string",
+          "description": "LEGACY and IGNORED. Pre-1.1.0 spines authored a headshot path here. The build resolves each member's approved headshot from branding/headshots/canonical-headshots.json by name and overwrites this value, so an old spine still builds correctly and needs no migration. Never author it in a new spine."
+        },
+        "bio": {
+          "type": "string"
+        }
+      }
+    }
   }
 }

@@ -1465,7 +1465,11 @@ def _build_portfolio_payload(workspace: DealWorkspace) -> tuple[dict, dict, dict
         },
         "team": _resolved_team(presentation["team"]),
         "track_record": first_payload["track_record"],
-        "marketing": first_payload["marketing"],
+        # The hub may carry the firm-ranking exhibit on its own, so a portfolio
+        # shows the credential once here rather than repeating it on every member
+        # page. Members stay byte-identical to each other either way.
+        "marketing": (dict(first_payload["marketing"], firm_ranking=presentation["firm_ranking"])
+                      if presentation.get("firm_ranking") else first_payload["marketing"]),
         "portfolio": {
             "total_units": sum(prop["units"] for prop in properties),
             "total_current_rent": sum(prop["scheduled_rent"][0] * 12 for prop in properties),
