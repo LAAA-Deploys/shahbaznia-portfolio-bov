@@ -16,6 +16,17 @@
   "team": {
     "leads": [
       {
+        "name": "Morgan Wetmore",
+        "title": "Associate Investments",
+        "phone": "(818) 212-2724",
+        "tel": "8182122724",
+        "email": "Morgan.Wetmore@marcusmillichap.com",
+        "license": "CA 02209935",
+        "bio": "Morgan is a graduate of California State University, Northridge, and a San Fernando Valley native who brings deep local market knowledge to every client engagement. She plays a key role in the LAAA Team's client service and deal execution, supporting apartment building owners and investors through every stage of the transaction process. With a strong foundation in real estate analysis and marketing, Morgan contributes to property valuations, offering memorandum preparation, and buyer qualification. Her strategic approach and attention to detail have made her an essential part of one of Marcus & Millichap's highest-performing multifamily investment teams. Education: California State University, Northridge. Recognition: Pace Setter Award, 2025; GRIT Award, 2025 and 2026; Emerging Core Hustle Award, 2025.",
+        "headshot": "images/team-morgan-wetmore.jpg",
+        "headshot_sha256": "450503e582b40f7542f62b2b14024ea93aa2ae290ef910b999370a2df9eb19a9"
+      },
+      {
         "name": "Glen Scher",
         "title": "Co-Founder, LAAA Team",
         "phone": "(818) 212-2808",
@@ -38,19 +49,7 @@
         "headshot_sha256": "63c20fde9deeb498aa777df872f22177fcfbcf19c9de30513e96aed0a3db8e66"
       }
     ],
-    "grid": [
-      {
-        "name": "Morgan Wetmore",
-        "title": "Associate",
-        "phone": "(818) 212-2724",
-        "tel": "8182122724",
-        "email": "Morgan.Wetmore@marcusmillichap.com",
-        "license": "CA 02209935",
-        "bio": "Associate with the LAAA Team of Marcus & Millichap and the deal contact for the Shahbaznia portfolio.",
-        "headshot": "images/team-morgan-wetmore.jpg",
-        "headshot_sha256": "450503e582b40f7542f62b2b14024ea93aa2ae290ef910b999370a2df9eb19a9"
-      }
-    ]
+    "grid": []
   },
   "track_record": {
     "metrics": [
@@ -152,8 +151,8 @@
       "show_value_scenarios": false,
       "value_scenarios": null,
       "address": "16550 Vanowen St, Los Angeles, CA 91406",
-      "city": "Los Angeles (Lake Balboa), CA 91406",
-      "submarket": "Lake Balboa / Van Nuys",
+      "city": "Van Nuys (Lake Balboa), CA 91406",
+      "submarket": "Van Nuys",
       "track_record_submarkets": null,
       "apn": "2231-007-024",
       "units": 52,
@@ -163,11 +162,11 @@
       "year_built": 1988,
       "renovated_year": null,
       "parking": "Subterranean parking structure beneath the building.",
-      "hero": "images/16550-vanowen-vanowen-02.png",
+      "hero": "images/16550-vanowen-vanowen-03.png",
       "price": 14750000,
       "price_per_unit": 283653.85,
       "price_per_sf": 358.89,
-      "value_range": "$14,250,000 to $15,250,000",
+      "value_range": "$14,250,000 to $14,750,000",
       "opinion_of_value": [
         {
           "label": "Suggested list price",
@@ -183,19 +182,7 @@
         },
         {
           "label": "Range top",
-          "price": 15250000,
-          "price_per_unit": 293269.23076923075,
-          "price_per_sf": 371.0552568189007,
-          "price_per_land_sf": null,
-          "price_per_buildable_unit": null,
-          "grm_current": 10.303109509528207,
-          "grm_market": 9.149268058555316,
-          "cap_current": 5.930404459016394,
-          "cap_market": 7.04672131147541
-        },
-        {
-          "label": "Midpoint",
-          "price": 14750000.0,
+          "price": 14750000,
           "price_per_unit": 283653.8461538461,
           "price_per_sf": 358.88951069369085,
           "price_per_land_sf": null,
@@ -204,6 +191,18 @@
           "grm_market": 8.84929205663547,
           "cap_current": 6.172791050847458,
           "cap_market": 7.3269491525423724
+        },
+        {
+          "label": "Midpoint",
+          "price": 14500000.0,
+          "price_per_unit": 278846.1538461539,
+          "price_per_sf": 352.8066376310859,
+          "price_per_land_sf": null,
+          "price_per_buildable_unit": null,
+          "grm_current": 9.796399205780919,
+          "grm_market": 8.699304055675546,
+          "cap_current": 6.300252965517242,
+          "cap_market": 7.474310344827587
         },
         {
           "label": "Range bottom",
@@ -500,8 +499,32 @@
       ],
       "gallery": [
         {
+          "src": "images/16550-vanowen-vanowen-02.png",
+          "alt": "Exterior"
+        },
+        {
           "src": "images/16550-vanowen-vanowen-01.png",
           "alt": "Exterior"
+        },
+        {
+          "src": "images/16550-vanowen-vanowen-11.png",
+          "alt": "Amenity"
+        },
+        {
+          "src": "images/16550-vanowen-vanowen-08.png",
+          "alt": "Amenity"
+        },
+        {
+          "src": "images/16550-vanowen-vanowen-04.png",
+          "alt": "Amenity"
+        },
+        {
+          "src": "images/16550-vanowen-vanowen-09.png",
+          "alt": "Amenity"
+        },
+        {
+          "src": "images/16550-vanowen-vanowen-05.png",
+          "alt": "Common Area"
         },
         {
           "src": "images/16550-vanowen-vanowen-15.png",
@@ -697,33 +720,32 @@
         },
         "asset_class_label": "Apartments",
         "local": {
-          "count": 7,
-          "volume": 16775000,
-          "units": 81
+          "count": 41,
+          "volume": 119875011,
+          "units": 527
         },
         "local_basis": {
-          "type": "radius",
-          "label": "within 1 miles",
-          "radius_mi": 1
+          "type": "submarket",
+          "label": "Van Nuys"
         },
         "representative": [
           {
-            "address": "16565 Vanowen St",
+            "address": "15716 Saticoy St",
             "submarket": "Van Nuys",
-            "units": 12,
-            "price": 1800000,
-            "price_per_unit": 150000,
-            "year": "2013",
-            "distance": 0.04
+            "units": 42,
+            "price": 14200000,
+            "price_per_unit": 338095,
+            "year": "2021",
+            "distance": 1.78
           },
           {
-            "address": "6706 Hayvenhurst Avenue",
+            "address": "14015 Oxnard St",
             "submarket": "Van Nuys",
-            "units": 33,
-            "price": 3800000,
-            "price_per_unit": 115152,
-            "year": "2013",
-            "distance": 0.13
+            "units": 32,
+            "price": 5136000,
+            "price_per_unit": 160500,
+            "year": "2025",
+            "distance": 2.42
           },
           {
             "address": "6860 Woodley Ave",
@@ -737,21 +759,20 @@
         ],
         "closings_map": {
           "source": "https://www.laaa.com/track-record",
-          "pulled": "2026-09-03T16:02:08+00:00",
+          "pulled": "2026-09-03T20:47:19+00:00",
           "basis": {
-            "type": "radius",
-            "label": "within 1 miles",
-            "radius_mi": 1
+            "type": "submarket",
+            "label": "Van Nuys"
           },
-          "apartment_sales": 7,
-          "other_closings": 1,
-          "apartment_markers": 6,
-          "other_markers": 1,
+          "apartment_sales": 41,
+          "other_closings": 4,
+          "apartment_markers": 37,
+          "other_markers": 4,
           "render": "images/maps-16550-vanowen-closings.png"
         }
       },
       "deal_id": "shahbaznia-vanowen-16550",
-      "card_image": "images/16550-vanowen-vanowen-02.png"
+      "card_image": "images/16550-vanowen-vanowen-03.png"
     },
     {
       "slug": "3000-honolulu",
@@ -3006,13 +3027,32 @@
         "media_selection": {
           "deal_id": "shahbaznia-vanowen-16550",
           "order": [
+            "vanowen-03",
             "vanowen-02",
             "vanowen-01",
+            "vanowen-11",
+            "vanowen-08",
+            "vanowen-04",
+            "vanowen-09",
+            "vanowen-05",
             "vanowen-15",
             "vanowen-13"
           ],
-          "hero": "vanowen-02",
+          "hero": "vanowen-03",
           "items": [
+            {
+              "id": "vanowen-03",
+              "sha256": "5e778cea54be0f0a0a5e9672d34f27e215e33571886414d3adb5841aca1d86f8",
+              "phash": "a5be9a40290fde33",
+              "category": "exterior",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Full street elevation on Vanowen St, three storeys, matching the building footprint and orientation in the Google satellite image at the resolved rooftop pin.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
             {
               "id": "vanowen-02",
               "sha256": "8475307533d2710398291abd99c52a7809ce9a35154014c6517f07b9200a3291",
@@ -3020,7 +3060,7 @@
               "category": "exterior",
               "stock_or_illustrative": false,
               "property_match": "confirmed_human",
-              "match_basis": "Address CONFIRMED: the street number 16550 is legible on the glass transom above the lobby entrance, and the black and white checkerboard entrance paving matches the Google satellite image at the resolved rooftop pin.",
+              "match_basis": "Address CONFIRMED: the street number 16550 is legible on the glass transom above the lobby entrance, and the checkerboard entrance paving matches the satellite image at the rooftop pin.",
               "publication_basis": "seller_provided",
               "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
               "required_credit": null,
@@ -3033,7 +3073,72 @@
               "category": "exterior",
               "stock_or_illustrative": false,
               "property_match": "confirmed_human",
-              "match_basis": "Same checkerboard entrance courtyard as the address-confirmed frame, viewed from the street approach.",
+              "match_basis": "Same checkerboard entrance courtyard as the address-confirmed frame, from the street approach.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "vanowen-11",
+              "sha256": "7dd233f57f294d3735d71e0db6e21a3b34b642cab131b07b2888b7c0f9a0aa3f",
+              "phash": "9998f02a1e6dd5d1",
+              "category": "amenity",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "On-site pool, the amenity cited for this property in the June rent comp file.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "vanowen-08",
+              "sha256": "ff02c3d762a375adc8c6f19ff9e2bdb9b90afc01e975a2dee9799197deb7eaca",
+              "phash": "dc896e2bce26c38c",
+              "category": "amenity",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Interior courtyard with seating, looking across to the three-storey elevation on the same building.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "vanowen-04",
+              "sha256": "14cf2860a6daa49f455ff7a7866e897857d1a9a19ab1f1c78eb254f289a29c7b",
+              "phash": "a3cefc784e318919",
+              "category": "amenity",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Courtyard seating and planting under the building overhang, same courtyard as the other interior frames.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "vanowen-09",
+              "sha256": "50c3c8f4a421f42ce89489a94e04499ad361bb7de2f28571ea5e5d1031571078",
+              "phash": "d5adaa75468a392a",
+              "category": "amenity",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Courtyard at ground level with unit doors 108 and 110 and the second-floor walkway above.",
+              "publication_basis": "seller_provided",
+              "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
+              "required_credit": null,
+              "exception_id": null
+            },
+            {
+              "id": "vanowen-05",
+              "sha256": "576a9de1c77336f67567a18ef606cefa68d9fe04898029a5da0570f3c757b475",
+              "phash": "91e9ce1ecd8ec60a",
+              "category": "common_area",
+              "stock_or_illustrative": false,
+              "property_match": "confirmed_human",
+              "match_basis": "Interior corridor with slatted timber walls, opening to an exterior walkway.",
               "publication_basis": "seller_provided",
               "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
               "required_credit": null,
@@ -3046,7 +3151,7 @@
               "category": "interior",
               "stock_or_illustrative": false,
               "property_match": "confirmed_human",
-              "match_basis": "Renovated unit interior, stainless appliances and quartz counters, consistent with the finishes cited in the rent comp file for this property.",
+              "match_basis": "Renovated unit interior, stainless appliances and quartz counters, consistent with the finishes cited in the rent comp file.",
               "publication_basis": "seller_provided",
               "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
               "required_credit": null,
@@ -3059,7 +3164,7 @@
               "category": "parking",
               "stock_or_illustrative": false,
               "property_match": "confirmed_human",
-              "match_basis": "Subterranean parking structure under the building, consistent with the 39,019 SF lot and the 41,099 SF improvement on the assessor record.",
+              "match_basis": "Subterranean parking structure beneath the building, consistent with the 39,019 SF lot against a 41,099 SF improvement on the assessor record.",
               "publication_basis": "seller_provided",
               "usage_scope": "Seller-facing broker opinion of value delivered to the property owner. Not cleared for public marketing.",
               "required_credit": null,
@@ -3743,28 +3848,28 @@
   "approval_binding": {
     "deal_id": "shahbaznia-portfolio",
     "domains": {
-      "identity": "d808948e7eb5c58ff93cc648839627d96dcea0e76a8820b44bd1839400edc2d5",
+      "identity": "be3fa21f80dc4b3cc0363f09d380cbe0c9133db0f354b18bf6fee3d644e12dc2",
       "financial_inputs": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b",
-      "pricing_decision": "5fbf4020c58f6f4a60c2ecbd844540702a2939e69958aa42aba3c4025dcc95cb",
+      "pricing_decision": "37d2b76f39576eb9bc550e7cd4c099f5f1a416781c2eb3dcbce482d7f3ecd699",
       "sale_comps": "c98b2a0dcf43a4cd982b3b760c138267c521ceb4cfa14bdc5c8523bd817a39fa",
       "rent_comps": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2",
       "copy": "d4310f2a0d12b258630826d2522de5a37cbddd0dbcf58783ad774f1d762f0d1f",
-      "media_selection": "bdc59ed09bad9e91de304769677ab81600d1579f12750b39ddaf4ccade56f3dc",
+      "media_selection": "4de399f2df6f55958fcc4725157214d3a1257da7a5b7234ae8e18ac5fb492aa9",
       "regulatory_conclusions": "aebaad476ba4746df8611977b480ecdad93795c04c46e0f97d94b5863d04d813"
     },
     "members": {
       "shahbaznia-vanowen-16550": {
-        "identity": "551620fe17c6b8c1e9ab06040ce3cd917414111b22154eb2057778f81ff4d77e",
+        "identity": "a89e5a726ca4b48cd94478030c8859692f3919670507614eaf79fcc1f7c5f94d",
         "financial_inputs": "37616713854f19238c86b53956a26121e20a8a62d68ef2dac13fbd17342cd805",
-        "pricing_decision": "a91f0523646fd59bb82a95a8d5e74323f8ca4d9eb4417804501cfb4be162f1bf",
+        "pricing_decision": "bcc0e62620af0fd98f30caef1fb047fa8da71acaad523dda536014e343ca8fc9",
         "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
         "rent_comps": "a5d5a0bf362d695d68d2e434cc8d7e2865e324146269645483b8b8accb2c9f4b",
         "copy": "9b9e789ef06e247e8f12f420fae0cf1bcd9535318b8c6d173ed4590a5b037990",
-        "media_selection": "675d314e74b289891c287c42bf6cd7c2b26241c169c33b99ab77031450b162f9",
+        "media_selection": "908d1b10d5ebf943bbfa2e5e3b04fcc4693c6fc537c3b625fb405b324056469e",
         "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
       },
       "shahbaznia-honolulu-3000": {
-        "identity": "441b70a3fb36b8459694c5805dd4222097e4c79b2731bc40817535acb9638419",
+        "identity": "c7428a18f072c0fbcef413a5901910871144ec7b1bd048aea52790725eb996a0",
         "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
         "pricing_decision": "57a9259ee19549634e54432751f5c26b4e25a38fea465cb3ecad972766f94f62",
         "sale_comps": "a90fe6ae77373ab6c1277eda98801995f2896eeab605e522edfd9281e4b5dd0e",
@@ -3775,19 +3880,19 @@
       }
     },
     "presentation_hashes": {
-      "identity": "5c7a6c2cecfd1ac1d5affff93c1db705e8e5d63a216ff3ea76541b6ea3aa6e6f",
+      "identity": "a9c90b407ddcb14c08f568b1857ea6e605da3a8ac02696cf5858ecb1bc4d109f",
       "financial_inputs": "8b41671866e7413456285ed0e276cc4066aeb8975ccc434e72852c45eaae3c84",
-      "pricing_decision": "40a0fa4f02b31f39e4f374c5018e1104e423273d20e44d29b5a722cd936802b0",
+      "pricing_decision": "6bb890fea1c7124d0711c921150c6769fb6fb431267b819c060c85c1ea5a2e84",
       "sale_comps": "525dded9d911bcba2f03ef54029647ec15d205239e60306d0fb4540869c2a895",
       "rent_comps": "223ea8925b250165c0ae6a28d46cd8c5d012ef0dda93894f8e5ce7c84fd3e5c8",
       "copy": "3b2d3cd80c21d355aa77f42782c3f151502414625e12b60e0335e6ec1c6373b3",
-      "media_selection": "1fc8e300d1574324bea6f05d08a667171c0816123374a05491ef988b3f1835fc",
+      "media_selection": "92dcf52217f187976a7d0b86e1d4fc74a8b58474502e3586c1f2cc3d0a7f6b95",
       "regulatory_conclusions": "cc752caa3878fc117582c3ec2fa281d6441ecbd832a04042861d2e48dd379354"
     }
   },
   "stats": {
     "live": true,
-    "generated": "2026-09-03T20:28:34+00:00",
+    "generated": "2026-09-03T20:49:52+00:00",
     "geography": {
       "states": 21,
       "has_dc": true,
