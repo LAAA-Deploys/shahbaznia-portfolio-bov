@@ -83,50 +83,6 @@
       "label": "7305 Hazeltine Ave, Van Nuys, CA 91405, USA"
     },
     {
-      "property": "3000-honolulu",
-      "category": "sold",
-      "order": 1,
-      "lat": 34.2117776,
-      "lng": -118.2326307,
-      "place_id": "ChIJ25f8U2rqwoARNW5Pw0bOIw4",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "2463 Montrose Ave, Montrose, CA 91020, USA"
-    },
-    {
-      "property": "3000-honolulu",
-      "category": "sold",
-      "order": 2,
-      "lat": 34.2083346,
-      "lng": -118.23288050000001,
-      "place_id": "ChIJJQa9emzqwoARn4Gup1Sz_iQ",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "3822 Sunset Ave, Montrose, CA 91020, USA"
-    },
-    {
-      "property": "3000-honolulu",
-      "category": "sold",
-      "order": 3,
-      "lat": 34.2103548,
-      "lng": -118.22822219999999,
-      "place_id": "ChIJi0MHpBTqwoARl7nWLT15J6g",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "4123 Ocean View Blvd, Montrose, CA 91020, USA"
-    },
-    {
-      "property": "3000-honolulu",
-      "category": "sold",
-      "order": 4,
-      "lat": 34.207418,
-      "lng": -118.22613079999999,
-      "place_id": "ChIJL0kNVxLqwoARNvPZ4WUIuN4",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "2218 Mira Vista Ave, Montrose, CA 91020, USA"
-    },
-    {
       "property": "16550-vanowen",
       "category": "rent",
       "order": 1,
@@ -246,6 +202,61 @@
       "precision": "ROOFTOP",
       "needs_review": false,
       "label": "2121 Valderas Dr, Glendale, CA 91208, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 1,
+      "lat": 34.2162632,
+      "lng": -118.22831689999998,
+      "place_id": "ChIJyYP07D_qwoAR9laOY7I2wag",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "Ocean View Gardens Apartments, 4439 Ocean View Blvd, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 2,
+      "lat": 34.2117776,
+      "lng": -118.2326307,
+      "place_id": "ChIJ25f8U2rqwoARNW5Pw0bOIw4",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2463 Montrose Ave, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 3,
+      "lat": 34.2083346,
+      "lng": -118.23288050000001,
+      "place_id": "ChIJJQa9emzqwoARn4Gup1Sz_iQ",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "3822 Sunset Ave, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 4,
+      "lat": 34.2103548,
+      "lng": -118.22822219999999,
+      "place_id": "ChIJi0MHpBTqwoARl7nWLT15J6g",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "4123 Ocean View Blvd, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "3000-honolulu",
+      "category": "sold",
+      "order": 5,
+      "lat": 34.207418,
+      "lng": -118.22613079999999,
+      "place_id": "ChIJL0kNVxLqwoARNvPZ4WUIuN4",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "2218 Mira Vista Ave, Montrose, CA 91020, USA"
     }
   ],
   "renders": {
@@ -259,8 +270,8 @@
     "images/maps-16550-vanowen-rent-comps-tall.png": "5cee0004dff00f37c77aeb79e303dc6d2c5afb054ab1ed30d13999bf4b77a967",
     "images/maps-3000-honolulu-subject.png": "4c3de7f990a1a465f5fcba6ab2cf03ace1fa0954bf52d7dcb70c50afc7f9dcd9",
     "images/maps-3000-honolulu-subject-tall.png": "1347599ffe650eeaa56eb05320adbc7ede62aaf75cd69e5117829ac790e47be4",
-    "images/maps-3000-honolulu-sale-comps.png": "0be806041299478f7d8c3468497c4aa7efbc15018e0ab14b6b67efceb7db8cb1",
-    "images/maps-3000-honolulu-sale-comps-tall.png": "5ddd6bffd51d19748fdf890546ec3bad9a03c81f314e7a30ae3b0d29ecab925d",
+    "images/maps-3000-honolulu-sale-comps.png": "ff5be330a405965d49b71c68a19cb2e768fa6990bf9a461c205f3dd923655962",
+    "images/maps-3000-honolulu-sale-comps-tall.png": "fb9932a685077c635f10b703b1898bdbd5e4dbe5525eb24be0db78e9ace1ee1c",
     "images/maps-3000-honolulu-rent-comps.png": "432563e4f2a78abc65c7a71b5efaeea9d628f86d5924d34ee1705d2db4730db8",
     "images/maps-3000-honolulu-rent-comps-tall.png": "cfd1e2521c41f8764ce13022a9801198b58ef08b88753ca398fe1441cbcb0d97",
     "images/maps-16550-vanowen-closings.png": "0841a4685460042081a8d23fadc044f0f01ac66c03198722bac0309d154f91d3"
@@ -268,7 +279,7 @@
   "closings": {
     "16550-vanowen": {
       "source": "https://www.laaa.com/track-record",
-      "pulled": "2026-09-03T20:47:19+00:00",
+      "pulled": "2026-09-03T21:56:09+00:00",
       "basis": {
         "type": "submarket",
         "label": "Van Nuys"

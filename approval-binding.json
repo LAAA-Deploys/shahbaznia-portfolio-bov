@@ -3,8 +3,8 @@
   "scope": "portfolio",
   "deal_id": "shahbaznia-portfolio",
   "portfolio_id": "shahbaznia-portfolio",
-  "package_version": "v6",
-  "approved_at": "2026-09-03T21:05:37.028695+00:00",
+  "package_version": "v8",
+  "approved_at": "2026-09-03T21:58:07.330521+00:00",
   "approver": "Morgan Wetmore",
   "price": {
     "value": 20500000
@@ -36,7 +36,7 @@
       "content_sha256": "4de399f2df6f55958fcc4725157214d3a1257da7a5b7234ae8e18ac5fb492aa9"
     },
     "pricing_decision": {
-      "content_sha256": "37d2b76f39576eb9bc550e7cd4c099f5f1a416781c2eb3dcbce482d7f3ecd699"
+      "content_sha256": "60a4af6ac503edd6b24c4b734c0693184320fbef5341a6c187dc5b821962eff4"
     },
     "regulatory_conclusions": {
       "content_sha256": "aebaad476ba4746df8611977b480ecdad93795c04c46e0f97d94b5863d04d813"
@@ -45,7 +45,7 @@
       "content_sha256": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2"
     },
     "sale_comps": {
-      "content_sha256": "c98b2a0dcf43a4cd982b3b760c138267c521ceb4cfa14bdc5c8523bd817a39fa"
+      "content_sha256": "96a2df61111c31bed59f00d6896ca74d795c2d5e097905c21374d3b8ca278178"
     }
   },
   "legacy_snapshot": false,
@@ -64,8 +64,8 @@
     "shahbaznia-honolulu-3000": {
       "identity": "66ba374afbeac09097055d25e0d61e31e8134673d6753bd332a12adfcd0e93c1",
       "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
-      "pricing_decision": "57a9259ee19549634e54432751f5c26b4e25a38fea465cb3ecad972766f94f62",
-      "sale_comps": "a90fe6ae77373ab6c1277eda98801995f2896eeab605e522edfd9281e4b5dd0e",
+      "pricing_decision": "8f2e0e64700c297b2c4d1c734553926e6977dda5b819c71c8ac59d77e00f68e7",
+      "sale_comps": "860409f9efd1b847673b6109b05127c3b8d3bb8bd832010db598cdd2d5f97a48",
       "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
       "copy": "2c53f992b331e1635bda816f86d9554cf0116d875f5727002efba9225511031c",
       "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",

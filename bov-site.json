@@ -759,7 +759,7 @@
         ],
         "closings_map": {
           "source": "https://www.laaa.com/track-record",
-          "pulled": "2026-09-03T20:47:19+00:00",
+          "pulled": "2026-09-03T21:56:09+00:00",
           "basis": {
             "type": "submarket",
             "label": "Van Nuys"
@@ -1218,6 +1218,28 @@
       ],
       "sale_comps": [
         {
+          "address": "Ocean View Gardens Apartments, 4439 Ocean View Blvd, Montrose, CA 91020, USA",
+          "status": "Closed",
+          "price": 5540000,
+          "units": 20,
+          "year_built": 1962,
+          "building_sf": 16338,
+          "lot_sf": 19602,
+          "date": "2026-07-31",
+          "days_on_market": 93,
+          "price_per_unit": 277000.0,
+          "price_per_sf": 339.09,
+          "price_per_land_sf": 282.6242220181614,
+          "grm": 11.59,
+          "cap_rate": 5.6000000000000005,
+          "image": null,
+          "restatement": null,
+          "summary": "Closest comparable in the set on unit count, price, vintage and unit size, and the most recent close. Carries a transaction-supported cap and GRM.",
+          "relevance": "20 units against the subject's 17, the closest unit count in the set.; 16,338 SF against 13,628, and 0.45 acres against 0.40.; Average unit 817 SF against the subject's 802, effectively the same unit size.; Built 1962 against 1958.",
+          "considerations": "Sold by Marcus & Millichap.; Closed 31 July 2026, the most recent sale in the set, after 93 days on market.; Achieves about $1,992 per unit per month against the subject's $2,624, so the subject earns roughly 32% more per unit on effectively the same unit size.; Capital work completed before the sale included a seismic retrofit, an updated main electrical panel and mostly copper supply lines. On-site laundry adds income.; The seller's marketing materials stated that only six properties of 20 or more units traded in the surrounding corridor over the prior 20 years. Recorded as the seller's claim, not verified by LAAA.",
+          "map_ref": 1
+        },
+        {
           "address": "2463 Montrose Ave, Montrose, CA 91020, USA",
           "status": "Closed",
           "price": 3200000,
@@ -1237,7 +1259,7 @@
           "summary": "Closest comp to the subject at seven tenths of a mile, and the nearest on vintage.",
           "relevance": "8 units against 17.; Average unit 991 SF against the subject's 802 SF.",
           "considerations": "Closed August 2025.; No income detail available in the comp file.",
-          "map_ref": 1
+          "map_ref": 2
         },
         {
           "address": "3822 Sunset Ave, Montrose, CA 91020, USA",
@@ -1259,7 +1281,7 @@
           "summary": "Nearest match on unit count and vintage, and the second most recent close.",
           "relevance": "9 units against 17.; Average unit 904 SF against the subject's 802 SF.",
           "considerations": "Closed January 2026.; No income detail available in the comp file.",
-          "map_ref": 2
+          "map_ref": 3
         },
         {
           "address": "4123 Ocean View Blvd, Montrose, CA 91020, USA",
@@ -1280,8 +1302,8 @@
           "restatement": null,
           "summary": "Most recent close in the set and the only one carrying income detail, but the smallest and oldest.",
           "relevance": "6 units against 17, and the oldest at 1948.; Average unit 666 SF against the subject's 802 SF.",
-          "considerations": "Closed March 2026, the most recent in the set.",
-          "map_ref": 3
+          "considerations": "Sold by the LAAA Team of Marcus & Millichap. The transaction appears in the team's published track record at laaa.com/track-record, 6 units at $1,685,000, closed 2026.; Closed March 2026, the most recent in the set.",
+          "map_ref": 4
         },
         {
           "address": "2218 Mira Vista Ave, Montrose, CA 91020, USA",
@@ -1303,7 +1325,7 @@
           "summary": "Similar vintage and unit count, but the oldest sale and the highest price per SF in the set.",
           "relevance": "8 units against 17.; Average unit 708 SF against the subject's 802 SF.",
           "considerations": "Closed April 2025, the oldest in the set.; No income detail available in the comp file.",
-          "map_ref": 4
+          "map_ref": 5
         }
       ],
       "active_comps": [],
@@ -3850,8 +3872,8 @@
     "domains": {
       "identity": "8b73ac2e6665d03e7371dbb79802a66b4b67ec8d58df4157154cb14b0abdbe58",
       "financial_inputs": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b",
-      "pricing_decision": "37d2b76f39576eb9bc550e7cd4c099f5f1a416781c2eb3dcbce482d7f3ecd699",
-      "sale_comps": "c98b2a0dcf43a4cd982b3b760c138267c521ceb4cfa14bdc5c8523bd817a39fa",
+      "pricing_decision": "60a4af6ac503edd6b24c4b734c0693184320fbef5341a6c187dc5b821962eff4",
+      "sale_comps": "96a2df61111c31bed59f00d6896ca74d795c2d5e097905c21374d3b8ca278178",
       "rent_comps": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2",
       "copy": "d4310f2a0d12b258630826d2522de5a37cbddd0dbcf58783ad774f1d762f0d1f",
       "media_selection": "4de399f2df6f55958fcc4725157214d3a1257da7a5b7234ae8e18ac5fb492aa9",
@@ -3871,8 +3893,8 @@
       "shahbaznia-honolulu-3000": {
         "identity": "66ba374afbeac09097055d25e0d61e31e8134673d6753bd332a12adfcd0e93c1",
         "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
-        "pricing_decision": "57a9259ee19549634e54432751f5c26b4e25a38fea465cb3ecad972766f94f62",
-        "sale_comps": "a90fe6ae77373ab6c1277eda98801995f2896eeab605e522edfd9281e4b5dd0e",
+        "pricing_decision": "8f2e0e64700c297b2c4d1c734553926e6977dda5b819c71c8ac59d77e00f68e7",
+        "sale_comps": "860409f9efd1b847673b6109b05127c3b8d3bb8bd832010db598cdd2d5f97a48",
         "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
         "copy": "2c53f992b331e1635bda816f86d9554cf0116d875f5727002efba9225511031c",
         "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",
@@ -3883,7 +3905,7 @@
       "identity": "44d2234f1c7077de94891af5bb1a9b2927dc33a8a1a3ce07adf9f36c8405f1fb",
       "financial_inputs": "8b41671866e7413456285ed0e276cc4066aeb8975ccc434e72852c45eaae3c84",
       "pricing_decision": "6bb890fea1c7124d0711c921150c6769fb6fb431267b819c060c85c1ea5a2e84",
-      "sale_comps": "525dded9d911bcba2f03ef54029647ec15d205239e60306d0fb4540869c2a895",
+      "sale_comps": "aff3df9f9eadf3230069b1ccd5e99d05153e02f77bbdcb7e58164d76a17a6b8b",
       "rent_comps": "223ea8925b250165c0ae6a28d46cd8c5d012ef0dda93894f8e5ce7c84fd3e5c8",
       "copy": "3b2d3cd80c21d355aa77f42782c3f151502414625e12b60e0335e6ec1c6373b3",
       "media_selection": "92dcf52217f187976a7d0b86e1d4fc74a8b58474502e3586c1f2cc3d0a7f6b95",
@@ -3892,7 +3914,7 @@
   },
   "stats": {
     "live": true,
-    "generated": "2026-09-03T21:05:47+00:00",
+    "generated": "2026-09-03T21:58:19+00:00",
     "geography": {
       "states": 21,
       "has_dc": true,
