@@ -288,7 +288,7 @@
         },
         "noindex": {
           "type": "boolean",
-          "description": "Emit <meta name=\"robots\" content=\"noindex, nofollow\">. A seller-facing opinion of value sits on a public URL, and this is what keeps it out of search. Preferred over robots.txt, which only asks a crawler not to FETCH the page: a URL shared by email can still be indexed from that reference alone. Off by default, because a marketing site may want indexing."
+          "description": "Emit <meta name=\"robots\" content=\"noindex, nofollow\">. A seller-facing opinion of value sits on a public URL, and this is what keeps it out of search. Preferred over robots.txt, which only asks a crawler not to FETCH the page: a URL shared by email can still be indexed from that reference alone. On by default: a Broker Opinion of Value is confidential to the owner it names, so the tag is emitted unless a deal sets this false for a site that is meant to be indexed."
         },
         "show_value_scenarios": {
           "type": "boolean",

@@ -109,9 +109,9 @@ def _paragraphs(copy: dict, section: str, field: str, *, required: bool = True) 
 def _achievement_pairs(values: list[str]) -> list[list[str]]:
     """Split each authored achievement into the (award, qualifier) pair the page renders.
 
-    blocks.track_record emits ``<strong>{a[0]}</strong> - {a[1]}``, so a plain
+    blocks.track_record emits ``<strong>{a[0]}</strong>, {a[1]}``, so a plain
     string indexes to its first two CHARACTERS: "Chairman's Club | ..." rendered
-    as "C - h". Camarillo escaped it only because its payload predates the copy
+    as "C, h". Camarillo escaped it only because its payload predates the copy
     spine and carried real pairs. Authors separate the award from its qualifier
     with a pipe; an achievement written without one renders as the award alone.
     """
@@ -1105,6 +1105,20 @@ def _build_payload(workspace: DealWorkspace) -> dict:
             if key not in seen:
                 seen[key] = len(seen) + 1
             row["map_ref"] = seen[key]
+            # The comp address links to its own point on Google Maps. Built HERE
+            # from the approved rooftop pin rather than in the renderer, and from
+            # the coordinate plus place id rather than from the address string:
+            # a text search can resolve to the wrong parcel, and the pin is the
+            # thing the map render and the distance were already struck on. No
+            # key is involved, so nothing sensitive reaches the page.
+            place_id = pin.get("place_id")
+            if pin.get("latitude") is not None and pin.get("longitude") is not None:
+                row["map_url"] = (
+                    "https://www.google.com/maps/search/?api=1"
+                    f"&query={pin['latitude']},{pin['longitude']}"
+                    + (f"&query_place_id={place_id}" if place_id else ""))
+            else:
+                row["map_url"] = None
         # The printed number is only trustworthy if the manifest the PNG was
         # rendered from yields the SAME distinct locations in the SAME order.
         # A manifest ordered differently, or one left stale after the comps
@@ -1282,7 +1296,7 @@ def _build_payload(workspace: DealWorkspace) -> dict:
             "subtitle": presentation["subtitle"],
             "month_year": presentation["month_year"],
             "cover_label": presentation.get("cover_label", "Confidential Broker Opinion of Value"),
-            "noindex": bool(presentation.get("noindex")),
+            "noindex": bool(presentation.get("noindex", True)),
             "hero": hero_ref,
             "hero_tall": presentation.get("hero_tall"),
         },

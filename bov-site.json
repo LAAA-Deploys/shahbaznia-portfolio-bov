@@ -17,7 +17,7 @@
     "leads": [
       {
         "name": "Morgan Wetmore",
-        "title": "Associate Investments",
+        "title": "Associate",
         "phone": "(818) 212-2724",
         "tel": "8182122724",
         "email": "Morgan.Wetmore@marcusmillichap.com",
@@ -459,7 +459,7 @@
         ],
         "6": [
           "Management Fee",
-          "Carried at 5.00% of Gross Scheduled Rent. The LAAA standard is 4.00%, so this is the more conservative figure and it is followed as the model was written."
+          "Carried at 5.00% of Effective Gross Revenue, the EGI line, exactly as the model computes it."
         ],
         "7": [
           "Manager",
@@ -527,10 +527,10 @@
         "This trades as a value add with the work already identified rather than a stabilized income purchase. The buyer is underwriting the recovery of 15 units and the closing of a $186,664 Loss to Lease, and is paying a 6.17% cap today for a 7.33% cap on the other side of that."
       ],
       "rent_narrative": [
-        "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+        "Two competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,567. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
       ],
       "valuation_narrative": [
-        "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+        "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.97 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $14,750,000."
       ],
       "strategy": [
         {
@@ -605,7 +605,8 @@
           "square_feet_basis": "omitted",
           "distance": 1.01,
           "image": null,
-          "map_ref": 1
+          "map_ref": 1,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.1933977,-118.4762685&query_place_id=ChIJq7nDjGeXwoAR9vFDJxa5_zw"
         },
         {
           "address": "Toscana Apartments, 15736 Vanowen St, Van Nuys, CA 91406, USA",
@@ -615,17 +616,8 @@
           "square_feet_basis": "omitted",
           "distance": 1.01,
           "image": null,
-          "map_ref": 1
-        },
-        {
-          "address": "Vanowen Apartments, 15340 Vanowen St, Van Nuys, CA 91406, USA",
-          "unit_type": "Studio to 2BR",
-          "rent": 1325,
-          "square_feet": 430,
-          "square_feet_basis": "labelled_estimate",
-          "distance": 1.503,
-          "image": null,
-          "map_ref": 2
+          "map_ref": 1,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.1933977,-118.4762685&query_place_id=ChIJq7nDjGeXwoAR9vFDJxa5_zw"
         },
         {
           "address": "HFL Vanowen, 14419 Vanowen St, Van Nuys, CA 91405, USA",
@@ -635,7 +627,8 @@
           "square_feet_basis": "omitted",
           "distance": 2.677,
           "image": null,
-          "map_ref": 3
+          "map_ref": 2,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.1942385,-118.44711339999999&query_place_id=ChIJDS67vRuXwoARhG72iwE4wQM"
         },
         {
           "address": "HFL Vanowen, 14419 Vanowen St, Van Nuys, CA 91405, USA",
@@ -645,7 +638,8 @@
           "square_feet_basis": "omitted",
           "distance": 2.677,
           "image": null,
-          "map_ref": 3
+          "map_ref": 2,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.1942385,-118.44711339999999&query_place_id=ChIJDS67vRuXwoARhG72iwE4wQM"
         }
       ],
       "sale_comps": [
@@ -669,7 +663,8 @@
           "summary": "Closest match on average unit size, 769 SF against the subject's 790, and just over one mile away.",
           "relevance": "28 units against 52, 21,540 SF against 41,099.; Average unit 769 SF, nearly identical to the subject's 790 SF.",
           "considerations": "Closed November 2025.",
-          "map_ref": 1
+          "map_ref": 1,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.194587,-118.4752597&query_place_id=ChIJ5UKzUV2XwoARRjwqnxDPfi0"
         },
         {
           "address": "7342 Haskell Ave, Van Nuys, CA 91406, USA",
@@ -691,7 +686,8 @@
           "summary": "Same submarket and vintage, closed most recently of the Haskell group.",
           "relevance": "21 units against 52.; Average unit 1,160 SF against the subject's 790 SF.",
           "considerations": "Closed December 2025.",
-          "map_ref": 2
+          "map_ref": 2,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.2043366,-118.4745056&query_place_id=ChIJYXqlVUWXwoARsQ-OhLDS2_k"
         },
         {
           "address": "6228 Fulton Ave, Van Nuys, CA 91401, USA",
@@ -713,7 +709,8 @@
           "summary": "Closest on unit count of the closed set, but the oldest sale and four miles out.",
           "relevance": "30 units against 52.; Average unit 1,153 SF against the subject's 790 SF.",
           "considerations": "Closed January 2025, the oldest sale in the set.; 4.2 miles from the subject.",
-          "map_ref": 3
+          "map_ref": 3,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.1839002,-118.4222027&query_place_id=ChIJzb06LVmWwoARVOrg5K7uyvs"
         },
         {
           "address": "6643 Haskell Ave, Van Nuys, CA 91406, USA",
@@ -735,7 +732,8 @@
           "summary": "Same street and vintage, but carries no cap rate or GRM, so it informs price per unit and per SF only.",
           "relevance": "18 units against 52.; Average unit 1,057 SF against the subject's 790 SF.",
           "considerations": "Closed December 2025.; No income detail available in the comp file.",
-          "map_ref": 4
+          "map_ref": 4,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.191387399999996,-118.47540479999999&query_place_id=ChIJVyhJLWaXwoARlbf4oGTDYJU"
         },
         {
           "address": "7305 Hazeltine Ave, Van Nuys, CA 91405, USA",
@@ -757,7 +755,8 @@
           "summary": "Largest closed comp by unit count, but no income detail and three miles out.",
           "relevance": "33 units against 52.; Average unit 1,097 SF against the subject's 790 SF.",
           "considerations": "Closed April 2025.; No income detail available in the comp file.; 3.1 miles from the subject.",
-          "map_ref": 5
+          "map_ref": 5,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.203106399999996,-118.44056189999999&query_place_id=ChIJXWiCHCCXwoAR5av_i6uH0vg"
         }
       ],
       "active_comps": [],
@@ -814,7 +813,7 @@
         ],
         "closings_map": {
           "source": "https://www.laaa.com/track-record",
-          "pulled": "2026-09-03T21:56:09+00:00",
+          "pulled": "2026-09-04T16:01:44+00:00",
           "basis": {
             "type": "submarket",
             "label": "Van Nuys"
@@ -823,6 +822,7 @@
           "other_closings": 4,
           "apartment_markers": 37,
           "other_markers": 4,
+          "activity_markers": 0,
           "render": "images/maps-16550-vanowen-closings.png"
         }
       },
@@ -1105,7 +1105,7 @@
         ],
         "6": [
           "Management Fee",
-          "Carried at 4.00% of Gross Scheduled Rent, the LAAA standard rate."
+          "Carried at 4.00% of Effective Gross Revenue, the LAAA standard rate."
         ],
         "7": [
           "Manager",
@@ -1166,7 +1166,7 @@
         "Two structures on one lot, 17 units totalling 13,628 gross SF on a 17,616 SF parcel. The mix is 15 one bedroom units, one studio and one two bedroom, averaging 802 SF."
       ],
       "market_narrative": [
-        "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+        "Five closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $277,000 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $339 to $477 against $422 here, also mid range. The anchor, Ocean View Gardens at 20 units, is the closest in scale; the other four run 6 to 9 units against 17 and bracket the per unit and per foot pricing rather than matching operating scale."
       ],
       "positioning_narrative": [
         "This is an income purchase. A full building at 99.3% of potential rent in a foothill submarket with four recent closings inside 1.2 miles offers a buyer predictability rather than upside."
@@ -1222,7 +1222,8 @@
           "square_feet_basis": "omitted",
           "distance": 0.268,
           "image": null,
-          "map_ref": 1
+          "map_ref": 1,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.215820300000004,-118.2405103&query_place_id=ChIJh59HNkPqwoARvyJrjcECYlQ"
         },
         {
           "address": "Sunset Ridge at La Crescenta, 2800 Montrose Ave, Glendale, CA 91214, USA",
@@ -1232,7 +1233,8 @@
           "square_feet_basis": "omitted",
           "distance": 0.268,
           "image": null,
-          "map_ref": 1
+          "map_ref": 1,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.215820300000004,-118.2405103&query_place_id=ChIJh59HNkPqwoARvyJrjcECYlQ"
         },
         {
           "address": "Sunset Ridge at La Crescenta, 2800 Montrose Ave, Glendale, CA 91214, USA",
@@ -1242,7 +1244,8 @@
           "square_feet_basis": "omitted",
           "distance": 0.268,
           "image": null,
-          "map_ref": 1
+          "map_ref": 1,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.215820300000004,-118.2405103&query_place_id=ChIJh59HNkPqwoARvyJrjcECYlQ"
         },
         {
           "address": "hon272 Apartments, 2722 Honolulu Ave, Montrose, CA 91020, USA",
@@ -1252,7 +1255,8 @@
           "square_feet_basis": "omitted",
           "distance": 0.366,
           "image": null,
-          "map_ref": 2
+          "map_ref": 2,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.2107102,-118.2394149&query_place_id=ChIJlwc5QmjqwoARFzTPJjuhI5k"
         },
         {
           "address": "hon272 Apartments, 2722 Honolulu Ave, Montrose, CA 91020, USA",
@@ -1262,7 +1266,8 @@
           "square_feet_basis": "omitted",
           "distance": 0.366,
           "image": null,
-          "map_ref": 2
+          "map_ref": 2,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.2107102,-118.2394149&query_place_id=ChIJlwc5QmjqwoARFzTPJjuhI5k"
         },
         {
           "address": "Vue at Montrose, 2121 Valderas Dr, Glendale, CA 91208, USA",
@@ -1272,7 +1277,8 @@
           "square_feet_basis": "omitted",
           "distance": 1.477,
           "image": null,
-          "map_ref": 3
+          "map_ref": 3,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.2022392,-118.2228746&query_place_id=ChIJdZNvpA7qwoARO2P5CjqEUlI"
         }
       ],
       "sale_comps": [
@@ -1296,7 +1302,8 @@
           "summary": "Closest comparable in the set on unit count, price, vintage and unit size, and the most recent close. Carries a transaction-supported cap and GRM.",
           "relevance": "20 units against the subject's 17, the closest unit count in the set.; 16,338 SF against 13,628, and 0.45 acres against 0.40.; Average unit 817 SF against the subject's 802, effectively the same unit size.; Built 1962 against 1958.",
           "considerations": "Sold by Marcus & Millichap.; Closed 31 July 2026, the most recent sale in the set, after 93 days on market.; Achieves about $1,992 per unit per month against the subject's $2,624, so the subject earns roughly 32% more per unit on effectively the same unit size.; Capital work completed before the sale included a seismic retrofit, an updated main electrical panel and mostly copper supply lines. On-site laundry adds income.; The seller's marketing materials stated that only six properties of 20 or more units traded in the surrounding corridor over the prior 20 years. Recorded as the seller's claim, not verified by LAAA.",
-          "map_ref": 1
+          "map_ref": 1,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.2162632,-118.22831689999998&query_place_id=ChIJyYP07D_qwoAR9laOY7I2wag"
         },
         {
           "address": "2463 Montrose Ave, Montrose, CA 91020, USA",
@@ -1318,7 +1325,8 @@
           "summary": "Closest comp to the subject at seven tenths of a mile, and the nearest on vintage.",
           "relevance": "8 units against 17.; Average unit 991 SF against the subject's 802 SF.",
           "considerations": "Closed August 2025.; No income detail available in the comp file.",
-          "map_ref": 2
+          "map_ref": 2,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.2117776,-118.2326307&query_place_id=ChIJ25f8U2rqwoARNW5Pw0bOIw4"
         },
         {
           "address": "3822 Sunset Ave, Montrose, CA 91020, USA",
@@ -1340,7 +1348,8 @@
           "summary": "Nearest match on unit count and vintage, and the second most recent close.",
           "relevance": "9 units against 17.; Average unit 904 SF against the subject's 802 SF.",
           "considerations": "Closed January 2026.; No income detail available in the comp file.",
-          "map_ref": 3
+          "map_ref": 3,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.2083346,-118.23288050000001&query_place_id=ChIJJQa9emzqwoARn4Gup1Sz_iQ"
         },
         {
           "address": "4123 Ocean View Blvd, Montrose, CA 91020, USA",
@@ -1362,7 +1371,8 @@
           "summary": "Most recent close in the set and the only one carrying income detail, but the smallest and oldest.",
           "relevance": "6 units against 17, and the oldest at 1948.; Average unit 666 SF against the subject's 802 SF.",
           "considerations": "Sold by the LAAA Team of Marcus & Millichap. The transaction appears in the team's published track record at laaa.com/track-record, 6 units at $1,685,000, closed 2026.; Closed March 2026, the most recent in the set.",
-          "map_ref": 4
+          "map_ref": 4,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.2103548,-118.22822219999999&query_place_id=ChIJi0MHpBTqwoARl7nWLT15J6g"
         },
         {
           "address": "2218 Mira Vista Ave, Montrose, CA 91020, USA",
@@ -1384,7 +1394,8 @@
           "summary": "Similar vintage and unit count, but the oldest sale and the highest price per SF in the set.",
           "relevance": "8 units against 17.; Average unit 708 SF against the subject's 802 SF.",
           "considerations": "Closed April 2025, the oldest in the set.; No income detail available in the comp file.",
-          "map_ref": 5
+          "map_ref": 5,
+          "map_url": "https://www.google.com/maps/search/?api=1&query=34.207418,-118.22613079999999&query_place_id=ChIJL0kNVxLqwoARNvPZ4WUIuN4"
         }
       ],
       "active_comps": [],
@@ -1603,12 +1614,12 @@
           },
           "rent_comps": {
             "narrative": [
-              "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+              "Two competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,567. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
             ]
           },
           "financial_analysis": {
             "valuation_narrative": [
-              "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+              "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.97 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $14,750,000."
             ],
             "disclosures": [
               "Stabilized basis. The pro forma reflects the building at full market rate occupancy. At the August 2026 rent roll 8 units were vacant and 7 were in active eviction, 15 of 52 or about 29%. The pro forma assumes those units are recovered and re leased at market. Owner collections for calendar 2025 were $1,226,612.",
@@ -2025,7 +2036,7 @@
               "comps-rent:rent-van-2"
             ],
             "framed_as": null,
-            "text": "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+            "text": "Two competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,567. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
           },
           {
             "id": "valuation-1",
@@ -2035,7 +2046,7 @@
               "comps-sale:conclusions"
             ],
             "framed_as": "broker opinion of value",
-            "text": "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+            "text": "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.97 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $14,750,000."
           },
           {
             "id": "disclosure-1",
@@ -2142,7 +2153,7 @@
           },
           "buyer_profile": {
             "market_narrative": [
-              "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+              "Five closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $277,000 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $339 to $477 against $422 here, also mid range. The anchor, Ocean View Gardens at 20 units, is the closest in scale; the other four run 6 to 9 units against 17 and bracket the per unit and per foot pricing rather than matching operating scale."
             ],
             "positioning_narrative": [
               "This is an income purchase. A full building at 99.3% of potential rent in a foothill submarket with four recent closings inside 1.2 miles offers a buyer predictability rather than upside."
@@ -2516,7 +2527,7 @@
               "comps-rent:conclusions"
             ],
             "framed_as": "broker market assessment",
-            "text": "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+            "text": "Five closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $277,000 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $339 to $477 against $422 here, also mid range. The anchor, Ocean View Gardens at 20 units, is the closest in scale; the other four run 6 to 9 units against 17 and bracket the per unit and per foot pricing rather than matching operating scale."
           },
           {
             "id": "positioning-1",
@@ -2710,12 +2721,12 @@
             },
             "rent_comps": {
               "narrative": [
-                "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+                "Two competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,567. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
               ]
             },
             "financial_analysis": {
               "valuation_narrative": [
-                "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+                "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.97 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $14,750,000."
               ],
               "disclosures": [
                 "Stabilized basis. The pro forma reflects the building at full market rate occupancy. At the August 2026 rent roll 8 units were vacant and 7 were in active eviction, 15 of 52 or about 29%. The pro forma assumes those units are recovered and re leased at market. Owner collections for calendar 2025 were $1,226,612.",
@@ -3132,7 +3143,7 @@
                 "comps-rent:rent-van-2"
               ],
               "framed_as": null,
-              "text": "Three competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,885. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
+              "text": "Two competing Vanowen Street properties frame the rents. One bedrooms run $1,627 to $2,248 in the competing set and two bedrooms run $2,113 to $2,567. These are asking rents from listing sources, not signed leases, and they are not represented as achieved subject rents."
             },
             {
               "id": "valuation-1",
@@ -3142,7 +3153,7 @@
                 "comps-sale:conclusions"
               ],
               "framed_as": "broker opinion of value",
-              "text": "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.96 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $15,250,000."
+              "text": "$14,750,000, or $283,654 per unit and $359 per SF. That is a 6.17% cap on current net operating income of $910,487 and a 9.97 gross rent multiplier on Gross Scheduled Rent of $1,480,136. Operating expenses run 38.14% of effective gross income. The recommended range is $14,250,000 to $14,750,000."
             },
             {
               "id": "disclosure-1",
@@ -3445,7 +3456,7 @@
             },
             "buyer_profile": {
               "market_narrative": [
-                "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+                "Five closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $277,000 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $339 to $477 against $422 here, also mid range. The anchor, Ocean View Gardens at 20 units, is the closest in scale; the other four run 6 to 9 units against 17 and bracket the per unit and per foot pricing rather than matching operating scale."
               ],
               "positioning_narrative": [
                 "This is an income purchase. A full building at 99.3% of potential rent in a foothill submarket with four recent closings inside 1.2 miles offers a buyer predictability rather than upside."
@@ -3819,7 +3830,7 @@
                 "comps-rent:conclusions"
               ],
               "framed_as": "broker market assessment",
-              "text": "Four closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $280,833 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $361 to $477 against $422 here, also mid range. Every comp is materially smaller, 6 to 9 units against 17, so the set brackets the per unit and per foot pricing rather than matching operating scale."
+              "text": "Five closed Montrose sales frame the valuation, all within 1.2 miles. Price per unit runs $277,000 to $400,000 and the recommendation sits mid range at $338,235. Price per SF runs $339 to $477 against $422 here, also mid range. The anchor, Ocean View Gardens at 20 units, is the closest in scale; the other four run 6 to 9 units against 17 and bracket the per unit and per foot pricing rather than matching operating scale."
             },
             {
               "id": "positioning-1",
@@ -4009,51 +4020,51 @@
   "approval_binding": {
     "deal_id": "shahbaznia-portfolio",
     "domains": {
-      "identity": "230b47e3efbb92a79547acb3205c12a36a0b165726151bac737f111604cf7240",
-      "financial_inputs": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b",
-      "pricing_decision": "60a4af6ac503edd6b24c4b734c0693184320fbef5341a6c187dc5b821962eff4",
+      "identity": "91906685ad6af8f6645a71301f9aaf896e6163d2bbd30e3234cb940b22c99cd7",
+      "financial_inputs": "d010a9d3cc9381dc46d8a6491a4a89baf31befb7842d15ce118021e55f665836",
+      "pricing_decision": "a08c439e60b8151c4adfc5a7f392a2d9e27f4f14b1cba70ace7d14f7c1d95563",
       "sale_comps": "96a2df61111c31bed59f00d6896ca74d795c2d5e097905c21374d3b8ca278178",
-      "rent_comps": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2",
-      "copy": "43d22d3f927b84e433010c2f9d61418fb7552532f03ea1bc06175b341c338e00",
+      "rent_comps": "ab5a9e7c7a66c6ee13a84881683bb7a17d2f4f5b926652104b2b16df150e8808",
+      "copy": "09794529295331348af88543b3eee01e8ebd0d6d6023913e6383b69d51559095",
       "media_selection": "4de399f2df6f55958fcc4725157214d3a1257da7a5b7234ae8e18ac5fb492aa9",
       "regulatory_conclusions": "aebaad476ba4746df8611977b480ecdad93795c04c46e0f97d94b5863d04d813"
     },
     "members": {
       "shahbaznia-vanowen-16550": {
-        "identity": "e3297fa95d02f81553a660a32402796a2c9799af194690b0beba0d81fd323a85",
-        "financial_inputs": "37616713854f19238c86b53956a26121e20a8a62d68ef2dac13fbd17342cd805",
-        "pricing_decision": "bcc0e62620af0fd98f30caef1fb047fa8da71acaad523dda536014e343ca8fc9",
+        "identity": "379db6bc7d7223b064e2cb0ed6b2b96137e60e2b152ff97c1f0853eab19ce944",
+        "financial_inputs": "996bb9494df0d27bf83d1d7b8256f493767f8f5e64b85728fff6ea3718214f4f",
+        "pricing_decision": "64f037825ab5671a4ce7f075135d9e81d25ec31a4315791f4bd6f6d2d5ca954d",
         "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
-        "rent_comps": "a5d5a0bf362d695d68d2e434cc8d7e2865e324146269645483b8b8accb2c9f4b",
-        "copy": "5a95a76acf73ca8e986ec7b0b38e43acc59d991fcf2e27936bc093f4cd9330fd",
+        "rent_comps": "4f38084443235c950e2362740747a6f8bb52c07afd7e27e84dd6d743a43e851d",
+        "copy": "54eeab6ece07fd5b143e41ca732e934e006828b597d126b621a2187b9bca1485",
         "media_selection": "908d1b10d5ebf943bbfa2e5e3b04fcc4693c6fc537c3b625fb405b324056469e",
         "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
       },
       "shahbaznia-honolulu-3000": {
-        "identity": "3d98b076fc56add773bafaf13fb95e3e0b632fe0872020f8bfe8087338902dd0",
-        "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
+        "identity": "681f6eaf354196e84ef25856157d61328697255be89912a27eafde4e9f87bfb6",
+        "financial_inputs": "01907b0887d091faa23a9a916209616f173bf234c52d38a47c61807f853ac783",
         "pricing_decision": "8f2e0e64700c297b2c4d1c734553926e6977dda5b819c71c8ac59d77e00f68e7",
         "sale_comps": "860409f9efd1b847673b6109b05127c3b8d3bb8bd832010db598cdd2d5f97a48",
         "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
-        "copy": "be14b18f52a66f5a65568c8eb3e292244393bc4d19aebb46797fbd953d077929",
+        "copy": "3e470afa19a0c39ebdb8db15ebdd1e735bd2caf4ec41d2744cd5fa400974625c",
         "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",
         "regulatory_conclusions": "220f85881ba693876f3e1a607289a43d25fad7df1b09b1316f42a5d8fe09359e"
       }
     },
     "presentation_hashes": {
-      "identity": "75d1798649b2b8042967d3c8ef30c847c45269797e27ec798304a55b55d41833",
-      "financial_inputs": "8b41671866e7413456285ed0e276cc4066aeb8975ccc434e72852c45eaae3c84",
+      "identity": "0b2838387c0b392bdfd7f031fed2d7f9fecf2933a31ea122002bd98b16d3f97d",
+      "financial_inputs": "c7ff2e751dfa9f5d7ddd982040adf309f0a00127bebeffd10d17084257083c92",
       "pricing_decision": "5206c408f43938880aa503e94d7b892d48f1075574a02d1389cc0a91514fb52f",
-      "sale_comps": "aff3df9f9eadf3230069b1ccd5e99d05153e02f77bbdcb7e58164d76a17a6b8b",
-      "rent_comps": "223ea8925b250165c0ae6a28d46cd8c5d012ef0dda93894f8e5ce7c84fd3e5c8",
-      "copy": "420330865ce7f01959226392147eda1090686eea587d6ca6935261f4bb7f50de",
+      "sale_comps": "aae2c972db9ba814432271f44451661fb5d4b800d604d174d6cb02b556ec93c5",
+      "rent_comps": "2e975fa5ff2ea12004ca45fbf03a2df8c35b487bca67cd9998f00ffeffa7ff1b",
+      "copy": "78d17f8cb1d16ce66b6e6f170d25df8c4d068cbb31886e5f4c30c3cb85ecb555",
       "media_selection": "92dcf52217f187976a7d0b86e1d4fc74a8b58474502e3586c1f2cc3d0a7f6b95",
       "regulatory_conclusions": "cc752caa3878fc117582c3ec2fa281d6441ecbd832a04042861d2e48dd379354"
     }
   },
   "stats": {
     "live": true,
-    "generated": "2026-09-04T00:28:24+00:00",
+    "generated": "2026-09-04T16:03:29+00:00",
     "geography": {
       "states": 21,
       "has_dc": true,

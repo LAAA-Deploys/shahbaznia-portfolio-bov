@@ -3,8 +3,8 @@
   "scope": "portfolio",
   "deal_id": "shahbaznia-portfolio",
   "portfolio_id": "shahbaznia-portfolio",
-  "package_version": "v14",
-  "approved_at": "2026-09-04T00:28:13.720168+00:00",
+  "package_version": "v16",
+  "approved_at": "2026-09-04T16:03:19.224243+00:00",
   "approver": "Morgan Wetmore",
   "price": {
     "value": 20500000
@@ -24,25 +24,25 @@
   ],
   "domains": {
     "copy": {
-      "content_sha256": "43d22d3f927b84e433010c2f9d61418fb7552532f03ea1bc06175b341c338e00"
+      "content_sha256": "09794529295331348af88543b3eee01e8ebd0d6d6023913e6383b69d51559095"
     },
     "financial_inputs": {
-      "content_sha256": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b"
+      "content_sha256": "d010a9d3cc9381dc46d8a6491a4a89baf31befb7842d15ce118021e55f665836"
     },
     "identity": {
-      "content_sha256": "230b47e3efbb92a79547acb3205c12a36a0b165726151bac737f111604cf7240"
+      "content_sha256": "91906685ad6af8f6645a71301f9aaf896e6163d2bbd30e3234cb940b22c99cd7"
     },
     "media_selection": {
       "content_sha256": "4de399f2df6f55958fcc4725157214d3a1257da7a5b7234ae8e18ac5fb492aa9"
     },
     "pricing_decision": {
-      "content_sha256": "60a4af6ac503edd6b24c4b734c0693184320fbef5341a6c187dc5b821962eff4"
+      "content_sha256": "a08c439e60b8151c4adfc5a7f392a2d9e27f4f14b1cba70ace7d14f7c1d95563"
     },
     "regulatory_conclusions": {
       "content_sha256": "aebaad476ba4746df8611977b480ecdad93795c04c46e0f97d94b5863d04d813"
     },
     "rent_comps": {
-      "content_sha256": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2"
+      "content_sha256": "ab5a9e7c7a66c6ee13a84881683bb7a17d2f4f5b926652104b2b16df150e8808"
     },
     "sale_comps": {
       "content_sha256": "96a2df61111c31bed59f00d6896ca74d795c2d5e097905c21374d3b8ca278178"
@@ -52,22 +52,22 @@
   "legacy_label": null,
   "members": {
     "shahbaznia-vanowen-16550": {
-      "identity": "e3297fa95d02f81553a660a32402796a2c9799af194690b0beba0d81fd323a85",
-      "financial_inputs": "37616713854f19238c86b53956a26121e20a8a62d68ef2dac13fbd17342cd805",
-      "pricing_decision": "bcc0e62620af0fd98f30caef1fb047fa8da71acaad523dda536014e343ca8fc9",
+      "identity": "379db6bc7d7223b064e2cb0ed6b2b96137e60e2b152ff97c1f0853eab19ce944",
+      "financial_inputs": "996bb9494df0d27bf83d1d7b8256f493767f8f5e64b85728fff6ea3718214f4f",
+      "pricing_decision": "64f037825ab5671a4ce7f075135d9e81d25ec31a4315791f4bd6f6d2d5ca954d",
       "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
-      "rent_comps": "a5d5a0bf362d695d68d2e434cc8d7e2865e324146269645483b8b8accb2c9f4b",
-      "copy": "5a95a76acf73ca8e986ec7b0b38e43acc59d991fcf2e27936bc093f4cd9330fd",
+      "rent_comps": "4f38084443235c950e2362740747a6f8bb52c07afd7e27e84dd6d743a43e851d",
+      "copy": "54eeab6ece07fd5b143e41ca732e934e006828b597d126b621a2187b9bca1485",
       "media_selection": "908d1b10d5ebf943bbfa2e5e3b04fcc4693c6fc537c3b625fb405b324056469e",
       "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
     },
     "shahbaznia-honolulu-3000": {
-      "identity": "3d98b076fc56add773bafaf13fb95e3e0b632fe0872020f8bfe8087338902dd0",
-      "financial_inputs": "4286f40d1f651ee5b46d2044140e169b8bfd42e2077ba03eb44ca248b17cb64c",
+      "identity": "681f6eaf354196e84ef25856157d61328697255be89912a27eafde4e9f87bfb6",
+      "financial_inputs": "01907b0887d091faa23a9a916209616f173bf234c52d38a47c61807f853ac783",
       "pricing_decision": "8f2e0e64700c297b2c4d1c734553926e6977dda5b819c71c8ac59d77e00f68e7",
       "sale_comps": "860409f9efd1b847673b6109b05127c3b8d3bb8bd832010db598cdd2d5f97a48",
       "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
-      "copy": "be14b18f52a66f5a65568c8eb3e292244393bc4d19aebb46797fbd953d077929",
+      "copy": "3e470afa19a0c39ebdb8db15ebdd1e735bd2caf4ec41d2744cd5fa400974625c",
       "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",
       "regulatory_conclusions": "220f85881ba693876f3e1a607289a43d25fad7df1b09b1316f42a5d8fe09359e"
     }

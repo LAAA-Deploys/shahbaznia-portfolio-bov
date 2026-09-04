@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="laaa-figures-pulled" content="2026-09-04T00:28:24+00:00">
+<meta name="robots" content="noindex, nofollow">
+<meta name="laaa-figures-pulled" content="2026-09-04T16:03:29+00:00">
 <meta name="description" content="69-Unit Two-Property Multifamily Portfolio | LAAA Team - Marcus &amp; Millichap">
 <meta property="og:title" content="Broker Opinion of Value - Fernando Shahbaznia Portfolio">
 <meta property="og:description" content="69-Unit Two-Property Multifamily Portfolio | LAAA Team - Marcus &amp; Millichap">
@@ -500,6 +501,15 @@ td.num, th.num { text-align: right; }
    pin. Co-located rows share a number by design. */
 .map-ref{display:inline-block;min-width:20px;height:20px;line-height:20px;margin-right:8px;
   border-radius:50%;background:#1B3A5C;color:#fff;font-size:11px;font-weight:700;text-align:center;}
+/* Comp addresses link to their own point on Google Maps. Underlined on a dotted
+   rule rather than a full link colour: every address in the table is a link, so
+   colouring them all would repaint the column and pull the eye off the figures
+   beside it, which is what the table is actually for. */
+.comp-link{color:inherit;text-decoration:underline;text-decoration-style:dotted;
+  text-decoration-color:#C5A258;text-underline-offset:3px;}
+.comp-link:hover,.comp-link:focus-visible{color:#1B3A5C;text-decoration-style:solid;}
+.comp-narratives .comp-link{text-decoration-color:#C5A258;}
+@media print{.comp-link{text-decoration:none;color:inherit;}}
 
 /* ---- Buyout Scenarios (opt-in section) ---- */
 .bm-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:22px 0 8px}
@@ -589,7 +599,7 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
     <div class="cover-address">Two-Property, 69-Unit Los Angeles Multifamily Portfolio</div>
     <div class="gold-line" style="width:80px;margin:20px auto;"></div>
     <div class="cover-stats"><div class="cover-stat"><span class="cover-stat-value">69</span><span class="cover-stat-label">Total Units</span></div><div class="cover-stat"><span class="cover-stat-value">2</span><span class="cover-stat-label">Properties</span></div><div class="cover-stat"><span class="cover-stat-value">54,727</span><span class="cover-stat-label">Combined Building SF</span></div><div class="cover-stat"><span class="cover-stat-value">1958 / 1988</span><span class="cover-stat-label">Year Built</span></div></div>
-    <div class="cover-headshots"><div class="cover-headshot-wrap"><img class="cover-headshot" src="images/team-morgan-wetmore.jpg" alt="Morgan Wetmore"><div class="cover-headshot-name">Morgan Wetmore</div><div class="cover-headshot-title">Associate Investments</div></div><div class="cover-headshot-wrap"><img class="cover-headshot" src="images/team-glen-scher.jpg" alt="Glen Scher"><div class="cover-headshot-name">Glen Scher</div><div class="cover-headshot-title">Co-Founder, LAAA Team</div></div><div class="cover-headshot-wrap"><img class="cover-headshot" src="images/team-filip-niculete.jpg" alt="Filip Niculete"><div class="cover-headshot-name">Filip Niculete</div><div class="cover-headshot-title">Co-Founder, LAAA Team</div></div></div>
+    <div class="cover-headshots"><div class="cover-headshot-wrap"><img class="cover-headshot" src="images/team-morgan-wetmore.jpg" alt="Morgan Wetmore"><div class="cover-headshot-name">Morgan Wetmore</div><div class="cover-headshot-title">Associate</div></div><div class="cover-headshot-wrap"><img class="cover-headshot" src="images/team-glen-scher.jpg" alt="Glen Scher"><div class="cover-headshot-name">Glen Scher</div><div class="cover-headshot-title">Co-Founder, LAAA Team</div></div><div class="cover-headshot-wrap"><img class="cover-headshot" src="images/team-filip-niculete.jpg" alt="Filip Niculete"><div class="cover-headshot-name">Filip Niculete</div><div class="cover-headshot-title">Co-Founder, LAAA Team</div></div></div>
     <p class="client-greeting" id="client-greeting">Prepared Exclusively for MSCO Corporation</p>
     <p style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:8px;">September 2026</p>
   </div>
@@ -653,15 +663,15 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
 
 <div class="section tr-page2">
   <div style="text-align:center;"><div class="section-title" style="margin-bottom:4px;">The Team Behind the Assignment</div><div class="section-divider" style="margin:0 auto 16px;"></div></div>
-  <div class="lead-grid"><div class="lead-card"><img class="lead-photo" src="images/team-morgan-wetmore.jpg" alt="Morgan Wetmore"><div class="lead-head"><div class="lead-name">Morgan Wetmore</div><div class="lead-title">Associate Investments</div></div><div class="lead-bio">2025: Pace Setter Award, GRIT Award, Emerging Core Hustle Award. 2026: GRIT Award.</div><div class="lead-contact"><a href="tel:8182122724">(818) 212-2724</a><br><a href="mailto:Morgan.Wetmore@marcusmillichap.com">Morgan.Wetmore@marcusmillichap.com</a><br>CA 02209935</div></div><div class="lead-card"><img class="lead-photo" src="images/team-glen-scher.jpg" alt="Glen Scher"><div class="lead-head"><div class="lead-kicker">Principal</div><div class="lead-name">Glen Scher</div><div class="lead-title">Co-Founder, LAAA Team</div></div><div class="lead-bio">Senior Managing Director Investments and co-founder of the LAAA Team of Marcus &amp; Millichap, specializing in Los Angeles apartment investment sales.</div><div class="lead-contact"><a href="tel:8182122808">(818) 212-2808</a><br><a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>CA 01962976</div></div><div class="lead-card"><img class="lead-photo" src="images/team-filip-niculete.jpg" alt="Filip Niculete"><div class="lead-head"><div class="lead-kicker">Principal</div><div class="lead-name">Filip Niculete</div><div class="lead-title">Co-Founder, LAAA Team</div></div><div class="lead-bio">Senior Managing Director Investments and co-founder of the LAAA Team of Marcus &amp; Millichap, specializing in Los Angeles apartment investment sales.</div><div class="lead-contact"><a href="tel:8182122748">(818) 212-2748</a><br><a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a><br>CA 01905352</div></div></div>
+  <div class="lead-grid"><div class="lead-card"><img class="lead-photo" src="images/team-morgan-wetmore.jpg" alt="Morgan Wetmore"><div class="lead-head"><div class="lead-name">Morgan Wetmore</div><div class="lead-title">Associate</div></div><div class="lead-bio">2025: Pace Setter Award, GRIT Award, Emerging Core Hustle Award. 2026: GRIT Award.</div><div class="lead-contact"><a href="tel:8182122724">(818) 212-2724</a><br><a href="mailto:Morgan.Wetmore@marcusmillichap.com">Morgan.Wetmore@marcusmillichap.com</a><br>CA 02209935</div></div><div class="lead-card"><img class="lead-photo" src="images/team-glen-scher.jpg" alt="Glen Scher"><div class="lead-head"><div class="lead-kicker">Principal</div><div class="lead-name">Glen Scher</div><div class="lead-title">Co-Founder, LAAA Team</div></div><div class="lead-bio">Senior Managing Director Investments and co-founder of the LAAA Team of Marcus &amp; Millichap, specializing in Los Angeles apartment investment sales.</div><div class="lead-contact"><a href="tel:8182122808">(818) 212-2808</a><br><a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>CA 01962976</div></div><div class="lead-card"><img class="lead-photo" src="images/team-filip-niculete.jpg" alt="Filip Niculete"><div class="lead-head"><div class="lead-kicker">Principal</div><div class="lead-name">Filip Niculete</div><div class="lead-title">Co-Founder, LAAA Team</div></div><div class="lead-bio">Senior Managing Director Investments and co-founder of the LAAA Team of Marcus &amp; Millichap, specializing in Los Angeles apartment investment sales.</div><div class="lead-contact"><a href="tel:8182122748">(818) 212-2748</a><br><a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a><br>CA 01905352</div></div></div>
   <div class="team-grid"></div>
   <div class="condition-note"><div class="condition-note-label">Key Achievements</div>
     <p class="achievements-list">
-      &bull; <strong>Chairman&#x27;s Club</strong> - Marcus &amp; Millichap&#x27;s top-tier annual honor<br>
-      &bull; <strong>National Achievement Award</strong> - multiple years, both partners<br>
-      &bull; <strong>#1 Most Active Multifamily Team in LA County</strong> - CoStar 2019-2021<br>
-      &bull; <strong>Sales Recognition Award</strong> - every year since 2016<br>
-      &bull; <strong>494 closed transactions</strong> - $1.56B in sales volume
+      &bull; <strong>Chairman&#x27;s Club</strong>, Marcus &amp; Millichap&#x27;s top-tier annual honor<br>
+      &bull; <strong>National Achievement Award</strong>, multiple years, both partners<br>
+      &bull; <strong>#1 Most Active Multifamily Team in LA County</strong>, CoStar 2019-2021<br>
+      &bull; <strong>Sales Recognition Award</strong>, every year since 2016<br>
+      &bull; <strong>494 closed transactions</strong>, $1.56B in sales volume
     </p></div>
   <div class="press-strip"><span class="press-strip-label">As Featured In</span><span class="press-logo">BISNOW</span><span class="press-logo">YAHOO FINANCE</span><span class="press-logo">CONNECT CRE</span><span class="press-logo">SFVBJ</span><span class="press-logo">THE PINNACLE LIST</span></div>
 </div>
@@ -684,7 +694,7 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
 
 <div class="footer" id="contact">
   <img src="images/LAAA_Team_White.png" class="footer-logo" alt="LAAA Team">
-  <div class="footer-team"><div class="footer-person"><img src="images/team-morgan-wetmore.jpg" class="footer-headshot" alt="Morgan Wetmore"><div class="footer-name">Morgan Wetmore</div><div class="footer-title">Associate Investments</div><div class="footer-contact"><a href="tel:8182122724">(818) 212-2724</a><br><a href="mailto:Morgan.Wetmore@marcusmillichap.com">Morgan.Wetmore@marcusmillichap.com</a><br>CA 02209935</div></div><div class="footer-person"><img src="images/team-glen-scher.jpg" class="footer-headshot" alt="Glen Scher"><div class="footer-name">Glen Scher</div><div class="footer-title">Co-Founder, LAAA Team</div><div class="footer-contact"><a href="tel:8182122808">(818) 212-2808</a><br><a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>CA 01962976</div></div><div class="footer-person"><img src="images/team-filip-niculete.jpg" class="footer-headshot" alt="Filip Niculete"><div class="footer-name">Filip Niculete</div><div class="footer-title">Co-Founder, LAAA Team</div><div class="footer-contact"><a href="tel:8182122748">(818) 212-2748</a><br><a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a><br>CA 01905352</div></div></div>
+  <div class="footer-team"><div class="footer-person"><img src="images/team-morgan-wetmore.jpg" class="footer-headshot" alt="Morgan Wetmore"><div class="footer-name">Morgan Wetmore</div><div class="footer-title">Associate</div><div class="footer-contact"><a href="tel:8182122724">(818) 212-2724</a><br><a href="mailto:Morgan.Wetmore@marcusmillichap.com">Morgan.Wetmore@marcusmillichap.com</a><br>CA 02209935</div></div><div class="footer-person"><img src="images/team-glen-scher.jpg" class="footer-headshot" alt="Glen Scher"><div class="footer-name">Glen Scher</div><div class="footer-title">Co-Founder, LAAA Team</div><div class="footer-contact"><a href="tel:8182122808">(818) 212-2808</a><br><a href="mailto:Glen.Scher@marcusmillichap.com">Glen.Scher@marcusmillichap.com</a><br>CA 01962976</div></div><div class="footer-person"><img src="images/team-filip-niculete.jpg" class="footer-headshot" alt="Filip Niculete"><div class="footer-name">Filip Niculete</div><div class="footer-title">Co-Founder, LAAA Team</div><div class="footer-contact"><a href="tel:8182122748">(818) 212-2748</a><br><a href="mailto:Filip.Niculete@marcusmillichap.com">Filip.Niculete@marcusmillichap.com</a><br>CA 01905352</div></div></div>
   <div class="footer-office">16830 Ventura Blvd, Ste. 100, Encino, CA 91436 | <a href="https://www.laaa.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">www.laaa.com</a></div>
   <div class="footer-disclaimer">This information has been secured from sources we believe to be reliable, but we make no representations or warranties, expressed or implied, as to the accuracy of the information. Buyer must verify the information and bears all risk for any inaccuracies. Marcus &amp; Millichap Real Estate Investment Services, Inc. | License: CA 01930580.</div>
 </div>

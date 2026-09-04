@@ -83,61 +83,6 @@
       "label": "7305 Hazeltine Ave, Van Nuys, CA 91405, USA"
     },
     {
-      "property": "16550-vanowen",
-      "category": "rent",
-      "order": 1,
-      "lat": 34.1933977,
-      "lng": -118.4762685,
-      "place_id": "ChIJq7nDjGeXwoAR9vFDJxa5_zw",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "15736 Vanowen St, Van Nuys, CA 91406, USA"
-    },
-    {
-      "property": "16550-vanowen",
-      "category": "rent",
-      "order": 2,
-      "lat": 34.1933977,
-      "lng": -118.4762685,
-      "place_id": "ChIJq7nDjGeXwoAR9vFDJxa5_zw",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "15736 Vanowen St, Van Nuys, CA 91406, USA"
-    },
-    {
-      "property": "16550-vanowen",
-      "category": "rent",
-      "order": 3,
-      "lat": 34.193701,
-      "lng": -118.4676502,
-      "place_id": "ChIJt842NGqXwoARVnah6HyP2G0",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "15340 Vanowen St, Van Nuys, CA 91406, USA"
-    },
-    {
-      "property": "16550-vanowen",
-      "category": "rent",
-      "order": 4,
-      "lat": 34.1942385,
-      "lng": -118.44711339999999,
-      "place_id": "ChIJDS67vRuXwoARhG72iwE4wQM",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "14419 Vanowen St, Van Nuys, CA 91405, USA"
-    },
-    {
-      "property": "16550-vanowen",
-      "category": "rent",
-      "order": 5,
-      "lat": 34.1942385,
-      "lng": -118.44711339999999,
-      "place_id": "ChIJDS67vRuXwoARhG72iwE4wQM",
-      "precision": "ROOFTOP",
-      "needs_review": false,
-      "label": "14419 Vanowen St, Van Nuys, CA 91405, USA"
-    },
-    {
       "property": "3000-honolulu",
       "category": "rent",
       "order": 1,
@@ -257,17 +202,61 @@
       "precision": "ROOFTOP",
       "needs_review": false,
       "label": "2218 Mira Vista Ave, Montrose, CA 91020, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 1,
+      "lat": 34.1933977,
+      "lng": -118.4762685,
+      "place_id": "ChIJq7nDjGeXwoAR9vFDJxa5_zw",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "Toscana Apartments, 15736 Vanowen St, Van Nuys, CA 91406, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 2,
+      "lat": 34.1933977,
+      "lng": -118.4762685,
+      "place_id": "ChIJq7nDjGeXwoAR9vFDJxa5_zw",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "Toscana Apartments, 15736 Vanowen St, Van Nuys, CA 91406, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 3,
+      "lat": 34.1942385,
+      "lng": -118.44711339999999,
+      "place_id": "ChIJDS67vRuXwoARhG72iwE4wQM",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "HFL Vanowen, 14419 Vanowen St, Van Nuys, CA 91405, USA"
+    },
+    {
+      "property": "16550-vanowen",
+      "category": "rent",
+      "order": 4,
+      "lat": 34.1942385,
+      "lng": -118.44711339999999,
+      "place_id": "ChIJDS67vRuXwoARhG72iwE4wQM",
+      "precision": "ROOFTOP",
+      "needs_review": false,
+      "label": "HFL Vanowen, 14419 Vanowen St, Van Nuys, CA 91405, USA"
     }
   ],
   "renders": {
     "images/maps-portfolio-subjects.png": "ee66857ffde17881c199020934cf5f509ee70b99a204917d029b119c069a1c79",
     "images/maps-portfolio-subjects-tall.png": "6106428693238bdb009b8c5a5db62fc7604f053f478a91e72472d21ee1bec4a2",
     "images/maps-16550-vanowen-subject.png": "7879675cc4f5e5b9db9efa39dbf16dbdc50e69b3162caf1d84d4f8721b44879e",
-    "images/maps-16550-vanowen-subject-tall.png": "3a19402ce79a0d3f491684183e26f3a3ee0e5c918698389f61ac0b68784cac58",
+    "images/maps-16550-vanowen-subject-tall.png": "14660eafd49422ac6da16b835b6e7e9255a40260e19b8a3d9cea820f11b633dd",
     "images/maps-16550-vanowen-sale-comps.png": "c6599c55ea79d4c0baa6dbc94217d561b5d850613b1a9c0c07e6eba6cc8c0773",
     "images/maps-16550-vanowen-sale-comps-tall.png": "ead9e8f92105a9ba5987eaa41a1cc60d46eef011098836c33bc713df1638e1da",
-    "images/maps-16550-vanowen-rent-comps.png": "71fb7af11b5d195394c7b71a8784cd5f0c6b1be6f7ae16e6018097341c42c31e",
-    "images/maps-16550-vanowen-rent-comps-tall.png": "5cee0004dff00f37c77aeb79e303dc6d2c5afb054ab1ed30d13999bf4b77a967",
+    "images/maps-16550-vanowen-rent-comps.png": "d73d4f7a5afacf7564508835aa99e1a9983d4823cb4c5db56e800283bef9b890",
+    "images/maps-16550-vanowen-rent-comps-tall.png": "80b16921856692ec8dbdc7af32b68a3a93cc175ea184527409d675c0ce6783ba",
     "images/maps-3000-honolulu-subject.png": "4c3de7f990a1a465f5fcba6ab2cf03ace1fa0954bf52d7dcb70c50afc7f9dcd9",
     "images/maps-3000-honolulu-subject-tall.png": "1347599ffe650eeaa56eb05320adbc7ede62aaf75cd69e5117829ac790e47be4",
     "images/maps-3000-honolulu-sale-comps.png": "ff5be330a405965d49b71c68a19cb2e768fa6990bf9a461c205f3dd923655962",
@@ -279,7 +268,7 @@
   "closings": {
     "16550-vanowen": {
       "source": "https://www.laaa.com/track-record",
-      "pulled": "2026-09-03T21:56:09+00:00",
+      "pulled": "2026-09-04T16:01:44+00:00",
       "basis": {
         "type": "submarket",
         "label": "Van Nuys"
@@ -288,6 +277,7 @@
       "other_closings": 4,
       "apartment_markers": 37,
       "other_markers": 4,
+      "activity_markers": 0,
       "render": "images/maps-16550-vanowen-closings.png"
     }
   }
