@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="laaa-figures-pulled" content="2026-09-03T23:18:04+00:00">
+<meta name="laaa-figures-pulled" content="2026-09-04T00:28:24+00:00">
 <meta name="description" content="17-Unit Multifamily Investment - La Crescenta, CA 91214 | LAAA Team - Marcus &amp; Millichap">
 <meta property="og:title" content="Broker Opinion of Value - Gardens at La Crescenta">
 <meta property="og:description" content="17-Unit Multifamily Investment - La Crescenta, CA 91214 | LAAA Team - Marcus &amp; Millichap">
@@ -43,7 +43,13 @@ h1,h2,h3 { font-family: 'DM Serif Display', Georgia, serif; }
 .cover-title { font-size: 52px; font-weight: 400; letter-spacing: 1px; margin-bottom: 8px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); font-family: 'DM Serif Display', serif; }
 .cover-address { font-size: 18px; font-weight: 400; letter-spacing: 1px; color: rgba(255,255,255,0.85); margin-top: 4px; }
 .cover-stats { display: flex; gap: 36px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
-.cover-stat { text-align: center; }
+/* Equal share per stat, so the VALUES sit on an even rhythm. Sized to content,
+   the fixed 36px gap sat between blocks of very different widths (88px for
+   "8 / Total Units" against 161px for "6,176 / Combined Building SF"), which
+   pushed the numbers 121px, then 157px, then 182px apart: the gap was even but
+   what a reader tracks across a stat row is the numbers, and those read as
+   bunched at the left. min-width keeps the wrap behaviour on a phone. */
+.cover-stat { text-align: center; flex: 1 1 0; min-width: 116px; }
 .cover-stat-value { display: block; font-size: 28px; font-weight: 600; color: #fff; font-family: 'DM Serif Display', serif; }
 .cover-stat-label { display: block; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: #C5A258; margin-top: 4px; }
 /* Every agent gets the SAME slot width, so the photos sit evenly spaced no
@@ -59,8 +65,13 @@ h1,h2,h3 { font-family: 'DM Serif Display', Georgia, serif; }
    the cover ends up with, keeps every agent on one row, and stays above the
    84px photo well past any realistic lead count. */
 .cover-headshots { display: flex; justify-content: center; gap: 40px; margin-top: 24px; margin-bottom: 16px; }
-.cover-headshot { width: 84px; height: 84px; border-radius: 50%; border: 3px solid #C5A258; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
-.cover-headshot-name { font-size: 12px; font-weight: 600; margin-top: 6px; color: #fff; overflow-wrap: anywhere; }
+/* display:block, or the image sits on a text baseline inside its wrapper and
+   the wrapper's 25.6px line-height leaves ~8px of phantom descender space under
+   every photo. That made the real gap to the name 14px while the stylesheet
+   said 6px, so the spacing under the headshots could not be tuned by reading
+   the CSS. Block it out and set the gap deliberately below. */
+.cover-headshot { display: block; margin: 0 auto; width: 84px; height: 84px; border-radius: 50%; border: 3px solid #C5A258; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
+.cover-headshot-name { font-size: 12px; font-weight: 600; margin-top: 12px; color: #fff; overflow-wrap: anywhere; }
 .cover-headshot-title { font-size: 10px; color: #C5A258; overflow-wrap: anywhere; }
 .cover-headshot-wrap { flex: 0 1 190px; min-width: 0; text-align: center; }
 .client-greeting { font-size: 14px; font-weight: 500; color: #C5A258; letter-spacing: 1px; margin-top: 16px; }
@@ -169,6 +180,13 @@ td.num, th.num { text-align: right; }
    the whole container width, which read as a stretched banner (Glen,
    2026-08-19: same width and height so all looks normal). */
 .lead-card:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc(50% - 10px); justify-self: center; }
+/* A non-principal lead renders no kicker at all (blocks.PRINCIPAL_NAMES, with
+   APPROVED_ROLE_KICKERS deliberately empty so nobody can invent a label). Their
+   name therefore started 22px higher than the principals beside them and the
+   row of names lost its shared baseline. Reserve the kicker's line rather than
+   give them a filler label, which is the thing that rule exists to prevent.
+   22px is the kicker's own 16px line box plus its 6px bottom margin. */
+.lead-card:not(:has(.lead-kicker)) .lead-head::before { content: ""; display: block; height: 22px; }
 .lead-card { display: grid; grid-template-columns: 150px minmax(0, 1fr); grid-template-rows: auto auto auto; grid-template-areas: "photo head" "photo bio" "photo contact"; column-gap: 20px; align-content: start; background: #fff; border: 1px solid #e5e9f0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 6px rgba(27,58,92,0.06); }
 .lead-photo { grid-area: photo; width: 150px; height: 178px; border-radius: 10px; object-fit: cover; object-position: top; background: #f0f4f8; }
 .lead-head { grid-area: head; }
@@ -600,7 +618,7 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
   <div class="metrics-grid-4"><div class="metric-card"><span class="metric-value">494</span><span class="metric-label">Closed Transactions</span></div><div class="metric-card"><span class="metric-value">342</span><span class="metric-label">Apartment Sales</span></div><div class="metric-card"><span class="metric-value">18</span><span class="metric-label">Within 5 miles</span></div><div class="metric-card"><span class="metric-value">$1.56B</span><span class="metric-label">Total Sales Volume</span></div></div>
   <div class="tr-map-print"><img src="../images/maps-portfolio-subjects.png" alt="LAAA Portfolio Map" loading="lazy"></div>
   <div class="tr-proof"><div class="tr-proof-item"><span class="tr-proof-figure">96.7%</span><span class="tr-proof-label">Apartment Pricing Accuracy</span></div><div class="tr-proof-item"><span class="tr-proof-figure">34</span><span class="tr-proof-label">Median Days on Market, Apartments</span></div></div>
-  <p class="tr-proof-source">Published team performance, <a href="https://www.laaa.com/track-record" target="_blank" rel="noopener">laaa.com/track-record</a>, as of September 3, 2026.</p>
+  <p class="tr-proof-source">Published team performance, <a href="https://www.laaa.com/track-record" target="_blank" rel="noopener">laaa.com/track-record</a>, as of September 4, 2026.</p>
   <div class="tr-service-quote">
     <h3>A Track Record Built One Assignment at a Time</h3>
 <p>Of those closings, 342 are apartment sales covering 4,703 units. CoStar ranked LAAA the most active multifamily team in Los Angeles County from 2019 through 2021, and the team has not finished a quarter without a closed sale since it was founded.</p>
@@ -681,7 +699,9 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
   <div class="section-divider"></div>
   <div class="loc-grid">
     <div class="loc-left">
-<p>The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave.</p>
+<p>The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All five closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave.</p>
+<p>The City of Glendale completed the La Crescenta Avenue Rehabilitation in August 2026, three tenths of a mile from the building. The roadway was reconfigured with a center two way left turn lane, protected and buffered bike lanes, decorative high visibility crosswalks, a pedestrian beacon by Fremont Elementary and an upgraded sewer network. About a mile east on the same street, Glendale Community College has proposed rebuilding its Professional Development Center on the 2300 block of Honolulu Ave as a clinical training site with USC Verdugo Hills Hospital.</p>
+<p>For an owner here the more valuable fact is what is not being built. Apartment stock in La Crescenta is held down by restrictive zoning and sustained local opposition to density, and active rental listings across the whole La Crescenta and Montrose footprint stay in the double digits. The one significant project proposed nearby, at Foothill and Briggs, was cut from 80 units to 66 and is not expected to break ground before 2027. Supply that cannot easily expand is the backdrop to this building&#x27;s rent roll.</p>
     </div>
     <div class="loc-right">
       <table class="info-table"><thead><tr><th colspan="2">Property &amp; Location Details</th></tr></thead><tbody><tr><td>Address</td><td>3000 Honolulu Ave, La Crescenta, CA 91214</td></tr><tr><td>City</td><td>La Crescenta, CA 91214</td></tr><tr><td>APN</td><td>5617-007-018</td></tr><tr><td>Year Built</td><td>1958</td></tr><tr><td>Building SF</td><td>13,628</td></tr><tr><td>Lot Size</td><td>17,616 SF (0.4 ac)</td></tr><tr><td>Units</td><td>17</td></tr><tr><td>Parking</td><td>On-site parking; count to be confirmed from the site inspection.</td></tr></tbody></table>

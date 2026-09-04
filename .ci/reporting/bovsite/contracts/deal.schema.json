@@ -454,6 +454,31 @@
           "type": "boolean",
           "description": "Show the Representative Local Closings table in the Track Record section. Defaults to TRUE, unlike the opt-in show_ flags: the table has always rendered, so an absent value must keep rendering it. Set false where the local closed-deal population is too thin to help, e.g. a submarket below the MIN_SALES floor whose radius rung scrapes in distant or very small transactions."
         },
+        "local_closings": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Presentation options for the local closings table and map. The population is always the live laaa.com pull scoped by stats.local_scope; nothing here changes which closings qualify, only how they are cut and drawn.",
+          "properties": {
+            "show_all": {"type": "boolean", "description": "Publish every closing in the scope instead of the three-row deterministic sample. The ranking still runs, so the order and the leading rows are unchanged; only the cut is removed."},
+            "hide_year": {"type": "boolean", "description": "Drop the Closed column from the rendered table. The years stay in the live feed and in the map manifest; only the column is suppressed. The local basis label beside the table still states the scope, so this cannot disguise a thin or dated population."},
+            "activity_pins": {
+              "type": "array",
+              "description": "Current LAAA activity drawn on the closings map in a lighter gold: properties being valued or marketed now, never closed transactions. Excluded from every closed-population tally and never presented as a closing. Coordinates must be rooftop-resolved through laaa-geo.",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["kind", "address", "latitude", "longitude"],
+                "properties": {
+                  "kind": {"type": "string", "enum": ["broker_opinion_of_value", "active_listing"]},
+                  "address": {"type": "string", "minLength": 1},
+                  "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+                  "longitude": {"type": "number", "minimum": -180, "maximum": 180},
+                  "place_id": {"type": ["string", "null"]}
+                }
+              }
+            }
+          }
+        },
         "show_buyout_model": {
           "type": "boolean",
           "description": "Opt in to the Buyout Scenarios section. Off for every deal that does not set it, exactly like show_active_listings. Requires buyout_model."

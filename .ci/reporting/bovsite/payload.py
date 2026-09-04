@@ -348,12 +348,19 @@ def _opinion_of_value(
             "cap_market": noi_market / rung_price * 100 if publish_cap else None,
         }
 
-    return [
-        rung("Suggested list price", price),
-        rung("Range top", high),
-        rung("Midpoint", (low + high) / 2),
-        rung("Range bottom", low),
-    ]
+    ladder = [rung("Suggested list price", price)]
+    # When the opinion tops AT the ask, a separate "Range top" rung is the same
+    # price twice: identical figures on two rows, which reads as a mistake and
+    # invites the seller to wonder which one is real. Omit it ONLY on exact
+    # equality. `high > price` was wrong here and CI caught it: an ask deliberately
+    # set ABOVE the opinion range is legitimate (bov_workflow: "the ask may sit at
+    # or above the range"), and dropping the rung there would hide the real top of
+    # the opinion from the seller, which is the Moorpark failure inverted.
+    if high != price:
+        ladder.append(rung("Range top", high))
+    ladder.append(rung("Midpoint", (low + high) / 2))
+    ladder.append(rung("Range bottom", low))
+    return ladder
 
 
 #: Income lines of the operating statement that represent an underwriting
@@ -1149,6 +1156,7 @@ def _build_payload(workspace: DealWorkspace) -> dict:
         "short_name": presentation["short_name"],
         "show_active_listings": bool(presentation.get("show_active_listings")),
         "show_local_closings": presentation.get("show_local_closings", True) is not False,
+        "local_closings": presentation.get("local_closings") or {},
         "show_buyout_model": bool(presentation.get("show_buyout_model")),
         "buyout_model": presentation.get("buyout_model"),
         "show_value_scenarios": bool(presentation.get("show_value_scenarios")),

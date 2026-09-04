@@ -3,8 +3,8 @@
   "scope": "portfolio",
   "deal_id": "shahbaznia-portfolio",
   "portfolio_id": "shahbaznia-portfolio",
-  "package_version": "v13",
-  "approved_at": "2026-09-03T23:17:53.347722+00:00",
+  "package_version": "v14",
+  "approved_at": "2026-09-04T00:28:13.720168+00:00",
   "approver": "Morgan Wetmore",
   "price": {
     "value": 20500000
@@ -24,7 +24,7 @@
   ],
   "domains": {
     "copy": {
-      "content_sha256": "4d0a2095d545bb3a0d15de0a13b4f62c365b47390327e6bac8ac10eaa561f67a"
+      "content_sha256": "43d22d3f927b84e433010c2f9d61418fb7552532f03ea1bc06175b341c338e00"
     },
     "financial_inputs": {
       "content_sha256": "b5de745c9876147957aa2b641096964fe1ee71612987254bc57f383cde2a457b"
@@ -57,7 +57,7 @@
       "pricing_decision": "bcc0e62620af0fd98f30caef1fb047fa8da71acaad523dda536014e343ca8fc9",
       "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
       "rent_comps": "a5d5a0bf362d695d68d2e434cc8d7e2865e324146269645483b8b8accb2c9f4b",
-      "copy": "34e5d09d9038c96321b3f78624868738ca2813941e2955bbb290780069124bfd",
+      "copy": "5a95a76acf73ca8e986ec7b0b38e43acc59d991fcf2e27936bc093f4cd9330fd",
       "media_selection": "908d1b10d5ebf943bbfa2e5e3b04fcc4693c6fc537c3b625fb405b324056469e",
       "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
     },
@@ -67,7 +67,7 @@
       "pricing_decision": "8f2e0e64700c297b2c4d1c734553926e6977dda5b819c71c8ac59d77e00f68e7",
       "sale_comps": "860409f9efd1b847673b6109b05127c3b8d3bb8bd832010db598cdd2d5f97a48",
       "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
-      "copy": "3ebee0f9632f1be052a0ad9ecb4679f53804ae80ba2b75dff70691539afa49e3",
+      "copy": "be14b18f52a66f5a65568c8eb3e292244393bc4d19aebb46797fbd953d077929",
       "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",
       "regulatory_conclusions": "220f85881ba693876f3e1a607289a43d25fad7df1b09b1316f42a5d8fe09359e"
     }

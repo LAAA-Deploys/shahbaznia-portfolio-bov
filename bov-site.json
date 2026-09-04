@@ -210,6 +210,7 @@
       "short_name": "Terraces at the Lake",
       "show_active_listings": false,
       "show_local_closings": true,
+      "local_closings": {},
       "show_buyout_model": false,
       "buyout_model": null,
       "show_value_scenarios": false,
@@ -234,18 +235,6 @@
       "opinion_of_value": [
         {
           "label": "Suggested list price",
-          "price": 14750000,
-          "price_per_unit": 283653.8461538461,
-          "price_per_sf": 358.88951069369085,
-          "price_per_land_sf": null,
-          "price_per_buildable_unit": null,
-          "grm_current": 9.96530264036335,
-          "grm_market": 8.84929205663547,
-          "cap_current": 6.172791050847458,
-          "cap_market": 7.3269491525423724
-        },
-        {
-          "label": "Range top",
           "price": 14750000,
           "price_per_unit": 283653.8461538461,
           "price_per_sf": 358.88951069369085,
@@ -524,7 +513,9 @@
       ],
       "location_title": "Lake Balboa, 1988 Construction, Outside the RSO",
       "location_narrative": [
-        "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+        "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building.",
+        "Van Nuys is absorbing the largest public transit investment in the Valley's history. Metro awarded a $2.43B construction contract in August 2026 for the East San Fernando Valley Light Rail, a 6.7 mile line running up Van Nuys Blvd with 11 stations and service every 7 to 10 minutes, and the G Line rebuild adds an elevated Van Nuys station expected to cut about 12 minutes from bus travel when it finishes in late 2027. Both sit on the Van Nuys Blvd corridor roughly 2.6 miles east of the property. Van Nuys Airport, 1.2 miles away, is partway through an $18.8M reconstruction of five taxiways.",
+        "Private capital has moved with it. The 332 unit Sona development at 7050 Van Nuys Blvd has delivered, a 405 unit project is under construction on Sepulveda Blvd, and further residential and eldercare projects are working through entitlement along the corridor. Developers are committing to Van Nuys at scale, which is the clearest read available on where the submarket is heading."
       ],
       "physical_narrative": [
         "One building, 52 units, 41,099 gross SF on a 39,019 SF lot. Unit mix is 28 one bedroom and 24 two bedroom, averaging 790 SF per unit. The courtyard carries a pool, and units have in unit laundry."
@@ -843,6 +834,7 @@
       "short_name": "Gardens at La Crescenta",
       "show_active_listings": false,
       "show_local_closings": false,
+      "local_closings": {},
       "show_buyout_model": false,
       "buyout_model": null,
       "show_value_scenarios": false,
@@ -1166,7 +1158,9 @@
       ],
       "location_title": "La Crescenta, Foothill Submarket, Fully Occupied",
       "location_narrative": [
-        "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+        "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All five closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave.",
+        "The City of Glendale completed the La Crescenta Avenue Rehabilitation in August 2026, three tenths of a mile from the building. The roadway was reconfigured with a center two way left turn lane, protected and buffered bike lanes, decorative high visibility crosswalks, a pedestrian beacon by Fremont Elementary and an upgraded sewer network. About a mile east on the same street, Glendale Community College has proposed rebuilding its Professional Development Center on the 2300 block of Honolulu Ave as a clinical training site with USC Verdugo Hills Hospital.",
+        "For an owner here the more valuable fact is what is not being built. Apartment stock in La Crescenta is held down by restrictive zoning and sustained local opposition to density, and active rental listings across the whole La Crescenta and Montrose footprint stay in the double digits. The one significant project proposed nearby, at Foothill and Briggs, was cut from 80 units to 66 and is not expected to break ground before 2027. Supply that cannot easily expand is the backdrop to this building's rent roll."
       ],
       "physical_narrative": [
         "Two structures on one lot, 17 units totalling 13,628 gross SF on a 17,616 SF parcel. The mix is 15 one bedroom units, one studio and one two bedroom, averaging 802 SF."
@@ -1581,7 +1575,9 @@
               "Lake Balboa, 1988 Construction, Outside the RSO"
             ],
             "narrative": [
-              "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+              "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building.",
+              "Van Nuys is absorbing the largest public transit investment in the Valley's history. Metro awarded a $2.43B construction contract in August 2026 for the East San Fernando Valley Light Rail, a 6.7 mile line running up Van Nuys Blvd with 11 stations and service every 7 to 10 minutes, and the G Line rebuild adds an elevated Van Nuys station expected to cut about 12 minutes from bus travel when it finishes in late 2027. Both sit on the Van Nuys Blvd corridor roughly 2.6 miles east of the property. Van Nuys Airport, 1.2 miles away, is partway through an $18.8M reconstruction of five taxiways.",
+              "Private capital has moved with it. The 332 unit Sona development at 7050 Van Nuys Blvd has delivered, a 405 unit project is under construction on Sepulveda Blvd, and further residential and eldercare projects are working through entitlement along the corridor. Developers are committing to Van Nuys at scale, which is the clearest read available on where the submarket is heading."
             ]
           },
           "property_details": {
@@ -1940,6 +1936,24 @@
             "text": "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
           },
           {
+            "id": "location-2",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:market-news-1"
+            ],
+            "framed_as": null,
+            "text": "Van Nuys is absorbing the largest public transit investment in the Valley's history. Metro awarded a $2.43B construction contract in August 2026 for the East San Fernando Valley Light Rail, a 6.7 mile line running up Van Nuys Blvd with 11 stations and service every 7 to 10 minutes, and the G Line rebuild adds an elevated Van Nuys station expected to cut about 12 minutes from bus travel when it finishes in late 2027. Both sit on the Van Nuys Blvd corridor roughly 2.6 miles east of the property. Van Nuys Airport, 1.2 miles away, is partway through an $18.8M reconstruction of five taxiways."
+          },
+          {
+            "id": "location-3",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:market-news-1"
+            ],
+            "framed_as": null,
+            "text": "Private capital has moved with it. The 332 unit Sona development at 7050 Van Nuys Blvd has delivered, a 405 unit project is under construction on Sepulveda Blvd, and further residential and eldercare projects are working through entitlement along the corridor. Developers are committing to Van Nuys at scale, which is the clearest read available on where the submarket is heading."
+          },
+          {
             "id": "physical-1",
             "claim_type": "verified_fact",
             "support_refs": [
@@ -2116,7 +2130,9 @@
               "La Crescenta, Foothill Submarket, Fully Occupied"
             ],
             "narrative": [
-              "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+              "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All five closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave.",
+              "The City of Glendale completed the La Crescenta Avenue Rehabilitation in August 2026, three tenths of a mile from the building. The roadway was reconfigured with a center two way left turn lane, protected and buffered bike lanes, decorative high visibility crosswalks, a pedestrian beacon by Fremont Elementary and an upgraded sewer network. About a mile east on the same street, Glendale Community College has proposed rebuilding its Professional Development Center on the 2300 block of Honolulu Ave as a clinical training site with USC Verdugo Hills Hospital.",
+              "For an owner here the more valuable fact is what is not being built. Apartment stock in La Crescenta is held down by restrictive zoning and sustained local opposition to density, and active rental listings across the whole La Crescenta and Montrose footprint stay in the double digits. The one significant project proposed nearby, at Foothill and Briggs, was cut from 80 units to 66 and is not expected to break ground before 2027. Supply that cannot easily expand is the backdrop to this building's rent roll."
             ]
           },
           "property_details": {
@@ -2463,7 +2479,25 @@
               "deal:rooftop_pin"
             ],
             "framed_as": null,
-            "text": "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+            "text": "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All five closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+          },
+          {
+            "id": "location-2",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:market-news-1"
+            ],
+            "framed_as": null,
+            "text": "The City of Glendale completed the La Crescenta Avenue Rehabilitation in August 2026, three tenths of a mile from the building. The roadway was reconfigured with a center two way left turn lane, protected and buffered bike lanes, decorative high visibility crosswalks, a pedestrian beacon by Fremont Elementary and an upgraded sewer network. About a mile east on the same street, Glendale Community College has proposed rebuilding its Professional Development Center on the 2300 block of Honolulu Ave as a clinical training site with USC Verdugo Hills Hospital."
+          },
+          {
+            "id": "location-3",
+            "claim_type": "sourced_market_fact",
+            "support_refs": [
+              "sources:market-news-1"
+            ],
+            "framed_as": null,
+            "text": "For an owner here the more valuable fact is what is not being built. Apartment stock in La Crescenta is held down by restrictive zoning and sustained local opposition to density, and active rental listings across the whole La Crescenta and Montrose footprint stay in the double digits. The one significant project proposed nearby, at Foothill and Briggs, was cut from 80 units to 66 and is not expected to break ground before 2027. Supply that cannot easily expand is the backdrop to this building's rent roll."
           },
           {
             "id": "physical-1",
@@ -2648,7 +2682,9 @@
                 "Lake Balboa, 1988 Construction, Outside the RSO"
               ],
               "narrative": [
-                "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+                "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building.",
+                "Van Nuys is absorbing the largest public transit investment in the Valley's history. Metro awarded a $2.43B construction contract in August 2026 for the East San Fernando Valley Light Rail, a 6.7 mile line running up Van Nuys Blvd with 11 stations and service every 7 to 10 minutes, and the G Line rebuild adds an elevated Van Nuys station expected to cut about 12 minutes from bus travel when it finishes in late 2027. Both sit on the Van Nuys Blvd corridor roughly 2.6 miles east of the property. Van Nuys Airport, 1.2 miles away, is partway through an $18.8M reconstruction of five taxiways.",
+                "Private capital has moved with it. The 332 unit Sona development at 7050 Van Nuys Blvd has delivered, a 405 unit project is under construction on Sepulveda Blvd, and further residential and eldercare projects are working through entitlement along the corridor. Developers are committing to Van Nuys at scale, which is the clearest read available on where the submarket is heading."
               ]
             },
             "property_details": {
@@ -3005,6 +3041,24 @@
               ],
               "framed_as": null,
               "text": "The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building."
+            },
+            {
+              "id": "location-2",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:market-news-1"
+              ],
+              "framed_as": null,
+              "text": "Van Nuys is absorbing the largest public transit investment in the Valley's history. Metro awarded a $2.43B construction contract in August 2026 for the East San Fernando Valley Light Rail, a 6.7 mile line running up Van Nuys Blvd with 11 stations and service every 7 to 10 minutes, and the G Line rebuild adds an elevated Van Nuys station expected to cut about 12 minutes from bus travel when it finishes in late 2027. Both sit on the Van Nuys Blvd corridor roughly 2.6 miles east of the property. Van Nuys Airport, 1.2 miles away, is partway through an $18.8M reconstruction of five taxiways."
+            },
+            {
+              "id": "location-3",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:market-news-1"
+              ],
+              "framed_as": null,
+              "text": "Private capital has moved with it. The 332 unit Sona development at 7050 Van Nuys Blvd has delivered, a 405 unit project is under construction on Sepulveda Blvd, and further residential and eldercare projects are working through entitlement along the corridor. Developers are committing to Van Nuys at scale, which is the clearest read available on where the submarket is heading."
             },
             {
               "id": "physical-1",
@@ -3379,7 +3433,9 @@
                 "La Crescenta, Foothill Submarket, Fully Occupied"
               ],
               "narrative": [
-                "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+                "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All five closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave.",
+                "The City of Glendale completed the La Crescenta Avenue Rehabilitation in August 2026, three tenths of a mile from the building. The roadway was reconfigured with a center two way left turn lane, protected and buffered bike lanes, decorative high visibility crosswalks, a pedestrian beacon by Fremont Elementary and an upgraded sewer network. About a mile east on the same street, Glendale Community College has proposed rebuilding its Professional Development Center on the 2300 block of Honolulu Ave as a clinical training site with USC Verdugo Hills Hospital.",
+                "For an owner here the more valuable fact is what is not being built. Apartment stock in La Crescenta is held down by restrictive zoning and sustained local opposition to density, and active rental listings across the whole La Crescenta and Montrose footprint stay in the double digits. The one significant project proposed nearby, at Foothill and Briggs, was cut from 80 units to 66 and is not expected to break ground before 2027. Supply that cannot easily expand is the backdrop to this building's rent roll."
               ]
             },
             "property_details": {
@@ -3726,7 +3782,25 @@
                 "deal:rooftop_pin"
               ],
               "framed_as": null,
-              "text": "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All four closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+              "text": "The property sits on Honolulu Ave in La Crescenta, in the foothills above Glendale. All five closed sales framing this valuation are in Montrose, every one of them within 1.2 miles of the building, and the nearest rent comp is a quarter mile away on Montrose Ave."
+            },
+            {
+              "id": "location-2",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:market-news-1"
+              ],
+              "framed_as": null,
+              "text": "The City of Glendale completed the La Crescenta Avenue Rehabilitation in August 2026, three tenths of a mile from the building. The roadway was reconfigured with a center two way left turn lane, protected and buffered bike lanes, decorative high visibility crosswalks, a pedestrian beacon by Fremont Elementary and an upgraded sewer network. About a mile east on the same street, Glendale Community College has proposed rebuilding its Professional Development Center on the 2300 block of Honolulu Ave as a clinical training site with USC Verdugo Hills Hospital."
+            },
+            {
+              "id": "location-3",
+              "claim_type": "sourced_market_fact",
+              "support_refs": [
+                "sources:market-news-1"
+              ],
+              "framed_as": null,
+              "text": "For an owner here the more valuable fact is what is not being built. Apartment stock in La Crescenta is held down by restrictive zoning and sustained local opposition to density, and active rental listings across the whole La Crescenta and Montrose footprint stay in the double digits. The one significant project proposed nearby, at Foothill and Briggs, was cut from 80 units to 66 and is not expected to break ground before 2027. Supply that cannot easily expand is the backdrop to this building's rent roll."
             },
             {
               "id": "physical-1",
@@ -3940,7 +4014,7 @@
       "pricing_decision": "60a4af6ac503edd6b24c4b734c0693184320fbef5341a6c187dc5b821962eff4",
       "sale_comps": "96a2df61111c31bed59f00d6896ca74d795c2d5e097905c21374d3b8ca278178",
       "rent_comps": "1fb2a223f6a475871592d01189351b3211d48757ba759ecd357b54cf5b0eb5b2",
-      "copy": "4d0a2095d545bb3a0d15de0a13b4f62c365b47390327e6bac8ac10eaa561f67a",
+      "copy": "43d22d3f927b84e433010c2f9d61418fb7552532f03ea1bc06175b341c338e00",
       "media_selection": "4de399f2df6f55958fcc4725157214d3a1257da7a5b7234ae8e18ac5fb492aa9",
       "regulatory_conclusions": "aebaad476ba4746df8611977b480ecdad93795c04c46e0f97d94b5863d04d813"
     },
@@ -3951,7 +4025,7 @@
         "pricing_decision": "bcc0e62620af0fd98f30caef1fb047fa8da71acaad523dda536014e343ca8fc9",
         "sale_comps": "dcee0705ffeff924a753fe6fd147c9d27f9c7b44ed07a0aa409e26e28ea7be4a",
         "rent_comps": "a5d5a0bf362d695d68d2e434cc8d7e2865e324146269645483b8b8accb2c9f4b",
-        "copy": "34e5d09d9038c96321b3f78624868738ca2813941e2955bbb290780069124bfd",
+        "copy": "5a95a76acf73ca8e986ec7b0b38e43acc59d991fcf2e27936bc093f4cd9330fd",
         "media_selection": "908d1b10d5ebf943bbfa2e5e3b04fcc4693c6fc537c3b625fb405b324056469e",
         "regulatory_conclusions": "a0e129499e9c309ced1c18403698c8d9a064ced57b68d9645013eeb88690c835"
       },
@@ -3961,7 +4035,7 @@
         "pricing_decision": "8f2e0e64700c297b2c4d1c734553926e6977dda5b819c71c8ac59d77e00f68e7",
         "sale_comps": "860409f9efd1b847673b6109b05127c3b8d3bb8bd832010db598cdd2d5f97a48",
         "rent_comps": "e9fd8b00c578a866c7eb537dec4db8b60f270dc89f94da079a24cda8301391e4",
-        "copy": "3ebee0f9632f1be052a0ad9ecb4679f53804ae80ba2b75dff70691539afa49e3",
+        "copy": "be14b18f52a66f5a65568c8eb3e292244393bc4d19aebb46797fbd953d077929",
         "media_selection": "bdbe89ff20077df84bd6f595e02686d16bcaf4153c79977ecd9f27a8f506e6e1",
         "regulatory_conclusions": "220f85881ba693876f3e1a607289a43d25fad7df1b09b1316f42a5d8fe09359e"
       }
@@ -3969,17 +4043,17 @@
     "presentation_hashes": {
       "identity": "75d1798649b2b8042967d3c8ef30c847c45269797e27ec798304a55b55d41833",
       "financial_inputs": "8b41671866e7413456285ed0e276cc4066aeb8975ccc434e72852c45eaae3c84",
-      "pricing_decision": "6bb890fea1c7124d0711c921150c6769fb6fb431267b819c060c85c1ea5a2e84",
+      "pricing_decision": "5206c408f43938880aa503e94d7b892d48f1075574a02d1389cc0a91514fb52f",
       "sale_comps": "aff3df9f9eadf3230069b1ccd5e99d05153e02f77bbdcb7e58164d76a17a6b8b",
       "rent_comps": "223ea8925b250165c0ae6a28d46cd8c5d012ef0dda93894f8e5ce7c84fd3e5c8",
-      "copy": "c295f993655566f1c1c29d70303d804620f5d8e3bf90442fd5d932985a87e44d",
+      "copy": "420330865ce7f01959226392147eda1090686eea587d6ca6935261f4bb7f50de",
       "media_selection": "92dcf52217f187976a7d0b86e1d4fc74a8b58474502e3586c1f2cc3d0a7f6b95",
       "regulatory_conclusions": "cc752caa3878fc117582c3ec2fa281d6441ecbd832a04042861d2e48dd379354"
     }
   },
   "stats": {
     "live": true,
-    "generated": "2026-09-03T23:18:04+00:00",
+    "generated": "2026-09-04T00:28:24+00:00",
     "geography": {
       "states": 21,
       "has_dc": true,

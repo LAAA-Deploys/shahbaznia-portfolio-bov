@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="laaa-figures-pulled" content="2026-09-03T23:18:04+00:00">
+<meta name="laaa-figures-pulled" content="2026-09-04T00:28:24+00:00">
 <meta name="description" content="52-Unit Multifamily Investment - Van Nuys (Lake Balboa), CA 91406 | LAAA Team - Marcus &amp; Millichap">
 <meta property="og:title" content="Broker Opinion of Value - Terraces at the Lake">
 <meta property="og:description" content="52-Unit Multifamily Investment - Van Nuys (Lake Balboa), CA 91406 | LAAA Team - Marcus &amp; Millichap">
@@ -43,7 +43,13 @@ h1,h2,h3 { font-family: 'DM Serif Display', Georgia, serif; }
 .cover-title { font-size: 52px; font-weight: 400; letter-spacing: 1px; margin-bottom: 8px; text-shadow: 0 2px 12px rgba(0,0,0,0.3); font-family: 'DM Serif Display', serif; }
 .cover-address { font-size: 18px; font-weight: 400; letter-spacing: 1px; color: rgba(255,255,255,0.85); margin-top: 4px; }
 .cover-stats { display: flex; gap: 36px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
-.cover-stat { text-align: center; }
+/* Equal share per stat, so the VALUES sit on an even rhythm. Sized to content,
+   the fixed 36px gap sat between blocks of very different widths (88px for
+   "8 / Total Units" against 161px for "6,176 / Combined Building SF"), which
+   pushed the numbers 121px, then 157px, then 182px apart: the gap was even but
+   what a reader tracks across a stat row is the numbers, and those read as
+   bunched at the left. min-width keeps the wrap behaviour on a phone. */
+.cover-stat { text-align: center; flex: 1 1 0; min-width: 116px; }
 .cover-stat-value { display: block; font-size: 28px; font-weight: 600; color: #fff; font-family: 'DM Serif Display', serif; }
 .cover-stat-label { display: block; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: #C5A258; margin-top: 4px; }
 /* Every agent gets the SAME slot width, so the photos sit evenly spaced no
@@ -59,8 +65,13 @@ h1,h2,h3 { font-family: 'DM Serif Display', Georgia, serif; }
    the cover ends up with, keeps every agent on one row, and stays above the
    84px photo well past any realistic lead count. */
 .cover-headshots { display: flex; justify-content: center; gap: 40px; margin-top: 24px; margin-bottom: 16px; }
-.cover-headshot { width: 84px; height: 84px; border-radius: 50%; border: 3px solid #C5A258; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
-.cover-headshot-name { font-size: 12px; font-weight: 600; margin-top: 6px; color: #fff; overflow-wrap: anywhere; }
+/* display:block, or the image sits on a text baseline inside its wrapper and
+   the wrapper's 25.6px line-height leaves ~8px of phantom descender space under
+   every photo. That made the real gap to the name 14px while the stylesheet
+   said 6px, so the spacing under the headshots could not be tuned by reading
+   the CSS. Block it out and set the gap deliberately below. */
+.cover-headshot { display: block; margin: 0 auto; width: 84px; height: 84px; border-radius: 50%; border: 3px solid #C5A258; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
+.cover-headshot-name { font-size: 12px; font-weight: 600; margin-top: 12px; color: #fff; overflow-wrap: anywhere; }
 .cover-headshot-title { font-size: 10px; color: #C5A258; overflow-wrap: anywhere; }
 .cover-headshot-wrap { flex: 0 1 190px; min-width: 0; text-align: center; }
 .client-greeting { font-size: 14px; font-weight: 500; color: #C5A258; letter-spacing: 1px; margin-top: 16px; }
@@ -169,6 +180,13 @@ td.num, th.num { text-align: right; }
    the whole container width, which read as a stretched banner (Glen,
    2026-08-19: same width and height so all looks normal). */
 .lead-card:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc(50% - 10px); justify-self: center; }
+/* A non-principal lead renders no kicker at all (blocks.PRINCIPAL_NAMES, with
+   APPROVED_ROLE_KICKERS deliberately empty so nobody can invent a label). Their
+   name therefore started 22px higher than the principals beside them and the
+   row of names lost its shared baseline. Reserve the kicker's line rather than
+   give them a filler label, which is the thing that rule exists to prevent.
+   22px is the kicker's own 16px line box plus its 6px bottom margin. */
+.lead-card:not(:has(.lead-kicker)) .lead-head::before { content: ""; display: block; height: 22px; }
 .lead-card { display: grid; grid-template-columns: 150px minmax(0, 1fr); grid-template-rows: auto auto auto; grid-template-areas: "photo head" "photo bio" "photo contact"; column-gap: 20px; align-content: start; background: #fff; border: 1px solid #e5e9f0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 6px rgba(27,58,92,0.06); }
 .lead-photo { grid-area: photo; width: 150px; height: 178px; border-radius: 10px; object-fit: cover; object-position: top; background: #f0f4f8; }
 .lead-head { grid-area: head; }
@@ -606,7 +624,7 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
     <tbody><tr><td>15716 Saticoy St</td><td class="num">42</td><td class="num">$14,200,000</td><td class="num">$338,095</td><td class="num">1.78 mi</td><td class="num">2021</td></tr><tr><td>14015 Oxnard St</td><td class="num">32</td><td class="num">$5,136,000</td><td class="num">$160,500</td><td class="num">2.42 mi</td><td class="num">2025</td></tr><tr><td>6860 Woodley Ave</td><td class="num">7</td><td class="num">$1,715,000</td><td class="num">$245,000</td><td class="num">0.63 mi</td><td class="num">2026</td></tr></tbody>
   </table></div>
   <div class="tr-proof"><div class="tr-proof-item"><span class="tr-proof-figure">96.7%</span><span class="tr-proof-label">Apartment Pricing Accuracy</span></div><div class="tr-proof-item"><span class="tr-proof-figure">34</span><span class="tr-proof-label">Median Days on Market, Apartments</span></div></div>
-  <p class="tr-proof-source">Published team performance, <a href="https://www.laaa.com/track-record" target="_blank" rel="noopener">laaa.com/track-record</a>, as of September 3, 2026.</p>
+  <p class="tr-proof-source">Published team performance, <a href="https://www.laaa.com/track-record" target="_blank" rel="noopener">laaa.com/track-record</a>, as of September 4, 2026.</p>
     </div>
     <div class="tr-closings-figure">
       <div class="tr-closings-frame"><img src="../images/maps-16550-vanowen-closings.png" alt="LAAA closings near Terraces at the Lake" loading="lazy"></div>
@@ -694,6 +712,8 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
   <div class="loc-grid">
     <div class="loc-left">
 <p>The property fronts Vanowen St in Lake Balboa, the residential pocket carved out of Van Nuys around the Sepulveda Basin. The five closed sales framing this valuation all sit inside Van Nuys, four of them within a mile and a half of the building.</p>
+<p>Van Nuys is absorbing the largest public transit investment in the Valley&#x27;s history. Metro awarded a $2.43B construction contract in August 2026 for the East San Fernando Valley Light Rail, a 6.7 mile line running up Van Nuys Blvd with 11 stations and service every 7 to 10 minutes, and the G Line rebuild adds an elevated Van Nuys station expected to cut about 12 minutes from bus travel when it finishes in late 2027. Both sit on the Van Nuys Blvd corridor roughly 2.6 miles east of the property. Van Nuys Airport, 1.2 miles away, is partway through an $18.8M reconstruction of five taxiways.</p>
+<p>Private capital has moved with it. The 332 unit Sona development at 7050 Van Nuys Blvd has delivered, a 405 unit project is under construction on Sepulveda Blvd, and further residential and eldercare projects are working through entitlement along the corridor. Developers are committing to Van Nuys at scale, which is the clearest read available on where the submarket is heading.</p>
     </div>
     <div class="loc-right">
       <table class="info-table"><thead><tr><th colspan="2">Property &amp; Location Details</th></tr></thead><tbody><tr><td>Address</td><td>16550 Vanowen St, Los Angeles, CA 91406</td></tr><tr><td>City</td><td>Van Nuys (Lake Balboa), CA 91406</td></tr><tr><td>APN</td><td>2231-007-024</td></tr><tr><td>Year Built</td><td>1988</td></tr><tr><td>Building SF</td><td>41,099</td></tr><tr><td>Lot Size</td><td>39,019 SF (0.9 ac)</td></tr><tr><td>Units</td><td>52</td></tr><tr><td>Parking</td><td>Subterranean parking structure beneath the building.</td></tr></tbody></table>
@@ -794,7 +814,7 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
   <div class="section-divider"></div>
   <div class="table-scroll"><table data-summary-exempt="A valuation ladder has no aggregate: the rows are alternative prices for the same asset, not components of a total.">
     <thead><tr><th>Basis</th><th class="num">Price</th><th class="num">$/Unit</th><th class="num">$/SF</th><th class="num">GRM Current</th><th class="num">GRM Pro Forma</th><th class="num">Cap Current</th><th class="num">Cap Pro Forma</th></tr></thead>
-    <tbody><tr class="highlight"><td><strong>Suggested list price</strong></td><td class="num">$14,750,000</td><td class="num">$283,654</td><td class="num">$358.89</td><td class="num">9.97</td><td class="num">8.85</td><td class="num">6.17%</td><td class="num">7.33%</td></tr><tr><td><strong>Range top</strong></td><td class="num">$14,750,000</td><td class="num">$283,654</td><td class="num">$358.89</td><td class="num">9.97</td><td class="num">8.85</td><td class="num">6.17%</td><td class="num">7.33%</td></tr><tr><td><strong>Midpoint</strong></td><td class="num">$14,500,000</td><td class="num">$278,846</td><td class="num">$352.81</td><td class="num">9.80</td><td class="num">8.70</td><td class="num">6.30%</td><td class="num">7.47%</td></tr><tr><td><strong>Range bottom</strong></td><td class="num">$14,250,000</td><td class="num">$274,038</td><td class="num">$346.72</td><td class="num">9.63</td><td class="num">8.55</td><td class="num">6.43%</td><td class="num">7.63%</td></tr></tbody>
+    <tbody><tr class="highlight"><td><strong>Suggested list price</strong></td><td class="num">$14,750,000</td><td class="num">$283,654</td><td class="num">$358.89</td><td class="num">9.97</td><td class="num">8.85</td><td class="num">6.17%</td><td class="num">7.33%</td></tr><tr><td><strong>Midpoint</strong></td><td class="num">$14,500,000</td><td class="num">$278,846</td><td class="num">$352.81</td><td class="num">9.80</td><td class="num">8.70</td><td class="num">6.30%</td><td class="num">7.47%</td></tr><tr><td><strong>Range bottom</strong></td><td class="num">$14,250,000</td><td class="num">$274,038</td><td class="num">$346.72</td><td class="num">9.63</td><td class="num">8.55</td><td class="num">6.43%</td><td class="num">7.63%</td></tr></tbody>
   </table></div>
   <p class="narrative">Property taxes reassess at the sale price, so the net operating income and therefore the capitalization rate are recalculated at every rung above.</p>
 </div>
