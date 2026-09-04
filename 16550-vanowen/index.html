@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<meta name="laaa-figures-pulled" content="2026-09-04T16:03:29+00:00">
+<meta name="laaa-figures-pulled" content="2026-09-04T16:17:22+00:00">
 <meta name="description" content="52-Unit Multifamily Investment - Van Nuys (Lake Balboa), CA 91406 | LAAA Team - Marcus &amp; Millichap">
 <meta property="og:title" content="Broker Opinion of Value - Terraces at the Lake">
 <meta property="og:description" content="52-Unit Multifamily Investment - Van Nuys (Lake Balboa), CA 91406 | LAAA Team - Marcus &amp; Millichap">
@@ -501,15 +501,22 @@ td.num, th.num { text-align: right; }
    pin. Co-located rows share a number by design. */
 .map-ref{display:inline-block;min-width:20px;height:20px;line-height:20px;margin-right:8px;
   border-radius:50%;background:#1B3A5C;color:#fff;font-size:11px;font-weight:700;text-align:center;}
-/* Comp addresses link to their own point on Google Maps. Underlined on a dotted
-   rule rather than a full link colour: every address in the table is a link, so
-   colouring them all would repaint the column and pull the eye off the figures
-   beside it, which is what the table is actually for. */
-.comp-link{color:inherit;text-decoration:underline;text-decoration-style:dotted;
-  text-decoration-color:#C5A258;text-underline-offset:3px;}
-.comp-link:hover,.comp-link:focus-visible{color:#1B3A5C;text-decoration-style:solid;}
-.comp-narratives .comp-link{text-decoration-color:#C5A258;}
-@media print{.comp-link{text-decoration:none;color:inherit;}}
+/* Comp addresses link to their own point on Google Maps, and they have to LOOK
+   clickable. This first shipped as inherited grey text under a thin dotted
+   rule, on the theory that colouring a whole column would pull the eye off the
+   figures beside it. It did not read as a link at all: the deal owner opened
+   the page and reported there was nothing to click. Navy plus a solid underline
+   is the same treatment every other link on the site already uses, so the
+   affordance is obvious and the palette is unchanged. Do not make this subtle
+   again. Print drops the decoration, where there is nothing to click anyway. */
+.comp-link{color:#1B3A5C;font-weight:500;text-decoration:underline;
+  text-decoration-color:#C5A258;text-decoration-thickness:1px;text-underline-offset:3px;}
+.comp-link:hover,.comp-link:focus-visible{color:#0F2740;text-decoration-color:#1B3A5C;
+  text-decoration-thickness:2px;}
+.comp-link::after{content:"\2197";font-size:0.8em;margin-left:3px;color:#C5A258;
+  text-decoration:none;display:inline-block;}
+@media print{.comp-link{text-decoration:none;color:inherit;font-weight:inherit;}
+  .comp-link::after{content:"";}}
 
 /* ---- Buyout Scenarios (opt-in section) ---- */
 .bm-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:22px 0 8px}
@@ -628,11 +635,6 @@ table.bm-soft tr.highlight td{background:#FFF8E7;border-left:3px solid #C5A258;f
   <div class="metrics-grid-4"><div class="metric-card"><span class="metric-value">494</span><span class="metric-label">Closed Transactions</span></div><div class="metric-card"><span class="metric-value">342</span><span class="metric-label">Apartment Sales</span></div><div class="metric-card"><span class="metric-value">41</span><span class="metric-label">in Van Nuys</span></div><div class="metric-card"><span class="metric-value">$1.56B</span><span class="metric-label">Total Sales Volume</span></div></div>
   <div class="tr-closings-split">
     <div class="tr-closings-copy">
-  <h3 class="sub-heading">Representative Local Closings</h3>
-  <div class="table-scroll"><table data-summary-exempt="Three named closings are examples the reader can look up, not a sample: averaging them would imply a market statistic three transactions cannot support.">
-    <thead><tr><th>Address</th><th class="num">Units</th><th class="num">Sale Price</th><th class="num">$/Unit</th><th class="num">Distance</th><th class="num">Closed</th></tr></thead>
-    <tbody><tr><td>15716 Saticoy St</td><td class="num">42</td><td class="num">$14,200,000</td><td class="num">$338,095</td><td class="num">1.78 mi</td><td class="num">2021</td></tr><tr><td>14015 Oxnard St</td><td class="num">32</td><td class="num">$5,136,000</td><td class="num">$160,500</td><td class="num">2.42 mi</td><td class="num">2025</td></tr><tr><td>6860 Woodley Ave</td><td class="num">7</td><td class="num">$1,715,000</td><td class="num">$245,000</td><td class="num">0.63 mi</td><td class="num">2026</td></tr></tbody>
-  </table></div>
   <div class="tr-proof"><div class="tr-proof-item"><span class="tr-proof-figure">96.7%</span><span class="tr-proof-label">Apartment Pricing Accuracy</span></div><div class="tr-proof-item"><span class="tr-proof-figure">34</span><span class="tr-proof-label">Median Days on Market, Apartments</span></div></div>
   <p class="tr-proof-source">Published team performance, <a href="https://www.laaa.com/track-record" target="_blank" rel="noopener">laaa.com/track-record</a>, as of September 4, 2026.</p>
     </div>

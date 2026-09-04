@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<meta name="laaa-figures-pulled" content="2026-09-04T16:03:29+00:00">
+<meta name="laaa-figures-pulled" content="2026-09-04T16:17:22+00:00">
 <meta name="description" content="17-Unit Multifamily Investment - La Crescenta, CA 91214 | LAAA Team - Marcus &amp; Millichap">
 <meta property="og:title" content="Broker Opinion of Value - Gardens at La Crescenta">
 <meta property="og:description" content="17-Unit Multifamily Investment - La Crescenta, CA 91214 | LAAA Team - Marcus &amp; Millichap">
@@ -501,15 +501,22 @@ td.num, th.num { text-align: right; }
    pin. Co-located rows share a number by design. */
 .map-ref{display:inline-block;min-width:20px;height:20px;line-height:20px;margin-right:8px;
   border-radius:50%;background:#1B3A5C;color:#fff;font-size:11px;font-weight:700;text-align:center;}
-/* Comp addresses link to their own point on Google Maps. Underlined on a dotted
-   rule rather than a full link colour: every address in the table is a link, so
-   colouring them all would repaint the column and pull the eye off the figures
-   beside it, which is what the table is actually for. */
-.comp-link{color:inherit;text-decoration:underline;text-decoration-style:dotted;
-  text-decoration-color:#C5A258;text-underline-offset:3px;}
-.comp-link:hover,.comp-link:focus-visible{color:#1B3A5C;text-decoration-style:solid;}
-.comp-narratives .comp-link{text-decoration-color:#C5A258;}
-@media print{.comp-link{text-decoration:none;color:inherit;}}
+/* Comp addresses link to their own point on Google Maps, and they have to LOOK
+   clickable. This first shipped as inherited grey text under a thin dotted
+   rule, on the theory that colouring a whole column would pull the eye off the
+   figures beside it. It did not read as a link at all: the deal owner opened
+   the page and reported there was nothing to click. Navy plus a solid underline
+   is the same treatment every other link on the site already uses, so the
+   affordance is obvious and the palette is unchanged. Do not make this subtle
+   again. Print drops the decoration, where there is nothing to click anyway. */
+.comp-link{color:#1B3A5C;font-weight:500;text-decoration:underline;
+  text-decoration-color:#C5A258;text-decoration-thickness:1px;text-underline-offset:3px;}
+.comp-link:hover,.comp-link:focus-visible{color:#0F2740;text-decoration-color:#1B3A5C;
+  text-decoration-thickness:2px;}
+.comp-link::after{content:"\2197";font-size:0.8em;margin-left:3px;color:#C5A258;
+  text-decoration:none;display:inline-block;}
+@media print{.comp-link{text-decoration:none;color:inherit;font-weight:inherit;}
+  .comp-link::after{content:"";}}
 
 /* ---- Buyout Scenarios (opt-in section) ---- */
 .bm-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:22px 0 8px}
